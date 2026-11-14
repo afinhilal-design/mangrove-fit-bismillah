@@ -1,0 +1,19 @@
+MANGROVE-FIT - MULAI DI SINI
+
+1. Ekstrak seluruh ZIP, jangan jalankan langsung dari arsip.
+2. Pasang Python 3.12 atau 3.11 64-bit dari python.org.
+   Pada installer, aktifkan Add python.exe to PATH jika tersedia.
+3. Klik dua kali 01_INSTALL_WINDOWS.bat (sekali saja, perlu internet).
+4. Setelah selesai, klik dua kali 02_JALANKAN_WINDOWS.bat.
+5. Jika browser tidak terbuka, buka http://localhost:8501.
+
+VS Code hanya perlu jika ingin mengedit kode. Jangan tutup jendela
+terminal selama aplikasi dipakai. Tekan Ctrl+C untuk berhenti.
+
+Pilih Demo untuk mencoba; Analis lokal untuk menyimpan data sendiri.
+Contoh bawaan adalah SIMULASI, bukan data lapangan.
+XGBoost dan SHAP belum tersedia; analisis memakai aturan transparan.
+
+Panduan lengkap: README.md
+Hasil pengujian: docs/acceptance.md
+Tangkapan layar: docs/screenshots/

@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "landcover_type": "coastal_mudflat",
+        "legal_status": "terverifikasi",
+        "mangrove_cover_pct": 15,
+        "ndvi": 0.31,
+        "ndmi": 0.12,
+        "elevation_m": 0.4,
+        "elevation_datum": "Datum lokal SINTETIS; bukan datum pasang surut nyata",
+        "inundation_duration_h_day": 5,
+        "tidal_connectivity": "baik",
+        "salinity_ppt": 22,
+        "substrate_type": "lumpur",
+        "wave_exposure": "rendah",
+        "shoreline_change_m_y": 0.3,
+        "natural_recruitment": "ada",
+        "propagule_supply": "cukup",
+        "accessibility": "mudah",
+        "observation_date": "2026-01-01",
+        "data_source": "SYNTHETIC_DEMO",
+        "quality_flag": "demo",
+        "processing_method": "Angka ilustrasi untuk uji perangkat lunak",
+        "provenance": {
+          "provider": "MANGROVE-FIT demo",
+          "dataset_name": "Zona simulasi",
+          "dataset_version": "1.0",
+          "observation_date": "2026-01-01",
+          "download_date": "2026-11-14",
+          "spatial_resolution_m": null,
+          "license": "CC0-1.0 untuk data sintetik",
+          "source_url": null,
+          "processing_method": "Geometri dan nilai sintetis, bukan pengukuran",
+          "quality_flag": "demo"
+        },
+        "zone_id": "SIM-A",
+        "zone_name": "Zona A · Regenerasi alami"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.49,
+              -6.89
+            ],
+            [
+              112.499,
+              -6.891
+            ],
+            [
+              112.497,
+              -6.899
+            ],
+            [
+              112.488,
+              -6.896999999999999
+            ],
+            [
+              112.49,
+              -6.89
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "landcover_type": "degraded_coastal",
+        "legal_status": "perlu_verifikasi",
+        "mangrove_cover_pct": 5,
+        "ndvi": 0.31,
+        "ndmi": 0.12,
+        "elevation_m": 0.4,
+        "elevation_datum": "Datum lokal SINTETIS; bukan datum pasang surut nyata",
+        "inundation_duration_h_day": 1,
+        "tidal_connectivity": "terganggu",
+        "salinity_ppt": 31,
+        "substrate_type": "campuran",
+        "wave_exposure": "sedang",
+        "shoreline_change_m_y": -1.4,
+        "natural_recruitment": "tidak",
+        "propagule_supply": "terbatas",
+        "accessibility": "mudah",
+        "observation_date": "2026-01-01",
+        "data_source": "SYNTHETIC_DEMO",
+        "quality_flag": "demo",
+        "processing_method": "Angka ilustrasi untuk uji perangkat lunak",
+        "provenance": {
+          "provider": "MANGROVE-FIT demo",
+          "dataset_name": "Zona simulasi",
+          "dataset_version": "1.0",
+          "observation_date": "2026-01-01",
+          "download_date": "2026-11-14",
+          "spatial_resolution_m": null,
+          "license": "CC0-1.0 untuk data sintetik",
+          "source_url": null,
+          "processing_method": "Geometri dan nilai sintetis, bukan pengukuran",
+          "quality_flag": "demo"
+        },
+        "zone_id": "SIM-B",
+        "zone_name": "Zona B · Hidrologi terganggu"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.505,
+              -6.904
+            ],
+            [
+              112.514,
+              -6.905
+            ],
+            [
+              112.512,
+              -6.913
+            ],
+            [
+              112.503,
+              -6.911
+            ],
+            [
+              112.505,
+              -6.904
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "landcover_type": "sandy_beach",
+        "legal_status": "perlu_verifikasi",
+        "mangrove_cover_pct": 0,
+        "ndvi": 0.02,
+        "ndmi": -0.03,
+        "elevation_m": 0.4,
+        "elevation_datum": "Datum lokal SINTETIS; bukan datum pasang surut nyata",
+        "inundation_duration_h_day": null,
+        "tidal_connectivity": "tidak_diketahui",
+        "salinity_ppt": null,
+        "substrate_type": "pasir",
+        "wave_exposure": "tinggi",
+        "shoreline_change_m_y": -2.1,
+        "natural_recruitment": "tidak",
+        "propagule_supply": "tidak_diketahui",
+        "accessibility": "mudah",
+        "observation_date": "2026-01-01",
+        "data_source": "SYNTHETIC_DEMO",
+        "quality_flag": "demo",
+        "processing_method": "Angka ilustrasi untuk uji perangkat lunak",
+        "provenance": {
+          "provider": "MANGROVE-FIT demo",
+          "dataset_name": "Zona simulasi",
+          "dataset_version": "1.0",
+          "observation_date": "2026-01-01",
+          "download_date": "2026-11-14",
+          "spatial_resolution_m": null,
+          "license": "CC0-1.0 untuk data sintetik",
+          "source_url": null,
+          "processing_method": "Geometri dan nilai sintetis, bukan pengukuran",
+          "quality_flag": "demo"
+        },
+        "zone_id": "SIM-C",
+        "zone_name": "Zona C · Pantai berpasir"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.52,
+              -6.917999999999999
+            ],
+            [
+              112.529,
+              -6.919
+            ],
+            [
+              112.527,
+              -6.927
+            ],
+            [
+              112.518,
+              -6.924999999999999
+            ],
+            [
+              112.52,
+              -6.917999999999999
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

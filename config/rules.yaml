@@ -1,0 +1,17 @@
+version: '2026.11-mvp.1'
+status: 'KONSEP AWAL — perlu telaah ahli setempat'
+excluded_landcovers: [coral_reef, seagrass, open_water, built_area]
+allowed_landcovers: [coastal_mudflat, degraded_coastal, mangrove]
+blocked_legal: [dilarang]
+verified_legal: [terverifikasi]
+core_parameters:
+  - inundation_duration_h_day
+  - tidal_connectivity
+  - salinity_ppt
+  - substrate_type
+  - wave_exposure
+  - natural_recruitment
+  - propagule_supply
+# Tidak ada ambang universal salinitas, elevasi, atau hidroperiode.
+# Urutan ini hanya urutan kerja survei, bukan skor keberhasilan ekologis.
+survey_order: [NEEDS_REVIEW, ELIGIBLE, EXCLUDED]

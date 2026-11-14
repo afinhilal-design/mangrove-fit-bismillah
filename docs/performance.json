@@ -1,0 +1,7 @@
+{
+  "scope": "30 analisis aturan + 30 hitungan luas; bukan waktu render UI atau uji beban",
+  "seconds": 0.07447933900016324,
+  "python": "3.12.14",
+  "os": "Linux",
+  "gpu_used": false
+}
