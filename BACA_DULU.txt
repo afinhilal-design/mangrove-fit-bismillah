@@ -1,7 +1,7 @@
 MANGROVE-FIT - MULAI DI SINI
 
 1. Ekstrak seluruh ZIP, jangan jalankan langsung dari arsip.
-2. Pasang Python 3.12 atau 3.11 64-bit dari python.org.
+2. Pasang Python 3.11 sampai 3.14 64-bit dari python.org.
    Pada installer, aktifkan Add python.exe to PATH jika tersedia.
 3. Klik dua kali 01_INSTALL_WINDOWS.bat (sekali saja, perlu internet).
 4. Setelah selesai, klik dua kali 02_JALANKAN_WINDOWS.bat.
