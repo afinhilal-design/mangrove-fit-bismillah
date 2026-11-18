@@ -1,0 +1,109 @@
+{
+  "model_status": "PENDING_REVIEW",
+  "metrics": {
+    "baseline_prevalence": {
+      "validation": {
+        "n": 22,
+        "prevalence": 0.2273,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.2273,
+        "brier": 0.1819,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 17,
+          "fn": 5
+        },
+        "threshold": 0.5
+      },
+      "test": {
+        "n": 25,
+        "prevalence": 0.24,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.24,
+        "brier": 0.1868,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 19,
+          "fn": 6
+        },
+        "threshold": 0.5
+      }
+    },
+    "train": {
+      "n": 62,
+      "prevalence": 0.3065,
+      "balanced_accuracy": 0.7252,
+      "f1": 0.6207,
+      "pr_auc": 0.9123,
+      "brier": 0.1197,
+      "confusion": {
+        "tp": 9,
+        "fp": 1,
+        "tn": 42,
+        "fn": 10
+      },
+      "threshold": 0.5
+    },
+    "validation": {
+      "n": 22,
+      "prevalence": 0.2273,
+      "balanced_accuracy": 0.4706,
+      "f1": 0.0,
+      "pr_auc": 0.3327,
+      "brier": 0.1657,
+      "confusion": {
+        "tp": 0,
+        "fp": 1,
+        "tn": 16,
+        "fn": 5
+      },
+      "threshold": 0.5
+    },
+    "test": {
+      "n": 25,
+      "prevalence": 0.24,
+      "balanced_accuracy": 0.614,
+      "f1": 0.4,
+      "pr_auc": 0.6012,
+      "brier": 0.1552,
+      "confusion": {
+        "tp": 2,
+        "fp": 2,
+        "tn": 17,
+        "fn": 4
+      },
+      "threshold": 0.5
+    },
+    "cv_leave_one_block_out": {
+      "n": 109,
+      "prevalence": 0.2752,
+      "balanced_accuracy": 0.5407,
+      "f1": 0.2857,
+      "pr_auc": 0.4655,
+      "brier": 0.1867,
+      "confusion": {
+        "tp": 7,
+        "fp": 12,
+        "tn": 67,
+        "fn": 23
+      },
+      "threshold": 0.5,
+      "baseline_pr_auc": 0.2752,
+      "blocks_skipped": []
+    }
+  },
+  "shap": {
+    "method": "XGBoost exact TreeSHAP pred_contribs",
+    "space": "log_odds",
+    "additivity_ok": true,
+    "max_additivity_error": 2.384185791015625e-07,
+    "model_sha256": "bcc114bbd732ffd1a1f4f61ebf2a579a43edd5bfe54a4677588769a64ecc808d",
+    "test_rows": 25,
+    "interpretation": "Kontribusi terhadap prediksi model; bukan sebab-akibat atau keberhasilan rehabilitasi."
+  },
+  "automatic_approval_blockers": []
+}

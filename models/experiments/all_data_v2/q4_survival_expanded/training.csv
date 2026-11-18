@@ -1,0 +1,398 @@
+row_id,group,target,sediment_level_cm,length,species
+J61,B01,0,66.0,44.0,A. marina
+J62,B01,0,66.0,64.0,A. marina
+J63,B01,0,66.0,50.0,A. marina
+J64,B01,0,66.0,45.0,A. marina
+J65,B01,0,66.0,40.0,A. marina
+K61,B01,1,66.0,90.0,R.mucronata
+K62,B01,1,66.0,82.0,R.mucronata
+K63,B01,1,66.0,89.0,R.mucronata
+K64,B01,1,66.0,81.0,R.mucronata
+K65,B01,1,66.0,74.0,R.mucronata
+M61,B01,0,66.0,40.0,R.apiculata
+M62,B01,0,66.0,32.0,R.apiculata
+M63,B01,1,66.0,42.0,R.apiculata
+M64,B01,0,66.0,33.0,R.apiculata
+M65,B01,0,66.0,33.0,R.apiculata
+P61,B01,0,66.0,65.0,A.alba
+P62,B01,0,66.0,46.0,A.alba
+P63,B01,0,66.0,29.0,A.alba
+P64,B01,0,66.0,29.0,A.alba
+P65,B01,0,66.0,55.0,A.alba
+J36,B10,0,101.0,50.0,A. marina
+J37,B10,0,101.0,44.0,A. marina
+J38,B10,0,101.0,43.0,A. marina
+J39,B10,0,101.0,47.0,A. marina
+J40,B10,1,101.0,47.0,A. marina
+K36,B10,0,101.0,89.0,R.mucronata
+K37,B10,0,101.0,87.0,R.mucronata
+K38,B10,0,101.0,96.0,R.mucronata
+K39,B10,1,101.0,95.0,R.mucronata
+K40,B10,1,101.0,84.0,R.mucronata
+M36,B10,0,101.0,19.0,R.apiculata
+M37,B10,0,101.0,28.0,R.apiculata
+M38,B10,0,101.0,32.0,R.apiculata
+M39,B10,0,101.0,18.0,R.apiculata
+M40,B10,0,101.0,26.0,R.apiculata
+P36,B10,1,101.0,26.0,A.alba
+P37,B10,1,101.0,86.0,A.alba
+P38,B10,0,101.0,43.0,A.alba
+P39,B10,0,101.0,54.0,A.alba
+P40,B10,0,101.0,39.0,A.alba
+J41,B11,0,87.0,53.0,A. marina
+J42,B11,0,87.0,52.0,A. marina
+J43,B11,0,87.0,37.0,A. marina
+J44,B11,0,87.0,42.0,A. marina
+J45,B11,0,87.0,49.0,A. marina
+K41,B11,1,87.0,103.0,R.mucronata
+K42,B11,1,87.0,71.0,R.mucronata
+K43,B11,1,87.0,95.0,R.mucronata
+K44,B11,0,87.0,78.0,R.mucronata
+K45,B11,1,87.0,84.0,R.mucronata
+M41,B11,0,87.0,35.0,R.apiculata
+M42,B11,0,87.0,32.0,R.apiculata
+M43,B11,0,87.0,30.0,R.apiculata
+M44,B11,0,87.0,31.0,R.apiculata
+M45,B11,0,87.0,25.0,R.apiculata
+P41,B11,1,87.0,51.0,A.alba
+P42,B11,1,87.0,57.0,A.alba
+P43,B11,1,87.0,28.0,A.alba
+P44,B11,1,87.0,56.0,A.alba
+P45,B11,1,87.0,84.0,A.alba
+J46,B12,0,82.0,42.0,A. marina
+J47,B12,0,82.0,49.0,A. marina
+J48,B12,0,82.0,30.0,A. marina
+J49,B12,0,82.0,23.0,A. marina
+J50,B12,0,82.0,32.0,A. marina
+K46,B12,1,82.0,81.0,R.mucronata
+K47,B12,0,82.0,71.0,R.mucronata
+K48,B12,0,82.0,98.0,R.mucronata
+K49,B12,0,82.0,83.0,R.mucronata
+K50,B12,1,82.0,97.0,R.mucronata
+M46,B12,0,82.0,33.0,R.apiculata
+M47,B12,0,82.0,27.0,R.apiculata
+M48,B12,0,82.0,24.0,R.apiculata
+M49,B12,0,82.0,32.0,R.apiculata
+M50,B12,1,82.0,33.0,R.apiculata
+P46,B12,1,82.0,42.0,A.alba
+P47,B12,0,82.0,75.0,A.alba
+P48,B12,0,82.0,24.0,A.alba
+P50,B12,1,82.0,43.0,A.alba
+J51,B13,0,83.0,48.0,A. marina
+J52,B13,0,83.0,48.0,A. marina
+J53,B13,0,83.0,43.0,A. marina
+J54,B13,0,83.0,30.0,A. marina
+J55,B13,1,83.0,64.0,A. marina
+K51,B13,0,83.0,110.0,R.mucronata
+K52,B13,0,83.0,70.0,R.mucronata
+K53,B13,1,83.0,80.0,R.mucronata
+K54,B13,0,83.0,86.0,R.mucronata
+K55,B13,1,83.0,68.0,R.mucronata
+M51,B13,0,83.0,22.0,R.apiculata
+M52,B13,0,83.0,39.0,R.apiculata
+M53,B13,0,83.0,34.0,R.apiculata
+M54,B13,0,83.0,28.0,R.apiculata
+M55,B13,0,83.0,23.0,R.apiculata
+P51,B13,0,83.0,26.0,A.alba
+P52,B13,0,83.0,35.0,A.alba
+P53,B13,0,83.0,64.0,A.alba
+P54,B13,0,83.0,44.0,A.alba
+P55,B13,0,83.0,29.0,A.alba
+J56,B14,1,127.0,45.0,A. marina
+J57,B14,1,127.0,50.0,A. marina
+J58,B14,0,127.0,46.0,A. marina
+J59,B14,1,127.0,44.0,A. marina
+J60,B14,1,127.0,45.0,A. marina
+K56,B14,0,127.0,100.0,R.mucronata
+K57,B14,1,127.0,87.0,R.mucronata
+K58,B14,0,127.0,84.0,R.mucronata
+K59,B14,0,127.0,93.0,R.mucronata
+K60,B14,1,127.0,77.0,R.mucronata
+M56,B14,0,127.0,34.0,R.apiculata
+M57,B14,0,127.0,50.0,R.apiculata
+M58,B14,0,127.0,30.0,R.apiculata
+M59,B14,0,127.0,30.0,R.apiculata
+M60,B14,0,127.0,36.0,R.apiculata
+P56,B14,0,127.0,23.0,A.alba
+P57,B14,0,127.0,27.0,A.alba
+P58,B14,1,127.0,40.0,A.alba
+P59,B14,0,127.0,58.0,A.alba
+P60,B14,1,127.0,40.0,A.alba
+J81,B15,0,54.0,26.0,A. marina
+J82,B15,0,54.0,42.0,A. marina
+J83,B15,0,54.0,52.0,A. marina
+J84,B15,0,54.0,54.0,A. marina
+J85,B15,0,54.0,33.0,A. marina
+K81,B15,1,54.0,66.0,R.mucronata
+K82,B15,1,54.0,84.0,R.mucronata
+K83,B15,1,54.0,78.0,R.mucronata
+K84,B15,1,54.0,86.0,R.mucronata
+K85,B15,0,54.0,71.0,R.mucronata
+M81,B15,0,54.0,26.0,R.apiculata
+M82,B15,0,54.0,36.0,R.apiculata
+M83,B15,0,54.0,31.0,R.apiculata
+M84,B15,0,54.0,39.0,R.apiculata
+M85,B15,0,54.0,25.0,R.apiculata
+P81,B15,0,54.0,65.0,A.alba
+P82,B15,0,54.0,56.0,A.alba
+P83,B15,0,54.0,36.0,A.alba
+P84,B15,0,54.0,46.0,A.alba
+P85,B15,0,54.0,41.0,A.alba
+J86,B16,0,51.0,35.0,A. marina
+J87,B16,0,51.0,73.0,A. marina
+J88,B16,0,51.0,75.0,A. marina
+J89,B16,0,51.0,18.0,A. marina
+J90,B16,0,51.0,48.0,A. marina
+K86,B16,1,51.0,43.0,R.mucronata
+K87,B16,0,51.0,30.0,R.mucronata
+K88,B16,1,51.0,69.0,R.mucronata
+K89,B16,1,51.0,18.0,R.mucronata
+K90,B16,1,51.0,34.0,R.mucronata
+M86,B16,0,51.0,30.0,R.apiculata
+M87,B16,0,51.0,26.0,R.apiculata
+M88,B16,0,51.0,84.0,R.apiculata
+M89,B16,0,51.0,70.0,R.apiculata
+M90,B16,0,51.0,65.0,R.apiculata
+P86,B16,0,51.0,73.0,A.alba
+P87,B16,0,51.0,30.0,A.alba
+P88,B16,0,51.0,30.0,A.alba
+P89,B16,0,51.0,33.0,A.alba
+P90,B16,0,51.0,63.0,A.alba
+J71,B17,1,90.0,46.0,A. marina
+J72,B17,1,90.0,40.0,A. marina
+J73,B17,1,90.0,36.0,A. marina
+J74,B17,1,90.0,40.0,A. marina
+J75,B17,1,90.0,42.0,A. marina
+K71,B17,0,90.0,70.0,R.mucronata
+K72,B17,1,90.0,59.0,R.mucronata
+K73,B17,1,90.0,69.0,R.mucronata
+K74,B17,1,90.0,77.0,R.mucronata
+K75,B17,1,90.0,60.0,R.mucronata
+M71,B17,0,90.0,24.0,R.apiculata
+M72,B17,1,90.0,28.0,R.apiculata
+M73,B17,0,90.0,25.0,R.apiculata
+M74,B17,0,90.0,24.0,R.apiculata
+M75,B17,0,90.0,22.0,R.apiculata
+P71,B17,1,90.0,35.0,A.alba
+P72,B17,1,90.0,55.0,A.alba
+P73,B17,1,90.0,30.0,A.alba
+P74,B17,1,90.0,36.0,A.alba
+P75,B17,1,90.0,64.0,A.alba
+J76,B18,1,50.0,37.0,A. marina
+J77,B18,1,50.0,36.0,A. marina
+J78,B18,1,50.0,48.0,A. marina
+J79,B18,1,50.0,43.0,A. marina
+J80,B18,1,50.0,35.0,A. marina
+K76,B18,1,50.0,57.0,R.mucronata
+K77,B18,0,50.0,74.0,R.mucronata
+K78,B18,1,50.0,73.0,R.mucronata
+K79,B18,0,50.0,78.0,R.mucronata
+K80,B18,1,50.0,70.0,R.mucronata
+M76,B18,0,50.0,26.0,R.apiculata
+M77,B18,1,50.0,31.0,R.apiculata
+M78,B18,1,50.0,27.0,R.apiculata
+M79,B18,0,50.0,28.0,R.apiculata
+M80,B18,0,50.0,22.0,R.apiculata
+P76,B18,1,50.0,30.0,A.alba
+P77,B18,1,50.0,29.0,A.alba
+P78,B18,1,50.0,39.0,A.alba
+P79,B18,1,50.0,51.0,A.alba
+P80,B18,1,50.0,62.0,A.alba
+J91,B19,0,83.0,34.0,A. marina
+J92,B19,0,83.0,43.0,A. marina
+J93,B19,0,83.0,43.0,A. marina
+J94,B19,0,83.0,45.0,A. marina
+J95,B19,0,83.0,39.0,A. marina
+K91,B19,1,83.0,86.0,R.mucronata
+K92,B19,0,83.0,75.0,R.mucronata
+K93,B19,1,83.0,90.0,R.mucronata
+K94,B19,1,83.0,76.0,R.mucronata
+K95,B19,1,83.0,88.0,R.mucronata
+M91,B19,0,83.0,27.0,R.apiculata
+M92,B19,0,83.0,29.0,R.apiculata
+M93,B19,0,83.0,25.0,R.apiculata
+M94,B19,0,83.0,26.0,R.apiculata
+M95,B19,0,83.0,25.0,R.apiculata
+P91,B19,1,83.0,72.0,A.alba
+P92,B19,0,83.0,59.0,A.alba
+P93,B19,1,83.0,50.0,A.alba
+P94,B19,1,83.0,47.0,A.alba
+P95,B19,1,83.0,69.0,A.alba
+J66,B02,0,63.0,43.0,A. marina
+J67,B02,0,63.0,46.0,A. marina
+J68,B02,0,63.0,71.0,A. marina
+J69,B02,0,63.0,40.0,A. marina
+J70,B02,0,63.0,45.0,A. marina
+K66,B02,1,63.0,80.0,R.mucronata
+K67,B02,0,63.0,79.0,R.mucronata
+K68,B02,1,63.0,94.0,R.mucronata
+K69,B02,1,63.0,77.0,R.mucronata
+K70,B02,1,63.0,80.0,R.mucronata
+M66,B02,0,63.0,30.0,R.apiculata
+M67,B02,0,63.0,48.0,R.apiculata
+M68,B02,0,63.0,26.0,R.apiculata
+M69,B02,0,63.0,42.0,R.apiculata
+M70,B02,0,63.0,29.0,R.apiculata
+P66,B02,0,63.0,47.0,A.alba
+P67,B02,0,63.0,48.0,A.alba
+P68,B02,0,63.0,21.0,A.alba
+P69,B02,0,63.0,28.0,A.alba
+P70,B02,0,63.0,30.0,A.alba
+J100,B20,0,105.0,36.0,A. marina
+J96,B20,0,105.0,50.0,A. marina
+J97,B20,0,105.0,42.0,A. marina
+J98,B20,0,105.0,28.0,A. marina
+J99,B20,1,105.0,38.0,A. marina
+K100,B20,1,105.0,90.0,R.mucronata
+K96,B20,0,105.0,71.0,R.mucronata
+K97,B20,1,105.0,94.0,R.mucronata
+K98,B20,0,105.0,75.0,R.mucronata
+K99,B20,0,105.0,80.0,R.mucronata
+M100,B20,0,105.0,26.0,R.apiculata
+M96,B20,0,105.0,34.0,R.apiculata
+M97,B20,0,105.0,20.0,R.apiculata
+M98,B20,0,105.0,28.0,R.apiculata
+M99,B20,0,105.0,22.0,R.apiculata
+P100,B20,0,105.0,35.0,A.alba
+P96,B20,0,105.0,22.0,A.alba
+P97,B20,0,105.0,67.0,A.alba
+P98,B20,0,105.0,64.0,A.alba
+P99,B20,1,105.0,58.0,A.alba
+J2,B03,0,62.0,54.0,A. marina
+J3,B03,0,62.0,50.0,A. marina
+J5,B03,0,62.0,40.0,A. marina
+K1,B03,1,62.0,60.0,R.mucronata
+K2,B03,1,62.0,69.0,R.mucronata
+K3,B03,0,62.0,80.0,R.mucronata
+K4,B03,1,62.0,72.0,R.mucronata
+K5,B03,1,62.0,70.0,R.mucronata
+M1,B03,0,62.0,29.0,R.apiculata
+M2,B03,0,62.0,22.0,R.apiculata
+M3,B03,0,62.0,39.0,R.apiculata
+M4,B03,0,62.0,37.0,R.apiculata
+M5,B03,0,62.0,26.0,R.apiculata
+P1,B03,0,62.0,44.0,A.alba
+P2,B03,0,62.0,27.0,A.alba
+P3,B03,0,62.0,55.0,A.alba
+P4,B03,0,62.0,62.0,A.alba
+P5,B03,0,62.0,52.0,A.alba
+J10,B04,0,61.9,38.0,A. marina
+J6,B04,0,61.9,32.0,A. marina
+J7,B04,1,61.9,32.0,A. marina
+J8,B04,0,61.9,50.0,A. marina
+J9,B04,0,61.9,39.0,A. marina
+K10,B04,1,61.9,82.0,R.mucronata
+K111,B04,1,61.9,60.0,R.mucronata
+K6,B04,1,61.9,76.0,R.mucronata
+K8,B04,1,61.9,92.0,R.mucronata
+K9,B04,1,61.9,77.0,R.mucronata
+M111,B04,1,61.9,59.0,R.apiculata
+M112,B04,0,61.9,27.0,R.apiculata
+M113,B04,0,61.9,22.0,R.apiculata
+M114,B04,0,61.9,31.0,R.apiculata
+M7,B04,0,61.9,39.0,R.apiculata
+P111,B04,0,61.9,33.0,A.alba
+P112,B04,1,61.9,55.0,A.alba
+P113,B04,0,61.9,50.0,A.alba
+P114,B04,0,61.9,44.0,A.alba
+P115,B04,0,61.9,53.0,A.alba
+J11,B05,0,57.0,29.0,A. marina
+J12,B05,0,57.0,37.0,A. marina
+J13,B05,0,57.0,47.0,A. marina
+J14,B05,0,57.0,37.0,A. marina
+J15,B05,0,57.0,43.0,A. marina
+K11,B05,0,57.0,86.0,R.mucronata
+K12,B05,1,57.0,68.0,R.mucronata
+K13,B05,1,57.0,77.0,R.mucronata
+K14,B05,1,57.0,75.0,R.mucronata
+K15,B05,1,57.0,89.0,R.mucronata
+M11,B05,0,57.0,22.0,R.apiculata
+M12,B05,0,57.0,24.0,R.apiculata
+M13,B05,0,57.0,26.0,R.apiculata
+M14,B05,0,57.0,31.0,R.apiculata
+M15,B05,0,57.0,21.0,R.apiculata
+P11,B05,1,57.0,31.0,A.alba
+P12,B05,0,57.0,28.0,A.alba
+P13,B05,1,57.0,31.0,A.alba
+P14,B05,0,57.0,35.0,A.alba
+P15,B05,1,57.0,33.0,A.alba
+J16,B06,0,57.0,43.0,A. marina
+J17,B06,0,57.0,36.0,A. marina
+J18,B06,0,57.0,40.0,A. marina
+J19,B06,0,57.0,34.0,A. marina
+J20,B06,0,57.0,31.0,A. marina
+K16,B06,1,57.0,82.0,R.mucronata
+K17,B06,1,57.0,97.0,R.mucronata
+K18,B06,1,57.0,75.0,R.mucronata
+K19,B06,1,57.0,68.0,R.mucronata
+K20,B06,0,57.0,80.0,R.mucronata
+M16,B06,0,57.0,38.0,R.apiculata
+M17,B06,0,57.0,27.0,R.apiculata
+M18,B06,0,57.0,29.0,R.apiculata
+M19,B06,0,57.0,25.0,R.apiculata
+M20,B06,0,57.0,26.0,R.apiculata
+P16,B06,1,57.0,71.0,A.alba
+P17,B06,0,57.0,26.0,A.alba
+P18,B06,0,57.0,68.0,A.alba
+P19,B06,1,57.0,47.0,A.alba
+P20,B06,0,57.0,64.0,A.alba
+J21,B07,0,63.0,52.0,A. marina
+J22,B07,0,63.0,48.0,A. marina
+J23,B07,0,63.0,40.0,A. marina
+J24,B07,0,63.0,34.0,A. marina
+J25,B07,0,63.0,33.0,A. marina
+K21,B07,1,63.0,66.0,R.mucronata
+K22,B07,1,63.0,71.0,R.mucronata
+K23,B07,1,63.0,68.0,R.mucronata
+K24,B07,1,63.0,73.0,R.mucronata
+K25,B07,1,63.0,82.0,R.mucronata
+M21,B07,0,63.0,25.0,R.apiculata
+M22,B07,0,63.0,26.0,R.apiculata
+M23,B07,0,63.0,31.0,R.apiculata
+M24,B07,0,63.0,32.0,R.apiculata
+M25,B07,0,63.0,48.0,R.apiculata
+P21,B07,0,63.0,33.0,A.alba
+P22,B07,0,63.0,65.0,A.alba
+P23,B07,0,63.0,60.0,A.alba
+P24,B07,1,63.0,37.0,A.alba
+P25,B07,0,63.0,51.0,A.alba
+J26,B08,0,65.0,52.0,A. marina
+J27,B08,0,65.0,46.0,A. marina
+J28,B08,0,65.0,42.0,A. marina
+J29,B08,0,65.0,30.0,A. marina
+J30,B08,0,65.0,40.0,A. marina
+K26,B08,0,65.0,88.0,R.mucronata
+K27,B08,0,65.0,74.0,R.mucronata
+K28,B08,0,65.0,100.0,R.mucronata
+K29,B08,0,65.0,80.0,R.mucronata
+K30,B08,0,65.0,92.0,R.mucronata
+M26,B08,0,65.0,33.0,R.apiculata
+M27,B08,0,65.0,32.0,R.apiculata
+M28,B08,0,65.0,28.0,R.apiculata
+M29,B08,0,65.0,28.0,R.apiculata
+M30,B08,0,65.0,33.0,R.apiculata
+P26,B08,0,65.0,37.0,A.alba
+P27,B08,0,65.0,35.0,A.alba
+P28,B08,0,65.0,33.0,A.alba
+P29,B08,0,65.0,30.0,A.alba
+P30,B08,0,65.0,32.0,A.alba
+J31,B09,1,51.0,46.0,A. marina
+J32,B09,1,51.0,57.0,A. marina
+J33,B09,0,51.0,56.0,A. marina
+J34,B09,1,51.0,51.0,A. marina
+J35,B09,0,51.0,28.0,A. marina
+K31,B09,1,51.0,70.0,R.mucronata
+K32,B09,1,51.0,89.0,R.mucronata
+K33,B09,0,51.0,52.0,R.mucronata
+K34,B09,1,51.0,106.0,R.mucronata
+K35,B09,0,51.0,96.0,R.mucronata
+M31,B09,0,51.0,29.0,R.apiculata
+M32,B09,0,51.0,21.0,R.apiculata
+M33,B09,0,51.0,39.0,R.apiculata
+M34,B09,0,51.0,73.0,R.apiculata
+M35,B09,0,51.0,20.0,R.apiculata
+P31,B09,0,51.0,55.0,A.alba
+P32,B09,0,51.0,50.0,A.alba
+P33,B09,1,51.0,43.0,A.alba
+P34,B09,0,51.0,47.0,A.alba
+P35,B09,1,51.0,69.0,A.alba

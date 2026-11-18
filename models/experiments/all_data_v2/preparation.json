@@ -1,0 +1,27 @@
+{
+  "q2_ambiguous_rows_excluded": 30,
+  "q2_missing_labels": 198,
+  "q3_source_rows": 700,
+  "q3_cohort_alive_month3": 240,
+  "presence_coordinate_connected_groups": 4,
+  "presence_common_numeric_features": [
+    "pH",
+    "redox",
+    "S2-",
+    "SCOARSE%_2 (%)",
+    "SD(0.1)_2 (\u00b5m)",
+    "SD(0.9)_2 (\u00b5m)",
+    "SD50MUM_2 (\u00b5m)",
+    "SD50PHIM_2 (phi)",
+    "SFINES%_2 (%)",
+    "SMEDIUM%_2 (%)",
+    "SMODE_2 (\u00b5m)",
+    "SSILT63_2 (%)",
+    "WC",
+    "orgC",
+    "BulkDen",
+    "ShearStrngth",
+    "%t_submerged"
+  ],
+  "raw_sources_unchanged": true
+}

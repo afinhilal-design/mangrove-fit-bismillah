@@ -1,0 +1,112 @@
+{
+  "status": "PENDING_REVIEW",
+  "metrics": {
+    "baseline_prevalence": {
+      "validation": {
+        "n": 79,
+        "prevalence": 0.2911,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.2911,
+        "brier": 0.207,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 56,
+          "fn": 23
+        },
+        "threshold": 0.5
+      },
+      "test": {
+        "n": 100,
+        "prevalence": 0.37,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.37,
+        "brier": 0.236,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 63,
+          "fn": 37
+        },
+        "threshold": 0.5
+      }
+    },
+    "train": {
+      "n": 218,
+      "prevalence": 0.3165,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.5564,
+      "brier": 0.1943,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 149,
+        "fn": 69
+      },
+      "threshold": 0.5
+    },
+    "validation": {
+      "n": 79,
+      "prevalence": 0.2911,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.3305,
+      "brier": 0.2063,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 56,
+        "fn": 23
+      },
+      "threshold": 0.5
+    },
+    "test": {
+      "n": 100,
+      "prevalence": 0.37,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.3394,
+      "brier": 0.2497,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 63,
+        "fn": 37
+      },
+      "threshold": 0.5
+    },
+    "cv_leave_one_block_out": {
+      "n": 397,
+      "prevalence": 0.3249,
+      "balanced_accuracy": 0.4914,
+      "f1": 0.0671,
+      "pr_auc": 0.3541,
+      "brier": 0.238,
+      "confusion": {
+        "tp": 5,
+        "fp": 15,
+        "tn": 253,
+        "fn": 124
+      },
+      "threshold": 0.5,
+      "baseline_pr_auc": 0.3249,
+      "blocks_skipped": []
+    }
+  },
+  "shap": {
+    "method": "XGBoost exact TreeSHAP pred_contribs",
+    "space": "log_odds",
+    "additivity_ok": true,
+    "max_additivity_error": 5.960464477539063e-08,
+    "model_sha256": "c7e0045b8d0fe01c1ab21b998c31bf549fc5eab3b20d845f8bc8f696c2ec718b",
+    "test_rows": 100,
+    "interpretation": "Kontribusi terhadap prediksi model; bukan sebab-akibat atau keberhasilan rehabilitasi."
+  },
+  "automatic_approval_blockers": [
+    "Balanced accuracy uji (0.5) tidak melampaui baseline (0.5).",
+    "Validasi silang antar-blok tidak lebih baik dari tebakan acak (balanced accuracy 0.4914)."
+  ]
+}

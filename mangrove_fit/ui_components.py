@@ -238,15 +238,32 @@ def show_table(frame, **kwargs):
     st.dataframe(frame.map(safe_cell), **kwargs)
 
 
-def scope(): return 'demo' if st.session_state.get('workspace_mode','Demo')=='Demo' else 'local'
+def scope():
+    return {'Demo': 'demo', 'Analis lokal': 'local', 'Skenario Demak A–C': 'scenario'}.get(st.session_state.get('workspace_mode','Demo'), 'demo')
 
-def header(eyebrow,title,description):
+def workspace_zones():
+    if scope() == 'scenario':
+        from .scenario_service import load_scenario_zones
+        try:
+            return load_scenario_zones()
+        except (ValidationError, ValueError) as exc:
+            st.error(f'Skenario belum dapat dimuat: {exc}')
+            return []
+    return list_zones(scope())
+
+def header(eyebrow,title,description, research=False):
     st.markdown(f'<div class="eyebrow">{html.escape(eyebrow)}</div>',unsafe_allow_html=True)
     st.title(title)
     st.caption(description)
-    if scope()=='demo': watermark()
+    if research:
+        st.caption('RISET · Sumber historis baca-saja; simulasi input terpisah dari data survei.')
+    elif scope() in ('demo', 'scenario'): watermark()
 
 def watermark():
+    if scope() == 'scenario':
+        st.warning('SKENARIO HIPOTETIS · 19 November 2026 · Koordinat dan nilai bersumber dari data historis, '
+                   'diasumsikan mewakili kondisi skenario. Bukan survei terbaru. Tanggal survei asli belum terverifikasi. Baca-saja.')
+        return
     st.markdown(f'<div class="watermark"><b>DEMO</b><span>{WATERMARK} · Seluruh nilai dan batas zona bersifat sintetis</span></div>',unsafe_allow_html=True)
 
 def local_demo_watermark(zones):
@@ -274,6 +291,10 @@ def choose_zone(zones,key):
 def empty_state():
     st.info('Belum ada zona dalam ruang kerja ini. Tambahkan titik atau impor CSV/GeoJSON pada Data & model.')
     st.page_link('pages/5_Data_Model.py',label='Buka Data & model',icon=':material/add_location_alt:')
+    if scope() == 'local':
+        def use_scenario():
+            st.session_state['workspace_mode'] = 'Skenario Demak A–C'
+        st.button('Tampilkan skenario Demak A–C', on_click=use_scenario)
 
 def results_for(zones):
     """Hasil analisis untuk banyak zona: 2 query SQL total, bukan 2 per zona."""
@@ -309,7 +330,15 @@ def observation_rows(zone):
     rows=[]
     for k,m in PARAMETERS.items():
         o=zone['observations'][k]
-        rows.append({'Parameter':m['label'],'Nilai':'—' if o['value'] is None else str(o['value']),'Satuan':m['unit'],'Sumber':o['source'] or 'Belum tersedia','Tanggal':o['date'] or '—','Kualitas':o['quality_flag'],'Metode':o.get('method') or '—','Datum':o.get('datum') or '—'})
+        scenario = zone['provenance'].get('scenario')
+        value = o['value']
+        # Numeric values stay numeric (negative numbers need no CSV formula escaping).
+        display = round(value, 4) if isinstance(value, (int, float)) else value
+        rows.append({'Parameter':m['label'],'Nilai':display,'Satuan':m['unit'],
+                     'Sumber': ('Dataset historis · ' + zone['provenance']['source_row_id']) if scenario and value is not None else (o['source'] or 'Belum tersedia'),
+                     ('Tanggal skenario' if scenario else 'Tanggal'):o['date'] or '—',
+                     'Kualitas': 'Data historis · skenario' if scenario and value is not None else o['quality_flag'],
+                     'Metode pengolahan':o.get('method') or '—','Datum':o.get('datum') or '—'})
     return rows
 
 def stats_strip(total,results):
@@ -318,7 +347,7 @@ def stats_strip(total,results):
     done=sum(c for _,c in counts)
     bar=''.join(f'<i style="flex:{c};background:{COLORS[k]}" title="{html.escape(STATUS_LABELS[k])}: {c}"></i>' for k,c in counts if c) or '<i style="flex:1;background:var(--line)"></i>'
     legend=''.join(f'<div class="leg"><b style="color:{COLORS[k]}">{c}</b><span><em style="background:{COLORS[k]}"></em>{html.escape(STATUS_LABELS[k])}</span></div>' for k,c in counts)
-    st.markdown(f'<div class="stats"><div class="stats-total"><b>{total}</b><span>Zona tersimpan</span><small>{done} sudah disaring</small></div>'
+    st.markdown(f'<div class="stats"><div class="stats-total"><b>{total}</b><span>Lokasi tersedia</span><small>{done} sudah disaring</small></div>'
                 f'<div class="stats-dist"><div class="stats-cap">Hasil penyaringan awal</div><div class="stats-bar">{bar}</div><div class="stats-leg">{legend}</div></div></div>',unsafe_allow_html=True)
 
 QUESTIONS = [
@@ -334,9 +363,12 @@ def home_questions():
 def home_status(zones,results):
     ms=get_model_status()
     ready=ms['status']=='MODEL_READY'
-    mode='Demo · baca-saja' if scope()=='demo' else 'Analis lokal · SQLite'
+    mode={'demo': 'Demo · baca-saja', 'local': 'Analis lokal · SQLite', 'scenario': 'Skenario Demak A–C · baca-saja'}[scope()]
     note=('Model XGBoost tervalidasi aktif; skor dan SHAP tampil di halaman Analisis setelah screening.' if ready
           else 'XGBoost dan SHAP belum aktif karena belum ada model yang disetujui. Hasil berasal dari aturan yang dapat diperiksa.')
+    from .research_service import available_models
+    if available_models() and not ready:
+        note='Model operasional belum disetujui. Eksperimen XGBoost, SHAP, dan demonstrasi prediksi tersedia melalui menu XGBoost & SHAP · Riset.'
     rows=''.join(f'<li><i style="background:{COLORS[r["screening"]["status"]]}"></i><span class="zl-n">{html.escape(z["zone_name"])}</span>'
                  f'<span class="zl-s" style="color:{COLORS[r["screening"]["status"]]}">{html.escape(STATUS_LABELS[r["screening"]["status"]])}</span></li>' for z,r in zip(zones,results))
     zl=f'<div class="zl-cap">Ringkasan zona <b>{len(zones)}</b></div><ul class="zlist">{rows}</ul>' if zones else ''
@@ -348,10 +380,10 @@ def home_status(zones,results):
             f'<p class="sys-quote">Hijau berarti bisa dikaji lebih lanjut, bukan siap ditanam atau pasti berhasil.</p>{zl}')
 
 def home():
-    zones=list_zones(scope())
-    note='zona sintetis (demo)' if scope()=='demo' else 'zona di ruang kerja lokal'
+    zones=workspace_zones()
+    note={'demo': 'zona sintetis (demo)', 'scenario': 'titik skenario historis Demak', 'local': 'zona di ruang kerja lokal'}[scope()]
     st.markdown(f'''<div class="hero"><div class="hero-main"><div class="hero-brand">MANGROVE-FIT<small>PESISIR DEMAK · JAWA TENGAH</small></div><div class="hero-count"><b>{len(zones)}</b><span>{note}</span><em>Foto latar dekoratif, bukan dokumentasi lokasi studi di Demak.</em></div></div><div class="hero-panel"><h1>Kaji dulu,<br>baru menanam</h1><div class="sub">Penyaringan berbasis aturan</div><p>Mulai dari kondisi pesisir, telusuri faktor pembatas, dan susun prioritas survei sebelum menentukan intervensi.</p><ol><li><i>01</i>Peta kawasan</li><li><i>02</i>Penyaringan habitat</li><li><i>03</i>Kajian tindakan</li></ol></div></div>''',unsafe_allow_html=True)
-    if scope()=='demo': watermark()
+    if scope() in ('demo', 'scenario'): watermark()
     local_demo_watermark(zones)
     results=[r for r,_ in results_for(zones)]
     stats_strip(len(zones),results)
@@ -382,7 +414,9 @@ def offline_map(zones,results,selected_id=None):
     for z,r in zip(zones,results):
         g=shape(z['geometry']);col=COLORS[r['screening']['status']]
         if g.geom_type=='Point':
-            x,y=xy(g.x,g.y);paths.append(f'<circle cx="{x}" cy="{y}" r="9" fill="{col}"/>')
+            x,y=xy(g.x,g.y)
+            sel=z['zone_id']==selected_id
+            paths.append(f'<rect x="{x-27}" y="{y-27}" width="54" height="54" fill="{col}" fill-opacity=".85" stroke="{"#14301f" if sel else "#ffffff"}" stroke-width="{4 if sel else 2}"/>')
         else:
             polys=list(g.geoms) if g.geom_type=='MultiPolygon' else [g]
             for p in polys:
@@ -390,7 +424,8 @@ def offline_map(zones,results,selected_id=None):
                 sel=z['zone_id']==selected_id
                 paths.append(f'<path d="{d}" fill="{col}" fill-opacity="{.5 if sel else .25}" stroke="{col}" stroke-width="{5 if sel else 2.5}" fill-rule="evenodd"/>')
         lat,lon=center(z['geometry']);x,y=xy(lon,lat)
-        paths.append(f'<text x="{x}" y="{y}" font-size="15" text-anchor="middle" fill="#193a30">{html.escape(z["zone_id"])}</text>')
+        label=z['zone_id'].removeprefix('SKENARIO-') if z['provenance'].get('scenario') else z['zone_id']
+        paths.append(f'<text x="{x}" y="{y+5}" font-size="{20 if len(label)<=3 else 12}" font-weight="bold" text-anchor="middle" fill="#193a30">{html.escape(label)}</text>')
     grid=''.join(f'<path d="M {x} 35 V 470" stroke="#d4ded5"/>' for x in range(45,800,80))+''.join(f'<path d="M 35 {y} H 785" stroke="#d4ded5"/>' for y in range(50,480,60))
     st.markdown(f'<svg viewBox="0 0 820 510" role="img" aria-label="Peta skematis koordinat zona" style="width:100%;background:#eaf1ec">{grid}{"".join(paths)}<text x="38" y="28" font-size="12" fill="#567260">SKEMA KOORDINAT · TANPA BASEMAP · EPSG:4326</text><text x="38" y="497" font-size="11" fill="#567260">Bukan peta jarak/luas · Pilih zona melalui panel di samping</text></svg>',unsafe_allow_html=True)
     st.caption(f'Rentang zona: {min(b[0] for b in bounds):.5f}–{max(b[2] for b in bounds):.5f} BT; {min(b[1] for b in bounds):.5f}–{max(b[3] for b in bounds):.5f} lintang.')
@@ -431,7 +466,7 @@ def fit_view(bounds,width_px=720,height_px=540,max_zoom=14):
 
 def map_page():
     header('EKSPLORASI / 01','Peta kawasan','Jelajahi zona kandidat dan periksa dasar klasifikasinya.')
-    zones=list_zones(scope())
+    zones=workspace_zones()
     local_demo_watermark(zones)
     if not zones: empty_state();return
     with st.container(key='mf_maptools'):
@@ -463,7 +498,14 @@ def map_page():
                 popup=folium.Popup(f'<strong>{popup_name}</strong><br>{html.escape(z["zone_id"])}<br>{STATUS_LABELS[r["screening"]["status"]]}',max_width=250)
                 tip=f'{html.escape(z["zone_id"])} · {popup_name}'
                 if z['geometry']['type']=='Point':
-                    folium.CircleMarker(location=center(z['geometry']),radius=11 if sel else 8,color='#ffffff' if sel else col,weight=3 if sel else 1.5,fill=True,fill_color=col,fill_opacity=.9,popup=popup,tooltip=tip).add_to(m)
+                    label=z['zone_id'].removeprefix('SKENARIO-') if z['provenance'].get('scenario') else z['zone_id']
+                    marker_html=(f'<div style="width:56px;height:56px;box-sizing:border-box;background:{col}dd;'
+                                 f'border:{4 if sel else 2}px solid {"#14301f" if sel else "#ffffff"};'
+                                 'box-shadow:0 2px 8px #0008;display:flex;align-items:center;justify-content:center;'
+                                 f'color:#14301f;font-weight:800;font-size:{22 if len(label)<=3 else 11}px;'
+                                 f'font-family:Arial,sans-serif">{html.escape(label)}</div>')
+                    folium.Marker(location=center(z['geometry']), icon=folium.DivIcon(html=marker_html,icon_size=(56,56),icon_anchor=(28,28)),
+                                  popup=popup,tooltip=tip,z_index_offset=1000 if sel else 0).add_to(m)
                 else:
                     style={'fillColor':col,'color':'#ffffff' if sel else col,'weight':4 if sel else 2,'fillOpacity':.45 if sel else .25,'dashArray':None}
                     folium.GeoJson({'type':'Feature','properties':{'zone_id':z['zone_id']},'geometry':z['geometry']},style_function=lambda f,style=style:style,highlight_function=lambda f:{'weight':4,'fillOpacity':.55},tooltip=tip,popup=popup).add_to(m)
@@ -485,12 +527,14 @@ def map_page():
             c=response.get('last_clicked')
             st.caption((f"Klik terakhir: {c['lat']:.5f}, {c['lng']:.5f} · " if c else '')+note+' Jika peta kosong, aktifkan Skematis offline.')
         map_legend(pairs)
+        if any(z['geometry']['type']=='Point' for z in zs):
+            st.caption('Kotak berlabel menandai titik pengamatan; ukurannya hanya untuk tampilan, bukan batas atau luas lahan. Kotak terpilih memiliki garis tepi lebih tebal.')
     with right:
         zone=choose_zone(list(zs),'map_zone_'+scope())
         result=next(r for z,r in pairs if z['zone_id']==zone['zone_id'])
         zone_card(zone,result)
         st.page_link('pages/3_Analisis.py',label='Analisis zona ini',icon=':material/arrow_forward:',width='stretch')
-        st.caption('Luas dari proyeksi metrik. Klik poligon di peta untuk memilih zona.')
+        st.caption('Klik kotak titik atau poligon untuk memilih zona. Luas hanya dihitung untuk geometri poligon sumber.')
 
 MODEL_STATUS_TEXT = {
     'NO_MODEL_AVAILABLE': 'Belum ada model XGBoost yang disetujui. Penilaian memakai aturan screening.',
@@ -510,6 +554,7 @@ def model_unavailable(ex):
     if ex.get('missing'): st.write('Belum terisi: '+', '.join(_plabel(k) for k in ex['missing']))
     if ex.get('outside'): st.write('Di luar domain: '+', '.join(_plabel(k) for k in ex['outside']))
     if ex['status']=='NO_MODEL_AVAILABLE':
+        st.page_link('pages/7_Riset.py', label='Coba XGBoost & SHAP dalam mode riset', icon=':material/science:')
         st.caption('Model diaktifkan lewat scripts/train_model.py lalu scripts/approve_model.py oleh peninjau ahli. Lihat tab Status model di halaman Data & model.')
 
 def model_tab(ex):
@@ -553,6 +598,7 @@ def shap_tab(ex):
     elif chk: st.caption(chk.get('message',''))
 
 def model_status_panel():
+    st.page_link('pages/7_Riset.py', label='Buka eksperimen XGBoost, SHAP & prediksi riset', icon=':material/science:')
     st.subheader('Model aktif')
     status=get_model_status()
     card,_=load_card()
@@ -594,23 +640,43 @@ def model_status_panel():
 
 def analysis_page():
     header('KAJIAN / 02','Analisis lokasi','Lihat kelengkapan data, alasan screening, dan opsi pemeriksaan berikutnya.')
-    zones=list_zones(scope())
+    zones=workspace_zones()
     local_demo_watermark(zones)
     if not zones: empty_state();return
     zone=choose_zone(zones,'analysis_zone_'+scope())
     r,aid=result_for(zone)
-    if scope()!='demo' and zone['is_demo']: watermark()
+    if scope()=='local' and zone['is_demo']: watermark()
     a,b,c=st.columns([1.4,1,1])
     with a: badge(r['screening']['status']);st.caption(r['screening']['status'])
     b.metric('Kelengkapan parameter inti',f"{r['completeness']['percent']}%")
     ex=explain_zone(zone,r['screening'])
-    c.metric('Skor model XGBoost',f"{ex['score']:.2f}" if ex['status']=='OK' else 'Tidak tersedia',help=None if ex['status']=='OK' else ex['status'])
+    research_result, research_error = None, None
+    if zone['provenance'].get('scenario'):
+        from .research_service import predict_scenario_reference, ResearchError
+        try:
+            research_result = predict_scenario_reference(zone)
+        except (ResearchError, ValidationError) as error:
+            research_error = str(error)
+        c.metric('Skor XGBoost riset · semai alami', f"{research_result['probability']:.3f}" if research_result else 'Tidak tersedia')
+        st.caption('RESEARCH_ONLY · Skor baris historis sumber, bukan peluang keberhasilan tanam atau pengukuran kondisi terbaru. Model operasional tetap belum aktif.')
+    else:
+        c.metric('Skor model XGBoost',f"{ex['score']:.2f}" if ex['status']=='OK' else 'Tidak tersedia',help=None if ex['status']=='OK' else ex['status'])
     if aid: st.caption(f"Analisis tersimpan #{aid} · {r['analysis_timestamp']} UTC · {r['screening']['rules_version']}")
-    else: st.caption('Pratinjau aturan dari data saat ini. Simpan analisis untuk membuat snapshot dan catatan verifikasi.')
+    elif scope() == 'local': st.caption('Pratinjau aturan dari data saat ini. Simpan analisis untuk membuat snapshot dan catatan verifikasi.')
+    else: st.caption('Pratinjau baca-saja. Screening dan skor riset merupakan dua hasil yang berbeda.')
     tabs=st.tabs(['Data input','Screening','Model XGBoost','Penjelasan SHAP','Rekomendasi & verifikasi'])
     with tabs[0]:
         st.write(f"**Tutupan:** {zone['landcover_type']} · **Status legal:** {zone['legal_status']}")
-        show_table(pd.DataFrame(observation_rows(zone)),hide_index=True,width='stretch',height=490)
+        if zone['provenance'].get('scenario'):
+            rows = pd.DataFrame(observation_rows(zone))
+            available = rows['Kualitas'].ne('missing')
+            st.caption(f"{int(available.sum())} dari {len(rows)} parameter tersedia pada baris sumber. Nilai kosong tidak diisi dengan tebakan.")
+            show_table(rows[available],hide_index=True,width='stretch')
+            with st.expander(f"Parameter belum tersedia ({int((~available).sum())})"):
+                show_table(rows[~available],hide_index=True,width='stretch')
+            st.caption(zone['provenance'].get('unit_note') or '')
+        else:
+            show_table(pd.DataFrame(observation_rows(zone)),hide_index=True,width='stretch',height=490)
         st.caption('Kelengkapan menghitung ketersediaan 7 parameter inti; bukan keyakinan model atau mutu ekologis.')
         with st.expander('Provenance dataset & geometri'):
             st.json({'provenance':zone['provenance'],'geometry':zone['geometry']})
@@ -621,15 +687,31 @@ def analysis_page():
         for warning in r['warnings']: st.warning(warning)
         st.caption(f"Aturan {r['screening']['rules_version']} · Konsep awal yang memerlukan telaah ahli.")
     with tabs[2]:
-        model_tab(ex)
+        if research_result:
+            st.info(research_result['watermark'])
+            st.write(research_result['note'])
+            st.write(f"ID model: `{research_result['model']}` · observasi `{research_result['historical_id']}`")
+            st.write(f"Skor kelas 1 (semai ditemukan): **{research_result['probability']:.3f}** · ambang final {research_result['threshold']:.2f}")
+            with st.expander('Fitur lengkap yang benar-benar digunakan model'):
+                st.json(research_result['inputs'])
+            st.download_button('Unduh skor & SHAP riset titik ini', json.dumps(research_result, indent=2, ensure_ascii=False, allow_nan=False),
+                               f"RISET_{zone['zone_id']}.json", 'application/json')
+        elif research_error: st.error(research_error)
+        else: model_tab(ex)
     with tabs[3]:
-        shap_tab(ex)
+        if research_result:
+            st.caption('SHAP lokal untuk baris historis pada model final. Kontribusi bukan sebab-akibat; ini bukan validasi baru.')
+            local_shap = pd.DataFrame(list(research_result['contributions'].items()), columns=['Fitur sumber', 'Kontribusi log-odds'])
+            st.bar_chart(local_shap.set_index('Fitur sumber'), horizontal=True)
+            st.caption(f"Aditivitas lulus: bias {research_result['bias']:.4f} + kontribusi = margin {research_result['margin']:.4f}.")
+        elif research_error: st.error(research_error)
+        else: shap_tab(ex)
     with tabs[4]:
         st.subheader(r['recommendation']['action'])
         st.write(r['recommendation']['focus'])
         for i,s in enumerate(r['recommendation']['next_steps'],1): st.write(f'{i}. {s}')
         st.info('Hasil ini merupakan arahan pemeriksaan awal. Peninjauan ahli dan izin setempat tetap diperlukan.')
-        if scope()=='demo': st.caption('Demo bersifat baca-saja. Gunakan Analis lokal untuk menyimpan data dan catatan.')
+        if scope()!='local': st.caption('Skenario dan Demo bersifat baca-saja. Gunakan Analis lokal untuk menyimpan survei dan catatan.')
         else:
             if st.button('Simpan analisis saat ini',type='primary'):
                 save_analysis(r);st.success('Snapshot analisis tersimpan.');st.rerun()
@@ -650,7 +732,7 @@ def analysis_page():
 
 def comparison_page():
     header('PRIORITAS / 03','Bandingkan zona','Susun urutan survei dengan alasan yang dapat ditelusuri.')
-    zones=list_zones(scope())
+    zones=workspace_zones()
     local_demo_watermark(zones)
     if not zones: empty_state();return
     ids=[z['zone_id'] for z in zones]
@@ -667,13 +749,58 @@ def comparison_page():
     if not results: st.info('Tidak ada zona sesuai filter.');return
     st.info('Urutan survei: perlu verifikasi → bisa dikaji lanjut → dikecualikan; dalam kelompok, data paling tidak lengkap diperiksa lebih dahulu. Ini bukan skor prioritas program atau keberhasilan tanam.')
     rows=[]
-    for i,r in enumerate(results,1):
-        z=r['feature_snapshot'];v=values(z)
-        rows.append({'Urutan survei':i,'ID':z['zone_id'],'Nama':z['zone_name'],'Luas (ha)':area_ha(z['geometry']),'Screening':STATUS_LABELS[r['screening']['status']],'Kelengkapan (%)':r['completeness']['percent'],'Kelas habitat ML':'Tidak tersedia','Sinyal degradasi':'Abrasi terindikasi' if v.get('shoreline_change_m_y') is not None and v['shoreline_change_m_y']<0 else 'Belum dinilai','Kualitas':r['data_quality'],'Tindakan awal':r['recommendation']['action'],'Alasan':' | '.join(r['screening']['reasons'])})
-    show_table(pd.DataFrame(rows),hide_index=True,width='stretch')
+    if scope() == 'scenario':
+        from .research_service import predict_scenario_reference, ResearchError
+        research_outputs = []
+        cards = st.columns(len(results))
+        for i, r in enumerate(results):
+            z = r['feature_snapshot']
+            available = sum(o['value'] is not None for o in z['observations'].values())
+            score = None
+            try:
+                prediction = predict_scenario_reference(z)
+                score = prediction['probability']
+                research_outputs.append(prediction)
+            except (ResearchError, ValidationError) as error:
+                cards[i].warning(str(error))
+            with cards[i]:
+                st.subheader(z['zone_name'].split(' · ')[0])
+                st.metric('Skor riset · semai alami', f'{score:.3f}' if score is not None else 'Tidak tersedia')
+                st.caption(f"{available}/{len(PARAMETERS)} parameter tersedia · sumber {z['provenance']['source_row_id']}")
+            rows.append({'Titik': z['zone_name'].split(' · ')[0],
+                         'Screening': STATUS_LABELS[r['screening']['status']],
+                         'Parameter tersedia': f'{available}/{len(PARAMETERS)}',
+                         'Data inti lengkap (%)': r['completeness']['percent'],
+                         'Skor riset semai': round(score, 3) if score is not None else None,
+                         'Kualitas': 'Data historis · skenario'})
+        show_table(pd.DataFrame(rows),hide_index=True,width='stretch')
+        st.caption('RESEARCH_ONLY · Skor 0–1 menjelaskan keberadaan semai pada baris historis, bukan kelas kesesuaian habitat atau peluang keberhasilan tanam. '
+                   'Balanced accuracy validasi model 48,8%; skor tidak dipakai menentukan urutan survei.')
+        with st.expander('Alasan screening dan tindak lanjut per titik'):
+            for r in results:
+                z = r['feature_snapshot']
+                st.markdown(f"**{z['zone_name']}**")
+                st.write(r['recommendation']['action'])
+                for reason in r['screening']['reasons']:
+                    st.write('• ' + reason)
+                st.caption('Luas kawasan belum ditentukan karena geometri berupa titik. Degradasi/abrasi belum dinilai tanpa data perubahan garis pantai.')
+        if research_outputs:
+            st.download_button('Unduh perbandingan skor riset', json.dumps(
+                {'watermark': 'RISET HISTORIS / SKENARIO — BUKAN VALIDASI LAPANGAN TERBARU',
+                 'results': research_outputs}, ensure_ascii=False, indent=2, allow_nan=False),
+                'RISET_perbandingan_Demak.json', 'application/json')
+    else:
+        for i,r in enumerate(results,1):
+            z=r['feature_snapshot'];v=values(z)
+            rows.append({'Urutan survei':i,'ID':z['zone_id'],'Nama':z['zone_name'],'Luas (ha)':area_ha(z['geometry']),'Screening':STATUS_LABELS[r['screening']['status']],'Kelengkapan (%)':r['completeness']['percent'],'Kelas habitat ML':'Tidak tersedia','Sinyal degradasi':'Abrasi terindikasi' if v.get('shoreline_change_m_y') is not None and v['shoreline_change_m_y']<0 else 'Belum dinilai','Kualitas':r['data_quality'],'Tindakan awal':r['recommendation']['action'],'Alasan':' | '.join(r['screening']['reasons'])})
+        show_table(pd.DataFrame(rows),hide_index=True,width='stretch')
     st.subheader('Bandingkan parameter')
-    nums=[k for k,m in PARAMETERS.items() if 'range' in m]
-    param=st.selectbox('Parameter grafik',nums,format_func=lambda k:f"{PARAMETERS[k]['label']} ({PARAMETERS[k]['unit']})")
+    nums=[k for k,m in PARAMETERS.items() if 'range' in m and any(values(r['feature_snapshot']).get(k) is not None for r in results)]
+    if not nums:
+        st.info('Belum ada parameter numerik untuk dibandingkan.')
+        exports(results,'comparison_')
+        return
+    param=st.selectbox('Parameter grafik',nums,format_func=lambda k:f"{PARAMETERS[k]['label']} ({PARAMETERS[k]['unit']})", key='comparison_parameter_'+scope())
     chart=pd.DataFrame([{'Zona':r['feature_snapshot']['zone_id'],'Nilai':values(r['feature_snapshot']).get(param)} for r in results]).set_index('Zona')
     if chart['Nilai'].notna().any():
         st.bar_chart(chart.dropna(),color='#278267',height=250)
@@ -732,7 +859,7 @@ def data_page():
         b.download_button('Contoh CSV sintetis',(ROOT/'data/demo/titik_simulasi.csv').read_bytes(),'titik_simulasi.csv','text/csv')
         c.download_button('Contoh GeoJSON sintetis',(ROOT/'data/demo/zona_simulasi.geojson').read_bytes(),'zona_simulasi.geojson','application/geo+json')
         st.caption('Contoh GeoJSON memakai ID demo yang dicadangkan. Ubah ID sebelum diimpor ke Analis lokal; penanda data demo tetap dipertahankan.')
-        if scope()=='demo':
+        if scope()!='local':
             st.info('Pilih Analis lokal pada sidebar untuk mengimpor atau mengedit. Dataset demo bersifat baca-saja.')
         else:
             uploaded=st.file_uploader('Unggah CSV / GeoJSON',type=['csv','geojson','json'],help='Maksimum sesuai konfigurasi, default 10 MB dan 1.000 zona.')
@@ -747,10 +874,10 @@ def data_page():
                         except ValueError as e: st.error(str(e))
                 except (ValidationError,TypeError,KeyError) as e: st.error(f'VALIDATION_ERROR — {e}')
     with tabs[1]:
-        if scope()=='demo': st.info('Pilih Analis lokal untuk menambah atau mengedit zona.')
+        if scope()!='local': st.info('Pilih Analis lokal untuk menambah atau mengedit zona.')
         else: zone_form()
     with tabs[2]:
-        zs=list_zones(scope())
+        zs=workspace_zones()
         if zs:
             show_table(pd.DataFrame([{'ID':z['zone_id'],'Nama':z['zone_name'],'Geometri':z['geometry']['type'],'Legal':z['legal_status'],'Sumber sintetis':z['is_demo']} for z in zs]),hide_index=True,width='stretch')
             if st.button('Cadangkan seluruh zona sebagai GeoJSON'):

@@ -1,0 +1,16 @@
+{
+  "source_files": [
+    {
+      "file": "sea-site_dataset_withNAs.csv",
+      "sha256": "c8c18d89657eae5efe3c41c12156b51c4039ec7a7aa5bedd85d1a38ca040565e"
+    },
+    {
+      "file": "pond_dataset_withNAs_UTF8.csv",
+      "sha256": "7bbefebea1c71db2d027f2719511c9b586f070b1f7a643a957f6e9cf2e25d995"
+    }
+  ],
+  "audit": "../audit/source_audit.json",
+  "preparation": "../preparation.json",
+  "scenario_data_used_in_training": false,
+  "historical_dates_and_locations_preserved": true
+}

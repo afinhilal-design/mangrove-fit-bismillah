@@ -1,0 +1,19 @@
+feature,mean_abs_oof_shap_log_odds
+%t_submerged,0.33116147
+SSILT63_2 (%),0.12921248
+SD(0.9)_2 (µm),0.12037144
+SFINES%_2 (%),0.09806026
+ShearStrngth,0.076418206
+S2-,0.047686134
+SMODE_2 (µm),0.036403555
+pH,0.027962834
+SMEDIUM%_2 (%),0.0232405
+BulkDen,0.01888542
+redox,0.017215073
+WC,0.010378099
+SD(0.1)_2 (µm),0.0007222523
+SD50MUM_2 (µm),0.00035380857
+SD50PHIM_2 (phi),0.0
+SCOARSE%_2 (%),0.0
+orgC,0.0
+zone_type,0.0

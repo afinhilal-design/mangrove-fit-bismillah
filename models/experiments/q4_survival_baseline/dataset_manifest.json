@@ -1,0 +1,31 @@
+{
+  "source_file": "Q4_EMR-and-planting.csv",
+  "source_sha256": "079c80efca94d233dc299d16da4599b27f85a757f80ba91dfc27bfcdfd385c6e",
+  "source_rows": 2800,
+  "source_unique_ids": 399,
+  "ambiguous_ids_excluded": [
+    "J4"
+  ],
+  "rows_with_ambiguous_ids": 14,
+  "ids_without_baseline": [],
+  "baseline_not_alive_or_missing_excluded": [
+    "P0"
+  ],
+  "cohort_rows": 397,
+  "blocks": 20,
+  "missing_baseline_sediment": 0,
+  "missing_outcome": 0,
+  "converted_sha256": "e3c5caf33fcb3b0c142b4b4ba610a6b83ce3fae4d2dcdb14d8fad40cd4a5d1d2",
+  "target": "Survival biner pada bulan 16, hanya bibit hidup pada bulan 0.",
+  "features": {
+    "sediment_level_cm": "sediment_raw bulan 0; label satuan mengikuti konverter proyek, belum diverifikasi metadata eksternal"
+  },
+  "scenario": "Data historis diasumsikan mewakili kondisi saat ini untuk esai; bukan survei terbaru.",
+  "known_limitations": [
+    "Hanya satu fitur sedimen awal; spesies dan ukuran bibit belum menjadi fitur model.",
+    "Bulan relatif asli dipertahankan; tanggal kalender baru tidak dibuat.",
+    "Tidak menggunakan sedimen, growth, atau length setelah bulan 0 sebagai prediktor.",
+    "Blok percobaan dipisahkan utuh; generalisasi geografis belum dibuktikan.",
+    "Hasil eksperimen historis bukan validasi kondisi saat ini atau rekomendasi operasional."
+  ]
+}

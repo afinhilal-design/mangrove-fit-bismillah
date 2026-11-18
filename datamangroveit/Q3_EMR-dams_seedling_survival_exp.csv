@@ -1,0 +1,701 @@
+"ID","SiteCondition","blockname","PlantingTreatment","month","season","survival"
+1,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+2,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+3,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+4,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+5,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+6,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+7,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+8,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+9,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+10,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+11,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+12,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+13,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+14,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+15,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+16,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+17,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+18,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+19,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+20,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+21,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+22,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+23,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+24,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+25,"EMR-dams","EMR-dams1","R.mucronata",3,"dry season 2019",1
+26,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+27,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",1
+28,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",1
+29,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+30,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+31,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",1
+32,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+33,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+34,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+35,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",1
+36,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+37,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+38,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+39,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+40,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+41,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+42,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+43,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+44,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+45,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+46,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",1
+47,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",1
+48,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+49,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+50,"EMR-dams","EMR-dams1","A.alba",3,"dry season 2019",0
+51,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+52,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+53,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+54,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+55,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+56,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+57,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+58,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+59,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+60,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+61,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+62,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+63,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+64,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+65,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+66,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+67,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+68,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+69,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+70,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+71,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+72,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+73,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+74,"exposed","exposed2","R.mucronata",3,"dry season 2019",1
+75,"exposed","exposed2","R.mucronata",3,"dry season 2019",0
+76,"exposed","exposed2","A.alba",3,"dry season 2019",0
+77,"exposed","exposed2","A.alba",3,"dry season 2019",0
+78,"exposed","exposed2","A.alba",3,"dry season 2019",0
+79,"exposed","exposed2","A.alba",3,"dry season 2019",0
+80,"exposed","exposed2","A.alba",3,"dry season 2019",0
+81,"exposed","exposed2","A.alba",3,"dry season 2019",0
+82,"exposed","exposed2","A.alba",3,"dry season 2019",0
+83,"exposed","exposed2","A.alba",3,"dry season 2019",0
+84,"exposed","exposed2","A.alba",3,"dry season 2019",0
+85,"exposed","exposed2","A.alba",3,"dry season 2019",0
+86,"exposed","exposed2","A.alba",3,"dry season 2019",0
+87,"exposed","exposed2","A.alba",3,"dry season 2019",1
+88,"exposed","exposed2","A.alba",3,"dry season 2019",1
+89,"exposed","exposed2","A.alba",3,"dry season 2019",1
+90,"exposed","exposed2","A.alba",3,"dry season 2019",0
+91,"exposed","exposed2","A.alba",3,"dry season 2019",1
+92,"exposed","exposed2","A.alba",3,"dry season 2019",0
+93,"exposed","exposed2","A.alba",3,"dry season 2019",0
+94,"exposed","exposed2","A.alba",3,"dry season 2019",1
+95,"exposed","exposed2","A.alba",3,"dry season 2019",0
+96,"exposed","exposed2","A.alba",3,"dry season 2019",1
+97,"exposed","exposed2","A.alba",3,"dry season 2019",0
+98,"exposed","exposed2","A.alba",3,"dry season 2019",0
+99,"exposed","exposed2","A.alba",3,"dry season 2019",0
+100,"exposed","exposed2","A.alba",3,"dry season 2019",0
+101,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+102,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+103,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+104,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",0
+105,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",0
+106,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+107,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+108,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+109,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+110,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+111,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+112,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+113,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+114,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+115,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+116,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+117,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+118,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+119,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+120,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+121,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+122,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+123,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+124,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+125,"EMR-dams","EMR-dams3","R.mucronata",3,"dry season 2019",1
+126,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+127,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+128,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+129,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+130,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+131,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+132,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",0
+133,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+134,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",0
+135,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+136,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+137,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+138,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+139,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+140,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+141,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+142,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+143,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+144,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+145,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+146,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+147,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+148,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+149,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+150,"EMR-dams","EMR-dams3","A.alba",3,"dry season 2019",1
+151,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+152,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+153,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+154,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+155,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+156,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+157,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+158,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+159,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+160,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+161,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+162,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+163,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+164,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+165,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+166,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+167,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",0
+168,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+169,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+170,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+171,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+172,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+173,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+174,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",1
+175,"EMR-dams","EMR-dams4","R.mucronata",3,"dry season 2019",0
+176,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+177,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+178,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+179,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+180,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+181,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+182,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+183,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+184,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+185,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+186,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+187,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+188,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+189,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+190,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+191,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+192,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+193,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+194,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+195,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+196,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+197,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",0
+198,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+199,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+200,"EMR-dams","EMR-dams4","A.alba",3,"dry season 2019",1
+201,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+202,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+203,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+204,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+205,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+206,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+207,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+208,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+209,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+210,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+211,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+212,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+213,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+214,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+215,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+216,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+217,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+218,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+219,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+220,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+221,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+222,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+223,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+224,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+225,"natural shelter","natural shelter1","R.mucronata",3,"dry season 2019",1
+226,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+227,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+228,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+229,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+230,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",1
+231,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",1
+232,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+233,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+234,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+235,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",1
+236,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",1
+237,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+238,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+239,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+240,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+241,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+242,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+243,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",1
+244,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",1
+245,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+246,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",1
+247,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",1
+248,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+249,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+250,"natural shelter","natural shelter1","A.alba",3,"dry season 2019",0
+251,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+252,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+253,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+254,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+255,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+256,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+257,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+258,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+259,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+260,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+261,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+262,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+263,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+264,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+265,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+266,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+267,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+268,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+269,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+270,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+271,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+272,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+273,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+274,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+275,"natural shelter","natural shelter2","R.mucronata",3,"dry season 2019",1
+276,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",1
+277,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+278,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",1
+279,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+280,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+281,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",1
+282,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+283,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+284,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+285,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+286,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+287,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+288,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",1
+289,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+290,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",1
+291,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+292,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+293,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+294,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+295,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",1
+296,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",1
+297,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",1
+298,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+299,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+300,"natural shelter","natural shelter2","A.alba",3,"dry season 2019",0
+301,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+302,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+303,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",0
+304,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+305,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+306,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+307,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+308,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+309,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+310,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+311,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+312,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+313,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+314,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+315,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+316,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+317,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+318,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+319,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+320,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+321,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+322,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+323,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+324,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+325,"natural shelter","natural shelter3","R.mucronata",3,"dry season 2019",1
+326,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+327,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+328,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+329,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+330,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+331,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+332,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+333,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+334,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+335,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+336,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+337,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+338,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+339,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+340,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+341,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+342,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+343,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+344,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+345,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+346,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",0
+347,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+348,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+349,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+350,"natural shelter","natural shelter3","A.alba",3,"dry season 2019",1
+1,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",1
+2,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+3,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+4,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+5,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",1
+6,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",1
+7,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+8,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+9,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",1
+10,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",1
+11,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+12,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+13,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+14,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+15,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+16,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+17,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+18,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",1
+19,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",1
+20,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+21,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+22,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",1
+23,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+24,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+25,"EMR-dams","EMR-dams1","R.mucronata",10,"wet season 2019",0
+26,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+27,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+28,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+29,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+30,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+31,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+32,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+33,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+34,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+35,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+36,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+37,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+38,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+39,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+40,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+41,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+42,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+43,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+44,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+45,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+46,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+47,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+48,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+49,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+50,"EMR-dams","EMR-dams1","A.alba",10,"wet season 2019",0
+51,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+52,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+53,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+54,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+55,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+56,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+57,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+58,"exposed","exposed2","R.mucronata",10,"wet season 2019",1
+59,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+60,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+61,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+62,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+63,"exposed","exposed2","R.mucronata",10,"wet season 2019",1
+64,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+65,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+66,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+67,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+68,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+69,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+70,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+71,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+72,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+73,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+74,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+75,"exposed","exposed2","R.mucronata",10,"wet season 2019",0
+76,"exposed","exposed2","A.alba",10,"wet season 2019",0
+77,"exposed","exposed2","A.alba",10,"wet season 2019",0
+78,"exposed","exposed2","A.alba",10,"wet season 2019",0
+79,"exposed","exposed2","A.alba",10,"wet season 2019",0
+80,"exposed","exposed2","A.alba",10,"wet season 2019",0
+81,"exposed","exposed2","A.alba",10,"wet season 2019",0
+82,"exposed","exposed2","A.alba",10,"wet season 2019",0
+83,"exposed","exposed2","A.alba",10,"wet season 2019",0
+84,"exposed","exposed2","A.alba",10,"wet season 2019",0
+85,"exposed","exposed2","A.alba",10,"wet season 2019",0
+86,"exposed","exposed2","A.alba",10,"wet season 2019",0
+87,"exposed","exposed2","A.alba",10,"wet season 2019",0
+88,"exposed","exposed2","A.alba",10,"wet season 2019",0
+89,"exposed","exposed2","A.alba",10,"wet season 2019",0
+90,"exposed","exposed2","A.alba",10,"wet season 2019",0
+91,"exposed","exposed2","A.alba",10,"wet season 2019",0
+92,"exposed","exposed2","A.alba",10,"wet season 2019",0
+93,"exposed","exposed2","A.alba",10,"wet season 2019",0
+94,"exposed","exposed2","A.alba",10,"wet season 2019",0
+95,"exposed","exposed2","A.alba",10,"wet season 2019",0
+96,"exposed","exposed2","A.alba",10,"wet season 2019",0
+97,"exposed","exposed2","A.alba",10,"wet season 2019",0
+98,"exposed","exposed2","A.alba",10,"wet season 2019",0
+99,"exposed","exposed2","A.alba",10,"wet season 2019",0
+100,"exposed","exposed2","A.alba",10,"wet season 2019",0
+101,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+102,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+103,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+104,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+105,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+106,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+107,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+108,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+109,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+110,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+111,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+112,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+113,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+114,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+115,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+116,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+117,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+118,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+119,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+120,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+121,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+122,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+123,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+124,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+125,"EMR-dams","EMR-dams3","R.mucronata",10,"wet season 2019",0
+126,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+127,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+128,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+129,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+130,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+131,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+132,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+133,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+134,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+135,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+136,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+137,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+138,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+139,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+140,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+141,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+142,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+143,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+144,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+145,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+146,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+147,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+148,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+149,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+150,"EMR-dams","EMR-dams3","A.alba",10,"wet season 2019",0
+151,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+152,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",1
+153,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+154,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+155,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",1
+156,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+157,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+158,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+159,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+160,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+161,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+162,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",1
+163,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+164,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",1
+165,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",1
+166,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+167,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+168,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+169,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+170,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",1
+171,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",1
+172,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+173,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+174,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",1
+175,"EMR-dams","EMR-dams4","R.mucronata",10,"wet season 2019",0
+176,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+177,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+178,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+179,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+180,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+181,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+182,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+183,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+184,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+185,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+186,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+187,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+188,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+189,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+190,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+191,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+192,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+193,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+194,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+195,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+196,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+197,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+198,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+199,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+200,"EMR-dams","EMR-dams4","A.alba",10,"wet season 2019",0
+201,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+202,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+203,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+204,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+205,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+206,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+207,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+208,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+209,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+210,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+211,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+212,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+213,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+214,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+215,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+216,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+217,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+218,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+219,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+220,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+221,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+222,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+223,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+224,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",0
+225,"natural shelter","natural shelter1","R.mucronata",10,"wet season 2019",1
+226,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+227,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+228,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+229,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+230,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+231,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+232,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+233,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+234,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+235,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+236,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+237,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+238,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+239,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+240,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+241,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+242,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+243,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+244,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+245,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+246,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+247,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+248,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+249,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+250,"natural shelter","natural shelter1","A.alba",10,"wet season 2019",0
+251,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+252,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+253,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+254,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+255,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+256,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+257,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+258,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+259,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+260,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+261,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+262,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+263,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+264,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+265,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+266,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+267,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+268,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+269,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+270,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+271,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+272,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+273,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+274,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",0
+275,"natural shelter","natural shelter2","R.mucronata",10,"wet season 2019",1
+276,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",1
+277,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+278,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",1
+279,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+280,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+281,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",1
+282,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+283,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+284,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+285,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+286,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+287,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+288,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+289,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+290,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+291,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+292,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+293,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+294,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+295,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+296,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",1
+297,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",1
+298,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+299,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+300,"natural shelter","natural shelter2","A.alba",10,"wet season 2019",0
+301,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+302,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+303,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",0
+304,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+305,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",0
+306,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+307,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+308,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+309,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+310,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+311,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+312,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+313,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+314,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+315,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",0
+316,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+317,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+318,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+319,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+320,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+321,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+322,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+323,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+324,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+325,"natural shelter","natural shelter3","R.mucronata",10,"wet season 2019",1
+326,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+327,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+328,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+329,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+330,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+331,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+332,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+333,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+334,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+335,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+336,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+337,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+338,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+339,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+340,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+341,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+342,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+343,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+344,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+345,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+346,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+347,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",1
+348,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",1
+349,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0
+350,"natural shelter","natural shelter3","A.alba",10,"wet season 2019",0

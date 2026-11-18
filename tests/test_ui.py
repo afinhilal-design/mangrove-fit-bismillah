@@ -7,9 +7,10 @@ def app(tmp_path,monkeypatch):
     import mangrove_fit.database as db
     monkeypatch.setattr(db,'DB_PATH',tmp_path/'ui.db')
     at=AppTest.from_file(str(ROOT/'app.py'),default_timeout=30).run()
+    at.radio(key='workspace_mode').set_value('Demo').run()
     assert not at.exception
     return at
-@pytest.mark.parametrize('page',['2_Peta.py','3_Analisis.py','4_Perbandingan.py','5_Data_Model.py','6_Metodologi.py'])
+@pytest.mark.parametrize('page',['2_Peta.py','3_Analisis.py','4_Perbandingan.py','5_Data_Model.py','6_Metodologi.py','7_Riset.py'])
 def test_pages(app,page):
     app.switch_page('pages/'+page).run();assert not app.exception
 

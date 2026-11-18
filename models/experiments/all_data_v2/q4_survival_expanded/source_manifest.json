@@ -1,0 +1,12 @@
+{
+  "source_files": [
+    {
+      "file": "Q4_EMR-and-planting.csv",
+      "sha256": "079c80efca94d233dc299d16da4599b27f85a757f80ba91dfc27bfcdfd385c6e"
+    }
+  ],
+  "audit": "../audit/source_audit.json",
+  "preparation": "../preparation.json",
+  "scenario_data_used_in_training": false,
+  "historical_dates_and_locations_preserved": true
+}

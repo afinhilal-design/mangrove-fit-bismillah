@@ -1,0 +1,241 @@
+row_id,group,target,SiteCondition,PlantingTreatment
+1,EMR-dams1,1,EMR-dams,R.mucronata
+2,EMR-dams1,0,EMR-dams,R.mucronata
+3,EMR-dams1,0,EMR-dams,R.mucronata
+4,EMR-dams1,0,EMR-dams,R.mucronata
+5,EMR-dams1,1,EMR-dams,R.mucronata
+6,EMR-dams1,1,EMR-dams,R.mucronata
+7,EMR-dams1,0,EMR-dams,R.mucronata
+8,EMR-dams1,0,EMR-dams,R.mucronata
+9,EMR-dams1,1,EMR-dams,R.mucronata
+10,EMR-dams1,1,EMR-dams,R.mucronata
+11,EMR-dams1,0,EMR-dams,R.mucronata
+12,EMR-dams1,0,EMR-dams,R.mucronata
+13,EMR-dams1,0,EMR-dams,R.mucronata
+14,EMR-dams1,0,EMR-dams,R.mucronata
+15,EMR-dams1,0,EMR-dams,R.mucronata
+16,EMR-dams1,0,EMR-dams,R.mucronata
+17,EMR-dams1,0,EMR-dams,R.mucronata
+18,EMR-dams1,1,EMR-dams,R.mucronata
+19,EMR-dams1,1,EMR-dams,R.mucronata
+20,EMR-dams1,0,EMR-dams,R.mucronata
+21,EMR-dams1,0,EMR-dams,R.mucronata
+22,EMR-dams1,1,EMR-dams,R.mucronata
+23,EMR-dams1,0,EMR-dams,R.mucronata
+24,EMR-dams1,0,EMR-dams,R.mucronata
+25,EMR-dams1,0,EMR-dams,R.mucronata
+27,EMR-dams1,0,EMR-dams,A.alba
+28,EMR-dams1,0,EMR-dams,A.alba
+31,EMR-dams1,0,EMR-dams,A.alba
+35,EMR-dams1,0,EMR-dams,A.alba
+46,EMR-dams1,0,EMR-dams,A.alba
+47,EMR-dams1,0,EMR-dams,A.alba
+51,exposed2,0,exposed,R.mucronata
+52,exposed2,0,exposed,R.mucronata
+53,exposed2,0,exposed,R.mucronata
+54,exposed2,0,exposed,R.mucronata
+55,exposed2,0,exposed,R.mucronata
+56,exposed2,0,exposed,R.mucronata
+57,exposed2,0,exposed,R.mucronata
+58,exposed2,1,exposed,R.mucronata
+59,exposed2,0,exposed,R.mucronata
+61,exposed2,0,exposed,R.mucronata
+62,exposed2,0,exposed,R.mucronata
+63,exposed2,1,exposed,R.mucronata
+68,exposed2,0,exposed,R.mucronata
+70,exposed2,0,exposed,R.mucronata
+71,exposed2,0,exposed,R.mucronata
+74,exposed2,0,exposed,R.mucronata
+87,exposed2,0,exposed,A.alba
+88,exposed2,0,exposed,A.alba
+89,exposed2,0,exposed,A.alba
+91,exposed2,0,exposed,A.alba
+94,exposed2,0,exposed,A.alba
+96,exposed2,0,exposed,A.alba
+101,EMR-dams3,0,EMR-dams,R.mucronata
+102,EMR-dams3,0,EMR-dams,R.mucronata
+103,EMR-dams3,0,EMR-dams,R.mucronata
+106,EMR-dams3,0,EMR-dams,R.mucronata
+107,EMR-dams3,0,EMR-dams,R.mucronata
+108,EMR-dams3,0,EMR-dams,R.mucronata
+109,EMR-dams3,0,EMR-dams,R.mucronata
+110,EMR-dams3,0,EMR-dams,R.mucronata
+111,EMR-dams3,0,EMR-dams,R.mucronata
+112,EMR-dams3,0,EMR-dams,R.mucronata
+113,EMR-dams3,0,EMR-dams,R.mucronata
+114,EMR-dams3,0,EMR-dams,R.mucronata
+115,EMR-dams3,0,EMR-dams,R.mucronata
+116,EMR-dams3,0,EMR-dams,R.mucronata
+117,EMR-dams3,0,EMR-dams,R.mucronata
+118,EMR-dams3,0,EMR-dams,R.mucronata
+119,EMR-dams3,0,EMR-dams,R.mucronata
+120,EMR-dams3,0,EMR-dams,R.mucronata
+121,EMR-dams3,0,EMR-dams,R.mucronata
+122,EMR-dams3,0,EMR-dams,R.mucronata
+123,EMR-dams3,0,EMR-dams,R.mucronata
+124,EMR-dams3,0,EMR-dams,R.mucronata
+125,EMR-dams3,0,EMR-dams,R.mucronata
+126,EMR-dams3,0,EMR-dams,A.alba
+127,EMR-dams3,0,EMR-dams,A.alba
+128,EMR-dams3,0,EMR-dams,A.alba
+129,EMR-dams3,0,EMR-dams,A.alba
+130,EMR-dams3,0,EMR-dams,A.alba
+131,EMR-dams3,0,EMR-dams,A.alba
+133,EMR-dams3,0,EMR-dams,A.alba
+135,EMR-dams3,0,EMR-dams,A.alba
+136,EMR-dams3,0,EMR-dams,A.alba
+137,EMR-dams3,0,EMR-dams,A.alba
+138,EMR-dams3,0,EMR-dams,A.alba
+139,EMR-dams3,0,EMR-dams,A.alba
+140,EMR-dams3,0,EMR-dams,A.alba
+141,EMR-dams3,0,EMR-dams,A.alba
+142,EMR-dams3,0,EMR-dams,A.alba
+143,EMR-dams3,0,EMR-dams,A.alba
+144,EMR-dams3,0,EMR-dams,A.alba
+145,EMR-dams3,0,EMR-dams,A.alba
+146,EMR-dams3,0,EMR-dams,A.alba
+147,EMR-dams3,0,EMR-dams,A.alba
+148,EMR-dams3,0,EMR-dams,A.alba
+149,EMR-dams3,0,EMR-dams,A.alba
+150,EMR-dams3,0,EMR-dams,A.alba
+151,EMR-dams4,0,EMR-dams,R.mucronata
+152,EMR-dams4,1,EMR-dams,R.mucronata
+153,EMR-dams4,0,EMR-dams,R.mucronata
+154,EMR-dams4,0,EMR-dams,R.mucronata
+155,EMR-dams4,1,EMR-dams,R.mucronata
+156,EMR-dams4,0,EMR-dams,R.mucronata
+157,EMR-dams4,0,EMR-dams,R.mucronata
+158,EMR-dams4,0,EMR-dams,R.mucronata
+159,EMR-dams4,0,EMR-dams,R.mucronata
+160,EMR-dams4,0,EMR-dams,R.mucronata
+161,EMR-dams4,0,EMR-dams,R.mucronata
+162,EMR-dams4,1,EMR-dams,R.mucronata
+163,EMR-dams4,0,EMR-dams,R.mucronata
+164,EMR-dams4,1,EMR-dams,R.mucronata
+165,EMR-dams4,1,EMR-dams,R.mucronata
+166,EMR-dams4,0,EMR-dams,R.mucronata
+168,EMR-dams4,0,EMR-dams,R.mucronata
+169,EMR-dams4,0,EMR-dams,R.mucronata
+170,EMR-dams4,1,EMR-dams,R.mucronata
+171,EMR-dams4,1,EMR-dams,R.mucronata
+172,EMR-dams4,0,EMR-dams,R.mucronata
+173,EMR-dams4,0,EMR-dams,R.mucronata
+174,EMR-dams4,1,EMR-dams,R.mucronata
+177,EMR-dams4,0,EMR-dams,A.alba
+178,EMR-dams4,0,EMR-dams,A.alba
+179,EMR-dams4,0,EMR-dams,A.alba
+181,EMR-dams4,0,EMR-dams,A.alba
+183,EMR-dams4,0,EMR-dams,A.alba
+186,EMR-dams4,0,EMR-dams,A.alba
+187,EMR-dams4,0,EMR-dams,A.alba
+188,EMR-dams4,0,EMR-dams,A.alba
+190,EMR-dams4,0,EMR-dams,A.alba
+193,EMR-dams4,0,EMR-dams,A.alba
+194,EMR-dams4,0,EMR-dams,A.alba
+195,EMR-dams4,0,EMR-dams,A.alba
+198,EMR-dams4,0,EMR-dams,A.alba
+199,EMR-dams4,0,EMR-dams,A.alba
+200,EMR-dams4,0,EMR-dams,A.alba
+201,natural shelter1,0,natural shelter,R.mucronata
+202,natural shelter1,0,natural shelter,R.mucronata
+203,natural shelter1,0,natural shelter,R.mucronata
+204,natural shelter1,0,natural shelter,R.mucronata
+205,natural shelter1,1,natural shelter,R.mucronata
+206,natural shelter1,0,natural shelter,R.mucronata
+207,natural shelter1,0,natural shelter,R.mucronata
+208,natural shelter1,1,natural shelter,R.mucronata
+209,natural shelter1,1,natural shelter,R.mucronata
+210,natural shelter1,1,natural shelter,R.mucronata
+211,natural shelter1,0,natural shelter,R.mucronata
+212,natural shelter1,0,natural shelter,R.mucronata
+213,natural shelter1,1,natural shelter,R.mucronata
+214,natural shelter1,1,natural shelter,R.mucronata
+215,natural shelter1,1,natural shelter,R.mucronata
+216,natural shelter1,1,natural shelter,R.mucronata
+217,natural shelter1,0,natural shelter,R.mucronata
+218,natural shelter1,1,natural shelter,R.mucronata
+219,natural shelter1,1,natural shelter,R.mucronata
+220,natural shelter1,1,natural shelter,R.mucronata
+221,natural shelter1,1,natural shelter,R.mucronata
+222,natural shelter1,0,natural shelter,R.mucronata
+223,natural shelter1,1,natural shelter,R.mucronata
+224,natural shelter1,0,natural shelter,R.mucronata
+225,natural shelter1,1,natural shelter,R.mucronata
+230,natural shelter1,0,natural shelter,A.alba
+231,natural shelter1,0,natural shelter,A.alba
+235,natural shelter1,0,natural shelter,A.alba
+236,natural shelter1,0,natural shelter,A.alba
+243,natural shelter1,0,natural shelter,A.alba
+244,natural shelter1,0,natural shelter,A.alba
+246,natural shelter1,0,natural shelter,A.alba
+247,natural shelter1,0,natural shelter,A.alba
+251,natural shelter2,1,natural shelter,R.mucronata
+252,natural shelter2,1,natural shelter,R.mucronata
+253,natural shelter2,0,natural shelter,R.mucronata
+254,natural shelter2,1,natural shelter,R.mucronata
+255,natural shelter2,1,natural shelter,R.mucronata
+256,natural shelter2,1,natural shelter,R.mucronata
+257,natural shelter2,0,natural shelter,R.mucronata
+258,natural shelter2,0,natural shelter,R.mucronata
+259,natural shelter2,0,natural shelter,R.mucronata
+260,natural shelter2,1,natural shelter,R.mucronata
+261,natural shelter2,0,natural shelter,R.mucronata
+262,natural shelter2,0,natural shelter,R.mucronata
+263,natural shelter2,0,natural shelter,R.mucronata
+264,natural shelter2,0,natural shelter,R.mucronata
+265,natural shelter2,0,natural shelter,R.mucronata
+266,natural shelter2,0,natural shelter,R.mucronata
+267,natural shelter2,0,natural shelter,R.mucronata
+268,natural shelter2,0,natural shelter,R.mucronata
+269,natural shelter2,0,natural shelter,R.mucronata
+270,natural shelter2,0,natural shelter,R.mucronata
+271,natural shelter2,0,natural shelter,R.mucronata
+272,natural shelter2,1,natural shelter,R.mucronata
+273,natural shelter2,1,natural shelter,R.mucronata
+274,natural shelter2,0,natural shelter,R.mucronata
+275,natural shelter2,1,natural shelter,R.mucronata
+276,natural shelter2,1,natural shelter,A.alba
+278,natural shelter2,1,natural shelter,A.alba
+281,natural shelter2,1,natural shelter,A.alba
+288,natural shelter2,0,natural shelter,A.alba
+290,natural shelter2,0,natural shelter,A.alba
+295,natural shelter2,0,natural shelter,A.alba
+296,natural shelter2,1,natural shelter,A.alba
+297,natural shelter2,1,natural shelter,A.alba
+301,natural shelter3,1,natural shelter,R.mucronata
+302,natural shelter3,1,natural shelter,R.mucronata
+304,natural shelter3,1,natural shelter,R.mucronata
+305,natural shelter3,0,natural shelter,R.mucronata
+306,natural shelter3,1,natural shelter,R.mucronata
+307,natural shelter3,1,natural shelter,R.mucronata
+308,natural shelter3,1,natural shelter,R.mucronata
+309,natural shelter3,1,natural shelter,R.mucronata
+310,natural shelter3,1,natural shelter,R.mucronata
+311,natural shelter3,1,natural shelter,R.mucronata
+312,natural shelter3,1,natural shelter,R.mucronata
+313,natural shelter3,1,natural shelter,R.mucronata
+314,natural shelter3,1,natural shelter,R.mucronata
+315,natural shelter3,0,natural shelter,R.mucronata
+316,natural shelter3,1,natural shelter,R.mucronata
+317,natural shelter3,1,natural shelter,R.mucronata
+318,natural shelter3,1,natural shelter,R.mucronata
+319,natural shelter3,1,natural shelter,R.mucronata
+320,natural shelter3,1,natural shelter,R.mucronata
+321,natural shelter3,1,natural shelter,R.mucronata
+322,natural shelter3,1,natural shelter,R.mucronata
+323,natural shelter3,1,natural shelter,R.mucronata
+324,natural shelter3,1,natural shelter,R.mucronata
+325,natural shelter3,1,natural shelter,R.mucronata
+326,natural shelter3,0,natural shelter,A.alba
+332,natural shelter3,0,natural shelter,A.alba
+333,natural shelter3,0,natural shelter,A.alba
+337,natural shelter3,0,natural shelter,A.alba
+339,natural shelter3,0,natural shelter,A.alba
+341,natural shelter3,0,natural shelter,A.alba
+342,natural shelter3,0,natural shelter,A.alba
+343,natural shelter3,0,natural shelter,A.alba
+344,natural shelter3,0,natural shelter,A.alba
+347,natural shelter3,1,natural shelter,A.alba
+348,natural shelter3,1,natural shelter,A.alba
+349,natural shelter3,0,natural shelter,A.alba
+350,natural shelter3,0,natural shelter,A.alba

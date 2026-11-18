@@ -1,0 +1,808 @@
+{
+  "scope": "demo",
+  "read_only": true,
+  "is_demo": true,
+  "watermark": "SIMULASI - DATA HISTORIS DIGUNAKAN DALAM SKENARIO HIPOTETIS",
+  "scenario_date": "2026-11-19",
+  "timezone": "Asia/Jakarta",
+  "source_table": "models/experiments/datamangroveit_presence/training.csv",
+  "source_table_sha256": "0d8c813f73f7c5e47ef8487b3ab3f9233b40672b51b0a04666dbcca18b23e102",
+  "training_allowed": false,
+  "points": [
+    {
+      "scenario_location": "A",
+      "scenario_date": "2026-11-19",
+      "source_row_id": "ss_1-1",
+      "source_block": "sea_T01",
+      "source_observation_date": null,
+      "latitude": -6.893683,
+      "longitude": 110.504174,
+      "historical_features": {
+        "inundation_duration_h_day": 20.8416,
+        "soil_ph": 6.8,
+        "redox_mv": -151.4,
+        "bed_slope": -0.0825,
+        "shear_strength_kpa": 0.451572296934074,
+        "water_content_pct": 59.0091043828075,
+        "organic_carbon_pct": 9.69360329690019,
+        "bulk_density_g_cm3": 1.3856,
+        "shelter_width_m": 367.69554
+      },
+      "assumption": "Nilai historis diasumsikan mewakili kondisi skenario; bukan pengukuran baru.",
+      "unavailable_parameters": [
+        "mangrove_cover_pct",
+        "ndvi",
+        "ndmi",
+        "elevation_m",
+        "tidal_connectivity",
+        "salinity_ppt",
+        "substrate_type",
+        "wave_exposure",
+        "shoreline_change_m_y",
+        "natural_recruitment",
+        "propagule_supply",
+        "accessibility",
+        "sediment_level_cm",
+        "sediment_change_cm"
+      ]
+    },
+    {
+      "scenario_location": "B",
+      "scenario_date": "2026-11-19",
+      "source_row_id": "ss_14-2",
+      "source_block": "sea_T14",
+      "source_observation_date": null,
+      "latitude": -6.912354,
+      "longitude": 110.486395999999,
+      "historical_features": {
+        "inundation_duration_h_day": 1.9436,
+        "soil_ph": 6.879,
+        "redox_mv": -168.4,
+        "bed_slope": 0.000340909090909,
+        "shear_strength_kpa": 1.29020656266878,
+        "shelter_width_m": 141.42136
+      },
+      "assumption": "Nilai historis diasumsikan mewakili kondisi skenario; bukan pengukuran baru.",
+      "unavailable_parameters": [
+        "mangrove_cover_pct",
+        "ndvi",
+        "ndmi",
+        "elevation_m",
+        "tidal_connectivity",
+        "salinity_ppt",
+        "substrate_type",
+        "wave_exposure",
+        "shoreline_change_m_y",
+        "natural_recruitment",
+        "propagule_supply",
+        "accessibility",
+        "water_content_pct",
+        "organic_carbon_pct",
+        "bulk_density_g_cm3",
+        "sediment_level_cm",
+        "sediment_change_cm"
+      ]
+    },
+    {
+      "scenario_location": "C",
+      "scenario_date": "2026-11-19",
+      "source_row_id": "pd_12-1",
+      "source_block": "pond_T12",
+      "source_observation_date": null,
+      "latitude": -6.914048,
+      "longitude": 110.495973,
+      "historical_features": {
+        "inundation_duration_h_day": 3.4802,
+        "soil_ph": 7.332,
+        "redox_mv": -39.5,
+        "shear_strength_kpa": 1.93530984400318,
+        "water_content_pct": 57.5891951816351,
+        "organic_carbon_pct": 9.46568587826368,
+        "bulk_density_g_cm3": 1.45
+      },
+      "assumption": "Nilai historis diasumsikan mewakili kondisi skenario; bukan pengukuran baru.",
+      "unavailable_parameters": [
+        "mangrove_cover_pct",
+        "ndvi",
+        "ndmi",
+        "elevation_m",
+        "tidal_connectivity",
+        "salinity_ppt",
+        "substrate_type",
+        "wave_exposure",
+        "shoreline_change_m_y",
+        "bed_slope",
+        "natural_recruitment",
+        "propagule_supply",
+        "accessibility",
+        "shelter_width_m",
+        "sediment_level_cm",
+        "sediment_change_cm"
+      ]
+    }
+  ],
+  "supporting_files": [
+    {
+      "source_file": "april2022_updated.xlsx",
+      "sha256": "83505b2d4b9079305e22b2840c5285b4c81e43f3ae08231fb7557f89c4c5d761",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "august2021_updated.xlsx",
+      "sha256": "98bdf19ffdffa42792d984e1f982470a71292ef309c8a8b7049d4cf7ae4cce75",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022.xlsx",
+      "sha256": "075f11e2ed677b2ba5a18aeb76e20cb6ce802d045f2077f18dea6f339b33d340",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_B5.csv",
+      "sha256": "ac780b5138ace8884ac542d0b5b07adfc72a5e2d18dc81b0bd18e3f71b0e263c",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_C2.csv",
+      "sha256": "374cb03254b91a87a086d896986c5940e5a05e2a245e2174b6f1f1e33a63a0e1",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_C3.csv",
+      "sha256": "209c1fd6f659f0978ad78ea58a5281eba33983d3ab093cc89d70bab6157512e5",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_C4.csv",
+      "sha256": "08d77badfbc454d26b6fab4c173542a6376e7e30a259c57c0e0d759a2d4afb2d",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_C5.csv",
+      "sha256": "01640e7e81df5de4b81bf1ad1e0c7f0751ad3bf5c199e123ff6ecb639da210cf",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_T4.csv",
+      "sha256": "c512c16ebc049a85675f067556f7f8ca8838d86931058fc2649eab027ed0ae8e",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_T5.csv",
+      "sha256": "2f7148a5c1a03edd26f77cc1cc535378b427432e0a65917963f38137d2bdf64a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_T6.csv",
+      "sha256": "ed7d1bde1250e120c3694b65da6876c4d60f422f1236ed37b938ab0a917a117c",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_T7.csv",
+      "sha256": "40c29dd8929732cb6f70345f470fdc4484dc4dbcceaa8f7b4dc0ee66f72ed984",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_april_2022_Tg3.csv",
+      "sha256": "cbdbc835c2d3f3e0a8cb6be2cc0a9acdc56ad530f10c7b709fa1c0724e30f44b",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021.xlsx",
+      "sha256": "a0a6d33443f11aa06aa4a31961b0844512e62522804500abc33396d71e06a0a6",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_B4, T8.csv",
+      "sha256": "bab63eeeada2e869c0074e3fe286dae9225bf4517951be2b17a0ff1182c96044",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_B5.csv",
+      "sha256": "4f35f09185ff04b4ec3c115db94a166213abca93d8cdd8a10c585e02bb45acfa",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_C2.csv",
+      "sha256": "865369c8a2878796a9d7da1989d2bbc8c9791034e98a61b2d98e8d7cf94f3693",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_C3.csv",
+      "sha256": "374680417e14a9b0a168db6a8737d75ade4cd2ffd8790b6ddc40478c260e2189",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_C4.csv",
+      "sha256": "2014bb73e3d02d0f4af0868eff01f1117f83f9426d7230f7d0b493dbd5619251",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_C5.csv",
+      "sha256": "f28d779320ee665118c43e2313b772ce7e8a3792b505e9e01b75941730008f0e",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_T3.csv",
+      "sha256": "329f7769ccf190a74862842ed4a82f33de7d2ce5d006ba9a873e3031674c2ec6",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_T4.csv",
+      "sha256": "a4015d8314ba6492373db84e75ec4fd4ed90dfaea7f0f33fa7babf933eefe3e7",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_T5.csv",
+      "sha256": "1fdc51e4d55ea645d67b696229714b0169dca39d2cd962cc43853e906f83c694",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_T6.csv",
+      "sha256": "7398563e5bed6de72acfdff20dde5993e8f2ec6cb1c4d0e36f50d3a8d7c81574",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_august_2021_T7.csv",
+      "sha256": "9b36fc79cab5749624ef41b3ba37d8c21ea4de2d0ae2e67fb8633d7763047828",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021.xlsx",
+      "sha256": "e95426ee1d7d007e3bcb08ee2381adaf6cb25ff8b116513e83993060e48c7b1f",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_B5.csv",
+      "sha256": "9f91d4a30fd027592f418d3a948997baac384ff74c8a68255fe0dd06c52c3d67",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_C2.csv",
+      "sha256": "66adb4d339040559945154db3bc2d2e7725d0a39298c16e8958ccd7342fd7114",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_C3.csv",
+      "sha256": "81fb17dccdd26aef69de2e48f1c910bdba5139d4c43871211cdb40db3e3be2b6",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_C4.csv",
+      "sha256": "96d5ebdfbd97251d64b305f32b673453c7318875aab7e918d2bbe490453e5c29",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_C5.csv",
+      "sha256": "ca37b03c0c1c4995376749dbb14f5ffacdb135afb8f2f986de8e1adf314c025a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_T4.csv",
+      "sha256": "c6cc345dca17f1d52b6c7e2ba0b5f24390160479089273b0ada03b539932be03",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_T5.csv",
+      "sha256": "eb4ac1460f1069593f4aaac00426e176afc51bad33f325929df74ac0869a17c7",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_T6.csv",
+      "sha256": "dfb56b03cb13700a4f4ac7bf48cbb30a9f31e3fbe6ea02e81f52f129cf2d6ca3",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_T7.csv",
+      "sha256": "ad55b73504190c73cd458e9f61a2e031b054c292ed0746fd7a8310e0ed33e817",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_december_2021_Tg3.csv",
+      "sha256": "c832999bc01c61ac1d725623c8be2331afd3ce5a3da2d371ca36bd2eed9bb8ad",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022.xlsx",
+      "sha256": "77e72b7490bf5d78767a3eec0de7d31a48ac97ea07ac0b30b16a4bb74515c69c",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_B5.csv",
+      "sha256": "685ae03b5a588db022e4db0e313dead424d2524ab8bfd6e1b2d9535e9f12aec3",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_C2.csv",
+      "sha256": "4e3261d4c024cfd24cec4d742654d9934f5f99eb66da3a357a53accfcf81abda",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_C3.csv",
+      "sha256": "abe0fcf40f03af029efdae2c3d8723bcd3d90035be68a81deaaeed22c53969b8",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_C4.csv",
+      "sha256": "fff16c5f871ebc8cb94da1f1ead1773d3a852c06c09e83733a322568faed4475",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_C5.csv",
+      "sha256": "2723984264e9bda62b8f03fedaaee5dec0b14ef312e35dc2023dbadc9fe84463",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_T4.csv",
+      "sha256": "dd5c2b96425fbf12fc3ff7d62849a3e0b782b2934f33a3ffc9bcfbf4a6a22ea7",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_T5.csv",
+      "sha256": "384e6f30c4f551d97219e6432ee20002373acc5d1c68f3b4ab01e12b0d769f06",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_T6.csv",
+      "sha256": "d104292848943f4f36eb07eee96c6910fefb39d14b63c9d7e58fae5604cf567b",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_T7.csv",
+      "sha256": "d5fdf32b50e11d2bf20a38e7327ca85ae7f40b59c3e3d0c25bfa4e790ee333d9",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_february_2022_Tg3.csv",
+      "sha256": "1a47644c2f9688e6794d50f9690ce0772383924bfd2732854b390a0539f18876",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022.xlsx",
+      "sha256": "a6065a4a685ca9b0d867ae3c3e5aea1fc3194f8ed482434b8ee7eef691a4fe34",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_B5.csv",
+      "sha256": "372576734e9f33a6e4aef482afd0ea3c6162e815334d379e9a0cac385c55abf0",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_C2.csv",
+      "sha256": "f598b34e0ad268774a2735fd0c85e66e008db2a255cc10769c99b2c789ebc73a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_C3.csv",
+      "sha256": "048baec0ba4be4770a78ba0800e0a2d8500946aaef35c9b58fe75e2c73a25b6f",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_C4.csv",
+      "sha256": "c2d204eeaa3f383717f9ba6b5b48a3cab449fd3c8d94c7f5c1d04ceb7a2a2a7a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_C5.csv",
+      "sha256": "b41de04c95758d272a436041afeecfd13070a271125029391cbb4d02882161d4",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_T4.csv",
+      "sha256": "850794319d94caf376321ba36cbd772f77d32b545791d28ed0e26007cd364808",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_T5.csv",
+      "sha256": "52c217f5b7e687ac18c3033ed88580e2172b827a9ef1c339f13e9763e82cccec",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_T6.csv",
+      "sha256": "0922d623d086f8229ed29fce2b3f6c94bcf9727521d386f098f635500921d52c",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_T7.csv",
+      "sha256": "eaa9e9aa68c158a2294bf60776fd8f0d4c4e3751fccb518f18df1af02a638427",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_january_2022_Tg3.csv",
+      "sha256": "a31405723de93ad9be2c938ea56d4f43cad6b831c12b5e633b4ab384ec51f10a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022.xlsx",
+      "sha256": "f3247b0362d893e9b3240a896e7f17bef25058dca516ebecfe474caf162e23a9",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_B5.csv",
+      "sha256": "e3793f4839a53b35c942ef0b60466a06309719d6790c39a9bcce6ad131fcf0e3",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_C2.csv",
+      "sha256": "27061be1e2a280b4c3608c7aa2348ac8ee74dc5a55655a2fde0db2548391d6ea",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_C3.csv",
+      "sha256": "ea7bb64c37f95cdf91fb07a93fa7d198615319e0fc33511eea48b5bc74072b5d",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_C4.csv",
+      "sha256": "32f3c310b910fe2f1c4ab8d761f2da5a6c633733614ff9a538a7bafb116b6a0a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_C5.csv",
+      "sha256": "0295d6f491b6370d56457bf350fc996fb0c570ab4cdb92bbc095f304697de5b3",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_T4.csv",
+      "sha256": "ff2821b7d02863462b316184c6b998a8d6796f630bbda8caea25a587af7151ac",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_T5.csv",
+      "sha256": "67090bd26f4c024f3d207728316e0ff6f88699d9153b8e75eaa8d62232606f6d",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_T6.csv",
+      "sha256": "a82d180c0875ef459fb9c2ed048f06cf0a5235e238ac628fd9f0854b91b2eedf",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_T7.csv",
+      "sha256": "796f98ca206e4f59c2b1b596aae868957ebe7b65206b0995afff81619a607691",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_july_2022_Tg3.csv",
+      "sha256": "7b4447acf06d3bd63ad36c1cffd166429dcbf1a9ece92eff3718eacecaf4975a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021.xlsx",
+      "sha256": "e1ee6440a043b48e5e26aabe3f60fbdbe0bd6355541b7d0ad4acf665fe80659d",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_B5.csv",
+      "sha256": "bb6272afc08e8f22cca4678fccc11c840fba777a02d185de24868a33928dfb7b",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_C2.csv",
+      "sha256": "0ea65792be1a74810415957f8fc12d5a8770fd9391f68eb9f25a8c89e5661648",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_C3.csv",
+      "sha256": "3ebcb67693cffb160acb0a8160bf24536c595208e312e15ccb46e95b0beb463f",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_C4.csv",
+      "sha256": "cb4d7d9cd2a15cae94e29e9257fcabb3a2eb06f8db1edc3d2d4ddfe0be2308da",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_C5.csv",
+      "sha256": "82cd9275cbb59b8fd2b5f1bd69d5a1df7a98f24dfba52cd9b56de2daa5e58883",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_T3.csv",
+      "sha256": "bb4f99617643a1cc7c0211b41ac23bd124a4ac15cfc4a013d1e8047d81d8f84d",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_T4.csv",
+      "sha256": "340f0445329657c65e7513a7d7161d15829287b2176d8179241a1adadfca64cd",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_T5.csv",
+      "sha256": "ff455e7c5231757b5232bae1c446598618c57fdb7294598b3fe9810a25d30c33",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_T6.csv",
+      "sha256": "83de5f149c3ed38732b2361e1cee7ba5a11f7901ea98d9c21ad1504ed48ea945",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Bathymetry_october_2021_T7.csv",
+      "sha256": "f6cdbc58541b9912f1782539cb2875f30a1427c0f4d79bf5c01dfe61cde70781",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "december2021_updated.xlsx",
+      "sha256": "ae0c1272ccfbb45025350ba0cede8972a476dae7149f924c79f0f82120a4f2b5",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "february2022_updated.xlsx",
+      "sha256": "66abdd81bcf02fb1e7d2005296480ae9d61391db5e4143bfbc56c861730dea0b",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "july 2021_updated.xlsx",
+      "sha256": "eaa224225f8e9b5a7aa99d61e5d4f33d1df86cb7416551121f2cb6d1bf22c43b",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "july2022_updated.xlsx",
+      "sha256": "89b5401b7fc5081e4cb776d9cd25e0aa9c052808b864c0d008b32fcf36ffcdb8",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "june2021_updated.xlsx",
+      "sha256": "2e7732cdf666241753ad141cdae2d2cc3189120639a46386503b1bf34b2c0f1a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "october2021_updated.xlsx",
+      "sha256": "f74d3f86eb40aad4963ffa811c64a71a0a8f408b470800e54454136a3adc7729",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "PoleData.xlsx",
+      "sha256": "4979129ee2d50f9c1f9a81090cc526a5d3382305c71437c124a0b2f73d88361a",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "pond_dataset_withNAs.csv",
+      "sha256": "88f835e39f9b12419a11f92873c47bbed568bcd01aec6c4fa5316c3462149f11",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "pond_dataset_withNAs_UTF8.csv",
+      "sha256": "7bbefebea1c71db2d027f2719511c9b586f070b1f7a643a957f6e9cf2e25d995",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Q1_forest_structure.csv",
+      "sha256": "9488d2c1166038240ffbda858a2a9b63248edbe3cda154903a0c4511bd8a4a28",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Q1_GIS_data.csv",
+      "sha256": "8c73072a8ca77def4c44bafc7fe7f2ec18b75bd52e96b48be8eb7a5ce39f1fdf",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Q2_EMR-hydrology_propagules.csv",
+      "sha256": "5f2b3c5d5a21e0b4dbdb2d41c301f4cc4b5264a3128e666784f7610d52d047d5",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Q3_EMR-dams_natural_seedling_establishment_mon.csv",
+      "sha256": "2b29113fed12b5823d0874f7910c551eeb4fef858ec0f87e609db7e3fe38c123",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Q3_EMR-dams_seedling_survival_exp.csv",
+      "sha256": "b5fb8b285e7906f13d20275d9171ec3ee352495c2993434d7c373e7c327ba3e6",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "Q4_EMR-and-planting.csv",
+      "sha256": "079c80efca94d233dc299d16da4599b27f85a757f80ba91dfc27bfcdfd385c6e",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "sea-site_dataset_withNAs.csv",
+      "sha256": "c8c18d89657eae5efe3c41c12156b51c4039ec7a7aa5bedd85d1a38ca040565e",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    },
+    {
+      "source_file": "september2021_updated.xlsx",
+      "sha256": "1ef824bb294c60fa471e8f3652338b33e4be39dc13667751db6ebc8b8527c063",
+      "role": "historical_support",
+      "scenario_location": null,
+      "mapping_status": "NOT_MAPPED_TO_SCENARIO_POINTS"
+    }
+  ],
+  "temporal_policy": "Pertahankan urutan waktu relatif sumber; tanggal skenario bukan tanggal survei.",
+  "spatial_policy": "Lokasi lain tidak dianggap sebagai A/B/C tanpa pemetaan eksplisit.",
+  "unit_note": "Satuan mengikuti pemetaan tabel konversi proyek; satuan parameter tanah/sedimen perlu konfirmasi metadata sumber sebelum penggunaan operasional."
+}

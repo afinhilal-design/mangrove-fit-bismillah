@@ -146,11 +146,13 @@ def classification_metrics(y_true, prob, threshold=0.5) -> dict:
     bal = (tpr + tnr) / 2 if tpr is not None and tnr is not None else None
     prec = tp / (tp + fp) if tp + fp else 0.0
     f1 = 2 * prec * tpr / (prec + tpr) if tpr and prec + tpr else 0.0
-    # Average precision: mean precision at each positive, ranks by descending score.
+    # Average precision at distinct thresholds; tied scores enter together.
     order = np.argsort(-p, kind='mergesort')
     ys = y[order]
     n_pos = int(ys.sum())
-    ap = float((np.cumsum(ys) / np.arange(1, len(ys) + 1))[ys == 1].sum() / n_pos) if n_pos else None
+    ends = np.r_[np.flatnonzero(np.diff(p[order])), len(y) - 1] if len(y) else np.array([], dtype=int)
+    cumulative_tp = np.cumsum(ys)[ends]
+    ap = float(np.sum(np.diff(np.r_[0, cumulative_tp]) * cumulative_tp / (ends + 1)) / n_pos) if n_pos else None
     r = lambda v: None if v is None else round(float(v), 4)
     return {'n': int(len(y)), 'prevalence': r(y.mean()) if len(y) else None, 'balanced_accuracy': r(bal),
             'f1': r(f1), 'pr_auc': r(ap), 'brier': r(((p - y) ** 2).mean()) if len(y) else None,
@@ -202,7 +204,8 @@ def train_candidate(path, target: str, features: list[str], block_col: str, out_
         'train': evaluate(dtrain, parts['train']),
         'validation': evaluate(dval, parts['validation']),
         'test': evaluate(dtest, parts['test']),
-        'cv_leave_one_block_out': leave_one_block_out(frame, target, features, block_col, run_params, best + 1),
+        # Fixed budget, independent of validation/test labels in outer folds.
+        'cv_leave_one_block_out': leave_one_block_out(frame, target, features, block_col, run_params, num_rounds),
     }
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -225,7 +228,7 @@ def train_candidate(path, target: str, features: list[str], block_col: str, out_
             'rows_per_split': {k: int(len(v)) for k, v in parts.items()},
             'split_strategy': 'blok spasial utuh, distratifikasi menurut keberadaan kelas positif per blok',
             'dataset_manifest': json.loads(Path(manifest).read_text(encoding='utf-8')) if manifest else None,
-            'params': run_params, 'best_iteration': best, 'xgboost_version': xgb.__version__,
+            'params': run_params, 'best_iteration': best, 'cv_num_rounds': num_rounds, 'xgboost_version': xgb.__version__,
             'trained_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
         },
         'metrics': metrics,

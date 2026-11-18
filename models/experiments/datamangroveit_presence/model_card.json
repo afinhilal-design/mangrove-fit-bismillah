@@ -1,0 +1,271 @@
+{
+  "status": "PENDING_REVIEW",
+  "synthetic": false,
+  "version": "cand-20261118-bcc114bb",
+  "target": "seedling_presence",
+  "features": [
+    "inundation_duration_h_day",
+    "soil_ph",
+    "redox_mv"
+  ],
+  "sha256": "bcc114bbd732ffd1a1f4f61ebf2a579a43edd5bfe54a4677588769a64ecc808d",
+  "domain": {
+    "inundation_duration_h_day": [
+      0.0,
+      24.0
+    ],
+    "soil_ph": [
+      6.562,
+      8.035
+    ],
+    "redox_mv": [
+      -317.9,
+      -29.5
+    ]
+  },
+  "output_space": "probability",
+  "approved_by": null,
+  "training": {
+    "data_file": "training.csv",
+    "data_sha256": "0d8c813f73f7c5e47ef8487b3ab3f9233b40672b51b0a04666dbcca18b23e102",
+    "rows_used": 109,
+    "rows_dropped_incomplete": 2,
+    "block_column": "blok",
+    "blocks": {
+      "test": [
+        "pond_T05",
+        "pond_T19",
+        "sea_T01",
+        "sea_T02",
+        "sea_T11"
+      ],
+      "validation": [
+        "pond_T08",
+        "sea_T09",
+        "sea_T15",
+        "sea_T21"
+      ],
+      "train": [
+        "pond_T03",
+        "pond_T04",
+        "pond_T07",
+        "pond_T12",
+        "pond_T13",
+        "pond_T16",
+        "pond_T17",
+        "pond_T18",
+        "sea_T06",
+        "sea_T10",
+        "sea_T14",
+        "sea_T20"
+      ]
+    },
+    "rows_per_split": {
+      "test": 25,
+      "validation": 22,
+      "train": 62
+    },
+    "split_strategy": "blok spasial utuh, distratifikasi menurut keberadaan kelas positif per blok",
+    "dataset_manifest": {
+      "dataset_id": "D02",
+      "citation": "van Bijsterveldt, C. E. J., dkk. (2020). How to restore mangroves for greenbelt creation along eroding coasts with abandoned aquaculture ponds. 4TU.ResearchData. https://doi.org/10.4121/uuid:522c81ad-e989-4374-8ac9-10367c6d4b23",
+      "license": "Periksa lisensi di halaman 4TU sebelum distribusi ulang.",
+      "source_files": {
+        "sea_site": {
+          "name": "sea-site_dataset_withNAs.csv",
+          "sha256": "c8c18d89657eae5efe3c41c12156b51c4039ec7a7aa5bedd85d1a38ca040565e",
+          "rows": 56
+        },
+        "pond": {
+          "name": "pond_dataset_withNAs_UTF8.csv",
+          "sha256": "7bbefebea1c71db2d027f2719511c9b586f070b1f7a643a957f6e9cf2e25d995",
+          "rows": 55
+        }
+      },
+      "converted_file": "training.csv",
+      "converted_sha256": "0d8c813f73f7c5e47ef8487b3ab3f9233b40672b51b0a04666dbcca18b23e102",
+      "converted_at": "2026-11-18T16:58:24+00:00",
+      "rows": 111,
+      "rows_per_zone": {
+        "sea": 56,
+        "pond": 55
+      },
+      "blocks": 21,
+      "target": {
+        "column": "seedling_presence",
+        "source_sea": "SeedlingPresence (0/1)",
+        "source_pond": "Seedling density class (absent→0, present/multiple→1)",
+        "positives": 30,
+        "negatives": 81,
+        "definition": "Semai mangrove alami ditemukan (1) atau tidak (0) pada titik pengamatan."
+      },
+      "block_column": "blok",
+      "features": {
+        "inundation_duration_h_day": {
+          "missing": 0,
+          "available": 111
+        },
+        "soil_ph": {
+          "missing": 2,
+          "available": 109
+        },
+        "redox_mv": {
+          "missing": 2,
+          "available": 109
+        },
+        "bed_slope": {
+          "missing": 55,
+          "available": 56
+        },
+        "shear_strength_kpa": {
+          "missing": 7,
+          "available": 104
+        },
+        "water_content_pct": {
+          "missing": 24,
+          "available": 87
+        },
+        "organic_carbon_pct": {
+          "missing": 25,
+          "available": 86
+        },
+        "bulk_density_g_cm3": {
+          "missing": 25,
+          "available": 86
+        },
+        "shelter_width_m": {
+          "missing": 55,
+          "available": 56
+        }
+      },
+      "known_limitations": [
+        "111 titik pengamatan, 21 blok; ukuran kecil.",
+        "Pond tidak memiliki data slope dan shelter width.",
+        "Target biner digabung dari dua definisi berbeda (presence vs density class).",
+        "Semua data berasal dari satu wilayah (Demak, Jawa Tengah).",
+        "Target keberadaan semai alami, bukan probabilitas survival penanaman.",
+        "Satuan redox dan definisi periode genangan perlu konfirmasi metadata sumber.",
+        "Validasi memakai transek; independensi geografis antartransek belum dibuktikan.",
+        "Q4 tidak digunakan: konversi lama memakai sedimen akhir dan groupby.last yang dapat mengisi NA dari bulan sebelumnya.",
+        "Berkas batimetri dan deret waktu tidak digabung tanpa kunci lokasi/waktu yang terverifikasi."
+      ],
+      "selected_features": [
+        "inundation_duration_h_day",
+        "soil_ph",
+        "redox_mv"
+      ]
+    },
+    "params": {
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "max_depth": 3,
+      "eta": 0.08,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "min_child_weight": 2,
+      "lambda": 1.0,
+      "nthread": 2,
+      "seed": 42
+    },
+    "best_iteration": 28,
+    "cv_num_rounds": 100,
+    "xgboost_version": "3.2.0",
+    "trained_at": "2026-11-18T16:58:27+00:00"
+  },
+  "metrics": {
+    "baseline_prevalence": {
+      "validation": {
+        "n": 22,
+        "prevalence": 0.2273,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.2273,
+        "brier": 0.1819,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 17,
+          "fn": 5
+        },
+        "threshold": 0.5
+      },
+      "test": {
+        "n": 25,
+        "prevalence": 0.24,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.24,
+        "brier": 0.1868,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 19,
+          "fn": 6
+        },
+        "threshold": 0.5
+      }
+    },
+    "train": {
+      "n": 62,
+      "prevalence": 0.3065,
+      "balanced_accuracy": 0.7252,
+      "f1": 0.6207,
+      "pr_auc": 0.9123,
+      "brier": 0.1197,
+      "confusion": {
+        "tp": 9,
+        "fp": 1,
+        "tn": 42,
+        "fn": 10
+      },
+      "threshold": 0.5
+    },
+    "validation": {
+      "n": 22,
+      "prevalence": 0.2273,
+      "balanced_accuracy": 0.4706,
+      "f1": 0.0,
+      "pr_auc": 0.3327,
+      "brier": 0.1657,
+      "confusion": {
+        "tp": 0,
+        "fp": 1,
+        "tn": 16,
+        "fn": 5
+      },
+      "threshold": 0.5
+    },
+    "test": {
+      "n": 25,
+      "prevalence": 0.24,
+      "balanced_accuracy": 0.614,
+      "f1": 0.4,
+      "pr_auc": 0.6012,
+      "brier": 0.1552,
+      "confusion": {
+        "tp": 2,
+        "fp": 2,
+        "tn": 17,
+        "fn": 4
+      },
+      "threshold": 0.5
+    },
+    "cv_leave_one_block_out": {
+      "n": 109,
+      "prevalence": 0.2752,
+      "balanced_accuracy": 0.5407,
+      "f1": 0.2857,
+      "pr_auc": 0.4655,
+      "brier": 0.1867,
+      "confusion": {
+        "tp": 7,
+        "fp": 12,
+        "tn": 67,
+        "fn": 23
+      },
+      "threshold": 0.5,
+      "baseline_pr_auc": 0.2752,
+      "blocks_skipped": []
+    }
+  }
+}

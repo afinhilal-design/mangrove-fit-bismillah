@@ -1,0 +1,9 @@
+{
+  "method": "XGBoost exact TreeSHAP pred_contribs",
+  "space": "log_odds",
+  "additivity_ok": true,
+  "max_additivity_error": 5.960464477539063e-08,
+  "model_sha256": "c7e0045b8d0fe01c1ab21b998c31bf549fc5eab3b20d845f8bc8f696c2ec718b",
+  "test_rows": 100,
+  "interpretation": "Kontribusi terhadap prediksi model; bukan sebab-akibat atau keberhasilan rehabilitasi."
+}

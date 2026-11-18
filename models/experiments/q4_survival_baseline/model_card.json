@@ -1,0 +1,202 @@
+{
+  "status": "PENDING_REVIEW",
+  "synthetic": false,
+  "version": "cand-20261118-c7e0045b",
+  "target": "seedling_survival_16_month",
+  "features": [
+    "sediment_level_cm"
+  ],
+  "sha256": "c7e0045b8d0fe01c1ab21b998c31bf549fc5eab3b20d845f8bc8f696c2ec718b",
+  "domain": {
+    "sediment_level_cm": [
+      50.0,
+      101.0
+    ]
+  },
+  "output_space": "probability",
+  "approved_by": null,
+  "training": {
+    "data_file": "training.csv",
+    "data_sha256": "e3c5caf33fcb3b0c142b4b4ba610a6b83ce3fae4d2dcdb14d8fad40cd4a5d1d2",
+    "rows_used": 397,
+    "rows_dropped_incomplete": 0,
+    "block_column": "blok",
+    "blocks": {
+      "test": [
+        "B09",
+        "B11",
+        "B14",
+        "B16",
+        "B19"
+      ],
+      "validation": [
+        "B04",
+        "B07",
+        "B12",
+        "B20"
+      ],
+      "train": [
+        "B01",
+        "B02",
+        "B03",
+        "B05",
+        "B06",
+        "B08",
+        "B10",
+        "B13",
+        "B15",
+        "B17",
+        "B18"
+      ]
+    },
+    "rows_per_split": {
+      "test": 100,
+      "validation": 79,
+      "train": 218
+    },
+    "split_strategy": "blok spasial utuh, distratifikasi menurut keberadaan kelas positif per blok",
+    "dataset_manifest": {
+      "source_file": "Q4_EMR-and-planting.csv",
+      "source_sha256": "079c80efca94d233dc299d16da4599b27f85a757f80ba91dfc27bfcdfd385c6e",
+      "source_rows": 2800,
+      "source_unique_ids": 399,
+      "ambiguous_ids_excluded": [
+        "J4"
+      ],
+      "rows_with_ambiguous_ids": 14,
+      "ids_without_baseline": [],
+      "baseline_not_alive_or_missing_excluded": [
+        "P0"
+      ],
+      "cohort_rows": 397,
+      "blocks": 20,
+      "missing_baseline_sediment": 0,
+      "missing_outcome": 0,
+      "converted_sha256": "e3c5caf33fcb3b0c142b4b4ba610a6b83ce3fae4d2dcdb14d8fad40cd4a5d1d2",
+      "target": "Survival biner pada bulan 16, hanya bibit hidup pada bulan 0.",
+      "features": {
+        "sediment_level_cm": "sediment_raw bulan 0; label satuan mengikuti konverter proyek, belum diverifikasi metadata eksternal"
+      },
+      "scenario": "Data historis diasumsikan mewakili kondisi saat ini untuk esai; bukan survei terbaru.",
+      "known_limitations": [
+        "Hanya satu fitur sedimen awal; spesies dan ukuran bibit belum menjadi fitur model.",
+        "Bulan relatif asli dipertahankan; tanggal kalender baru tidak dibuat.",
+        "Tidak menggunakan sedimen, growth, atau length setelah bulan 0 sebagai prediktor.",
+        "Blok percobaan dipisahkan utuh; generalisasi geografis belum dibuktikan.",
+        "Hasil eksperimen historis bukan validasi kondisi saat ini atau rekomendasi operasional."
+      ]
+    },
+    "params": {
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "max_depth": 3,
+      "eta": 0.08,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "min_child_weight": 2,
+      "lambda": 1.0,
+      "nthread": 2,
+      "seed": 42
+    },
+    "best_iteration": 4,
+    "cv_num_rounds": 100,
+    "xgboost_version": "3.2.0",
+    "trained_at": "2026-11-18T17:34:02+00:00"
+  },
+  "metrics": {
+    "baseline_prevalence": {
+      "validation": {
+        "n": 79,
+        "prevalence": 0.2911,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.2911,
+        "brier": 0.207,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 56,
+          "fn": 23
+        },
+        "threshold": 0.5
+      },
+      "test": {
+        "n": 100,
+        "prevalence": 0.37,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.37,
+        "brier": 0.236,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 63,
+          "fn": 37
+        },
+        "threshold": 0.5
+      }
+    },
+    "train": {
+      "n": 218,
+      "prevalence": 0.3165,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.5564,
+      "brier": 0.1943,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 149,
+        "fn": 69
+      },
+      "threshold": 0.5
+    },
+    "validation": {
+      "n": 79,
+      "prevalence": 0.2911,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.3305,
+      "brier": 0.2063,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 56,
+        "fn": 23
+      },
+      "threshold": 0.5
+    },
+    "test": {
+      "n": 100,
+      "prevalence": 0.37,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.3394,
+      "brier": 0.2497,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 63,
+        "fn": 37
+      },
+      "threshold": 0.5
+    },
+    "cv_leave_one_block_out": {
+      "n": 397,
+      "prevalence": 0.3249,
+      "balanced_accuracy": 0.4914,
+      "f1": 0.0671,
+      "pr_auc": 0.3541,
+      "brier": 0.238,
+      "confusion": {
+        "tp": 5,
+        "fp": 15,
+        "tn": 253,
+        "fn": 124
+      },
+      "threshold": 0.5,
+      "baseline_pr_auc": 0.3249,
+      "blocks_skipped": []
+    }
+  }
+}

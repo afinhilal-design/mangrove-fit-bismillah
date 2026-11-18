@@ -1,0 +1,12 @@
+{
+  "source_files": [
+    {
+      "file": "Q2_EMR-hydrology_propagules.csv",
+      "sha256": "5f2b3c5d5a21e0b4dbdb2d41c301f4cc4b5264a3128e666784f7610d52d047d5"
+    }
+  ],
+  "audit": "../audit/source_audit.json",
+  "preparation": "../preparation.json",
+  "scenario_data_used_in_training": false,
+  "historical_dates_and_locations_preserved": true
+}

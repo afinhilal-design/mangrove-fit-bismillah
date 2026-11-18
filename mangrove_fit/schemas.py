@@ -22,6 +22,14 @@ PARAMETERS = {
     'natural_recruitment': {'label': 'Regenerasi alami', 'unit': 'kategori', 'choices': ['ada','tidak','tidak_diketahui']},
     'propagule_supply': {'label': 'Pasokan propagul', 'unit': 'kategori', 'choices': ['cukup','terbatas','tidak_diketahui']},
     'accessibility': {'label': 'Akses lokasi', 'unit': 'kategori', 'choices': ['mudah','sedang','sulit','tidak_diketahui']},
+    # Parameter tanah & sedimen tambahan (v0.3, 18 Nov 2026) — dataset D02 combined & D03 Q4.
+    'shear_strength_kpa': {'label': 'Kuat geser tanah', 'unit': 'kPa', 'range': (0, None)},
+    'water_content_pct': {'label': 'Kadar air tanah', 'unit': '%', 'range': (0, 100)},
+    'organic_carbon_pct': {'label': 'Karbon organik tanah', 'unit': '%', 'range': (0, 100)},
+    'bulk_density_g_cm3': {'label': 'Densitas curah tanah', 'unit': 'g/cm³', 'range': (0, None)},
+    'shelter_width_m': {'label': 'Lebar perlindungan', 'unit': 'm', 'range': (0, None)},
+    'sediment_level_cm': {'label': 'Tinggi sedimen', 'unit': 'cm', 'range': (0, None)},
+    'sediment_change_cm': {'label': 'Perubahan sedimen', 'unit': 'cm', 'range': (None, None)},
 }
 LANDCOVERS = ['coastal_mudflat','degraded_coastal','mangrove','sandy_beach','coral_reef','seagrass','open_water','built_area','tidak_diketahui']
 LEGAL = ['terverifikasi','perlu_verifikasi','dilarang','tidak_diketahui']

@@ -43,6 +43,30 @@ def test_metrics_known_values():
     assert classification_metrics([1, 0], [1.0, 0.0])['balanced_accuracy'] == 1.0
 
 
+def test_average_precision_ties_are_order_independent():
+    assert classification_metrics([1, 1, 0, 0], [0.5] * 4)['pr_auc'] == 0.5
+    assert classification_metrics([0, 0, 1, 1], [0.5] * 4)['pr_auc'] == 0.5
+    assert classification_metrics([], [])['pr_auc'] is None
+
+
+def test_candidate_shap_export(tmp_path, xgb):
+    from mangrove_fit.training_report import export_candidate_report
+    candidate = tmp_path / 'report'
+    candidate.mkdir()
+    source = _make_csv(candidate / 'training.csv')
+    card = train_candidate(source, 'label', FEATURES, 'blok', candidate, num_rounds=20)
+    report = export_candidate_report(candidate)
+    assert report['additivity_ok']
+    rows = pd.read_csv(candidate / 'predictions_shap.csv')
+    assert len(rows) == card['training']['rows_used']
+    assert set(rows.loc[rows['split'] == 'test', 'blok']) == set(card['training']['blocks']['test'])
+    assert np.allclose(rows['bias_log_odds'] + rows[['shap_' + f for f in FEATURES]].sum(axis=1),
+                       rows['margin_log_odds'], atol=1e-5)
+    source.write_text('changed')
+    with pytest.raises(TrainingError, match='Checksum'):
+        export_candidate_report(candidate)
+
+
 def test_block_split_is_disjoint_and_complete(tmp_path):
     frame, _ = load_training_table(_make_csv(tmp_path / 'd.csv'), 'label', FEATURES, 'blok')
     split = spatial_block_split(frame, 'blok')

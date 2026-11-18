@@ -1,0 +1,47 @@
+{
+  "dataset_id": "D03",
+  "citation": "van Bijsterveldt, C. E. J., dkk. (2022). To Plant or Not to Plant: experimental data on mangrove restoration. 4TU.ResearchData. https://doi.org/10.4121/17927198",
+  "license": "Periksa lisensi di halaman 4TU sebelum distribusi ulang.",
+  "source_file": "Q4_EMR-and-planting.csv",
+  "source_sha256": "079c80efca94d233dc299d16da4599b27f85a757f80ba91dfc27bfcdfd385c6e",
+  "source_rows": 2800,
+  "converted_file": "D03_q4_planting_survival.csv",
+  "converted_sha256": "6b952b1e9dfb22e7da1c7a6a33e33fe0297e1be1f2fb797960b54d86610f0d5b",
+  "converted_at": "2026-11-18T16:33:08+00:00",
+  "rows": 399,
+  "unique_seedlings": 399,
+  "blocks": 20,
+  "aggregation": "Observasi terakhir per bibit (ID); bulan terakhir bervariasi per bibit.",
+  "target": {
+    "column": "seedling_survival",
+    "source": "survival (0/1) pada observasi terakhir per bibit",
+    "positives": 129,
+    "negatives": 270,
+    "definition": "Bibit mangrove yang ditanam masih hidup (1) atau mati (0) pada pengamatan terakhir."
+  },
+  "block_column": "blok",
+  "species_distribution": {
+    "R.mucronata": 100,
+    "R.apiculata": 100,
+    "A.alba": 100,
+    "A. marina": 99
+  },
+  "features": {
+    "sediment_level_cm": {
+      "source": "sediment_raw",
+      "missing": 0,
+      "available": 399
+    },
+    "sediment_change_cm": {
+      "source": "sediment_rel",
+      "missing": 0,
+      "available": 399
+    }
+  },
+  "known_limitations": [
+    "Hanya 2 fitur lingkungan kontinu (sediment); tidak ada pH, salinitas, inundasi.",
+    "Variabel spesies kategorik tidak masuk fitur model (hanya numerik).",
+    "Data berasal dari satu eksperimen di satu wilayah (Demak, Jawa Tengah).",
+    "Observasi terakhir per bibit: bulan pengamatan bervariasi (tidak semua diikuti sampai bulan 16)."
+  ]
+}

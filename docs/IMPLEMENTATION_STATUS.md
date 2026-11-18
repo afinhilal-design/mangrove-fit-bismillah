@@ -1,10 +1,80 @@
 # Status Implementasi — MANGROVE-FIT
 
-> **Diperbarui:** 16 November 2026  
+> **Diperbarui:** 19 November 2026 (WIB)  
 > **Versi:** MVP 0.1  
 > **Lingkungan uji:** Windows 11, Python 3.11.9, Streamlit 1.50.0
 
 ---
+
+## Integrasi skenario Demak A–C — 19 November 2026
+
+**SELESAI — Perbandingan skenario:** kartu skor historis untuk A–C, tabel ringkas dan kualitas “Data historis · skenario”, detail alasan screening terpisah, grafik hanya menawarkan parameter tersedia, serta unduhan skor berwatermark. Tidak ada parameter random, kelas habitat atau status legal buatan. 15 tes skenario/UI lulus.
+
+**SELESAI — Skor dan SHAP riset per titik:** Analisis lokasi menampilkan prediksi `presence_expanded` untuk baris historis `sea_1_1`, `sea_14_2`, dan `pond_12_1` yang sesuai dengan A–C. Tidak menggunakan model survival Q4 atau mengganti status operasional. Label tampilan kualitas menjadi “Data historis · skenario”, metode pengolahan spesifik per kolom sumber, angka dibulatkan empat desimal tanpa mengubah data. Nilai tidak tersedia tetap null. **93 tes lulus**, termasuk kecocokan ID historis, validasi zona, skor, SHAP, dan metadata ekspor.
+
+**SELESAI — Pemetaan seluruh nilai sumber tersedia:** A 9 parameter, B 6, C 7. Parameter yang kosong pada sumber tetap null; tampilan mengutamakan nilai tersedia dan menyediakan daftar kekurangan terpisah. Satuan mengikuti pemetaan proyek dengan catatan perlu konfirmasi metadata. 14 tes skenario dan UI lulus untuk pembaruan ini.
+
+| Komponen | Status | Bukti / Catatan |
+|---|---|---|
+| Ruang kerja Skenario Demak A–C | **SELESAI** | Pilihan bawaan sesi baru; overlay baca-saja, terpisah dari Demo sintetis dan Analis lokal |
+| Peta, Analisis lokasi, Perbandingan | **SELESAI** | Membaca tiga titik dari konfigurasi skenario dan memvalidasi checksum, koordinat, nilai sumber serta skema/geometri |
+| Provenance dan ekspor | **SELESAI** | Tanggal 19 November sebagai tanggal skenario; tanggal survei asli tetap null; watermark dan metadata tersertakan dalam ekspor |
+| Isolasi data | **SELESAI** | Tidak ada penambahan zona ke SQLite; tidak ada formulir simpan/edit pada skenario; nilai inti yang tidak tersedia tetap null |
+
+Panduan penggunaan dan verifikasi: [SCENARIO_UI_GUIDE.md](SCENARIO_UI_GUIDE.md).
+
+## Integrasi aplikasi riset — 19 November 2026
+
+| Komponen | Status | Bukti / Catatan |
+|---|---|---|
+| Menu XGBoost & SHAP · Riset | **SELESAI** | Empat model, metrik validasi, baseline dan SHAP global terhubung ke artefak lokal |
+| Demonstrasi prediksi & SHAP lokal | **SELESAI** | Pilih observasi historis atau isi simulasi manual; skor, kontribusi, uji aditivitas dan unduhan JSON berwatermark |
+| Validasi integrasi | **SELESAI** | Checksum model/data, skema encoder, kategori dan domain input; 88 tes lulus termasuk Streamlit AppTest |
+| Model operasional zona | **PARSIAL** | Tetap NO_MODEL_AVAILABLE sampai persetujuan; mode riset tidak mengubah DB atau melewati screening |
+
+Panduan: [RESEARCH_UI_GUIDE.md](RESEARCH_UI_GUIDE.md).
+
+## Pembaruan audit seluruh data dan eksperimen diperluas — 19 November 2026
+
+Bagian ini menggantikan status eksperimen terbatas sebelumnya, tanpa mengubah hasil historisnya.
+
+| Komponen | Status | Bukti / Catatan |
+|---|---|---|
+| Audit semua sumber | **SELESAI** | 97 berkas, 178 tabel/sheet; checksum, duplikasi, missing values, masalah koordinat dan peran setiap sumber tercatat |
+| Pemanfaatan seluruh sumber untuk training langsung | **PARSIAL** | 5 berkas masuk 4 tugas berlabel; sisanya untuk konteks/audit atau menunggu pemetaan/definisi target, tidak digabung paksa |
+| XGBoost riset diperluas | **SELESAI** | Fitur numerik/kategori, NaN native, nested GroupKFold; Q4 BA 0,6364 pada threshold 0,5 dibanding 0,4914 model satu fitur pada fold sama |
+| Validasi koordinat keberadaan semai | **SELESAI** | Transek yang berbagi koordinat menjadi 4 komponen; BA 0,4883, model masih lemah |
+| SHAP out-of-fold | **SELESAI** | Kontribusi pada test setiap outer fold, agregasi kategori ke fitur asal, aditivitas teruji |
+| Aktivasi aplikasi | **PARSIAL** | Empat model `RESEARCH_ONLY`, belum tervalidasi eksternal; aplikasi tetap `NO_MODEL_AVAILABLE` |
+| Tes | **SELESAI** | 82 passed |
+
+Rincian: [TRAINING_ALL_DATA.md](TRAINING_ALL_DATA.md). Artefak: `models/experiments/all_data_v2/`.
+
+## Pembaruan training survival Q4 — 19 November 2026
+
+| Komponen | Status | Bukti / Catatan |
+|---|---|---|
+| Kohort survival bulan 0 ke 16 | **SELESAI** | 397 bibit/20 blok; ID ambigu J4 dan bibit sudah mati P0 dikeluarkan; tanpa imputasi |
+| Training XGBoost dan SHAP Q4 | **SELESAI** | Satu fitur sedimen awal; artefak `models/experiments/q4_survival_baseline/`; aditivitas SHAP lulus |
+| Kelayakan model Q4 | **TERHAMBAT** | Test BA 0,5; CV BA 0,4914; tidak melampaui baseline; kandidat tidak diaktifkan |
+| Pengujian | **SELESAI** | 76 passed, mencakup fitur baseline, horizon tetap, ID ambigu, NA dan label |
+
+Rincian: [TRAINING_Q4_SURVIVAL.md](TRAINING_Q4_SURVIVAL.md). Data historis dipertahankan; asumsi kondisi saat ini hanya skenario esai. Pembaruan ini menggantikan status Q4 BELUM MULAI dalam catatan sebelumnya di bawah.
+
+## Pembaruan training datamangroveit — 19 November 2026
+
+Bagian ini memperbarui catatan historis di bawah mengenai ketersediaan data/model.
+
+| Komponen | Status | Bukti / Catatan |
+|---|---|---|
+| Training XGBoost data nyata | **SELESAI** | Kandidat `cand-20261118-bcc114bb`, target keberadaan semai alami; 109 observasi lengkap dari sea-site + tambak, 21 transek. Artefak di `models/experiments/datamangroveit_presence/` |
+| Evaluasi kandidat | **SELESAI** | Test BA 0,6140, F1 0,4000, AP 0,6012; leave-one-transect-out BA 0,5407. AP diperbaiki untuk skor seri; CV memakai 100 rounds tetap |
+| Ekspor SHAP kandidat | **SELESAI** | Exact TreeSHAP native XGBoost, CSV per observasi dan importance test; aditivitas lulus, galat maksimum 2,3842e-7 |
+| Kelayakan operasional | **PARSIAL** | `PENDING_REVIEW`; validation BA 0,4706 dan CV lemah. Belum ada peninjauan ahli/kalibrasi. Status aplikasi terverifikasi `NO_MODEL_AVAILABLE` |
+| Training survival Q4 | **BELUM MULAI** | Memerlukan fitur awal, horizon target konsisten, dan koreksi agregasi NA; tidak digabung dengan target keberadaan semai |
+| Pengujian kode | **SELESAI** | `python -m pytest tests -q`: 73 passed; mencakup AP dengan ties, ekspor SHAP, checksum, dan gerbang model |
+
+Rincian data, keterbatasan, metrik dan reproduksi: [TRAINING_DATAMANGROVEIT.md](TRAINING_DATAMANGROVEIT.md).
 
 ## Legenda Status
 

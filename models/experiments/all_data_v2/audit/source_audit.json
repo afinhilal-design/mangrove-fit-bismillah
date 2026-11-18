@@ -1,0 +1,6002 @@
+[
+  {
+    "file": "april2022_updated.xlsx",
+    "sha256": "83505b2d4b9079305e22b2840c5285b4c81e43f3ae08231fb7557f89c4c5d761",
+    "tables": {
+      "Sheet1": {
+        "rows": 44246,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 10907,
+          "water_level": 1494
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -1.03,
+            "max": 1654.97
+          }
+        },
+        "invalid_timestamps": 10907,
+        "time_min": "2022-03-29 02:31:00",
+        "time_max": "2022-05-01 07:00:00",
+        "duplicate_timestamps": 10907
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "august2021_updated.xlsx",
+    "sha256": "98bdf19ffdffa42792d984e1f982470a71292ef309c8a8b7049d4cf7ae4cce75",
+    "tables": {
+      "Sheet1": {
+        "rows": 44363,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 10979,
+          "water_level": 1560
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -1.03,
+            "max": 2572.97
+          }
+        },
+        "invalid_timestamps": 10979,
+        "time_min": "2021-08-29 07:00:00",
+        "time_max": "2021-09-28 07:00:00",
+        "duplicate_timestamps": 10978
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "Bathymetry_april_2022.xlsx",
+    "sha256": "075f11e2ed677b2ba5a18aeb76e20cb6ce802d045f2077f18dea6f339b33d340",
+    "tables": {
+      "C2": {
+        "rows": 76,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 75,
+          "cordinates": 74,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.02,
+            "max": 17.07
+          },
+          "water level height(m)": {
+            "min": 0.34,
+            "max": 2.12
+          }
+        }
+      },
+      "Tg3": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.12,
+            "max": 12.59
+          },
+          "water level height(m)": {
+            "min": 0.43,
+            "max": 1.8
+          }
+        }
+      },
+      "T4": {
+        "rows": 16,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 15,
+          "cordinates": 14,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.56,
+            "max": 14.12
+          },
+          "water level height(m)": {
+            "min": 0.21,
+            "max": 1.35
+          }
+        }
+      },
+      "T5": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 8.15,
+            "max": 13.29
+          },
+          "water level height(m)": {
+            "min": 0.2,
+            "max": 1.76
+          }
+        }
+      },
+      "T6": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 8.01,
+            "max": 13.42
+          },
+          "water level height(m)": {
+            "min": 0.12,
+            "max": 1.81
+          }
+        }
+      },
+      "T7": {
+        "rows": 26,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 25,
+          "cordinates": 24,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 8.07,
+            "max": 10.04
+          },
+          "water level height(m)": {
+            "min": 0.07,
+            "max": 1.8
+          }
+        }
+      },
+      "C3": {
+        "rows": 76,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 75,
+          "cordinates": 74,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.27,
+            "max": 8.41
+          },
+          "water level height(m)": {
+            "min": 0.1,
+            "max": 4.04
+          }
+        }
+      },
+      "C4": {
+        "rows": 51,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 50,
+          "cordinates": 49,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.37,
+            "max": 15.53
+          },
+          "water level height(m)": {
+            "min": 0.03,
+            "max": 1.56
+          }
+        }
+      },
+      "C5": {
+        "rows": 55,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 54,
+          "cordinates": 53,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.26,
+            "max": 15.17
+          },
+          "water level height(m)": {
+            "min": 0.12,
+            "max": 1.61
+          }
+        }
+      },
+      "B5": {
+        "rows": 40,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 39,
+          "cordinates": 38,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.31,
+            "max": 14.53
+          },
+          "water level height(m)": {
+            "min": 0.08,
+            "max": 1.58
+          }
+        }
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "Bathymetry_april_2022_B5.csv",
+    "sha256": "ac780b5138ace8884ac542d0b5b07adfc72a5e2d18dc81b0bd18e3f71b0e263c",
+    "tables": {
+      "csv": {
+        "rows": 35,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8827805556,
+            "max": -6.8809361111
+          },
+          "LON": {
+            "min": 110.5064916667,
+            "max": 110.5094305556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_C2.csv",
+    "sha256": "374cb03254b91a87a086d896986c5940e5a05e2a245e2174b6f1f1e33a63a0e1",
+    "tables": {
+      "csv": {
+        "rows": 53,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8883833333,
+            "max": -6.8858666667
+          },
+          "LON": {
+            "min": 110.5051666667,
+            "max": 110.5091555556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_C3.csv",
+    "sha256": "209c1fd6f659f0978ad78ea58a5281eba33983d3ab093cc89d70bab6157512e5",
+    "tables": {
+      "csv": {
+        "rows": 64,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8999833333,
+            "max": -6.8667027778
+          },
+          "LON": {
+            "min": 110.5048805556,
+            "max": 110.5107388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_C4.csv",
+    "sha256": "08d77badfbc454d26b6fab4c173542a6376e7e30a259c57c0e0d759a2d4afb2d",
+    "tables": {
+      "csv": {
+        "rows": 51,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8849277778,
+            "max": -6.8823916667
+          },
+          "LON": {
+            "min": 110.5050833333,
+            "max": 110.5093861111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_C5.csv",
+    "sha256": "01640e7e81df5de4b81bf1ad1e0c7f0751ad3bf5c199e123ff6ecb639da210cf",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8843111111,
+            "max": -6.8817611111
+          },
+          "LON": {
+            "min": 110.5051083333,
+            "max": 110.5092666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_T4.csv",
+    "sha256": "c512c16ebc049a85675f067556f7f8ca8838d86931058fc2649eab027ed0ae8e",
+    "tables": {
+      "csv": {
+        "rows": 12,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8861027778,
+            "max": -6.8855833333
+          },
+          "LON": {
+            "min": 110.50615,
+            "max": 110.5069916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_T5.csv",
+    "sha256": "2f7148a5c1a03edd26f77cc1cc535378b427432e0a65917963f38137d2bdf64a",
+    "tables": {
+      "csv": {
+        "rows": 34,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 1,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8856388889,
+            "max": -6.8666888889
+          },
+          "LON": {
+            "min": 110.5041111111,
+            "max": 110.5070666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [
+      24
+    ],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_T6.csv",
+    "sha256": "ed7d1bde1250e120c3694b65da6876c4d60f422f1236ed37b938ab0a917a117c",
+    "tables": {
+      "csv": {
+        "rows": 32,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8999555556,
+            "max": -6.88335
+          },
+          "LON": {
+            "min": 110.50425,
+            "max": 110.5072916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_T7.csv",
+    "sha256": "40c29dd8929732cb6f70345f470fdc4484dc4dbcceaa8f7b4dc0ee66f72ed984",
+    "tables": {
+      "csv": {
+        "rows": 0,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {}
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_april_2022_Tg3.csv",
+    "sha256": "cbdbc835c2d3f3e0a8cb6be2cc0a9acdc56ad530f10c7b709fa1c0724e30f44b",
+    "tables": {
+      "csv": {
+        "rows": 27,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8855472222,
+            "max": -6.8842833333
+          },
+          "LON": {
+            "min": 110.5033611111,
+            "max": 110.5054027778
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021.xlsx",
+    "sha256": "a0a6d33443f11aa06aa4a31961b0844512e62522804500abc33396d71e06a0a6",
+    "tables": {
+      "C2": {
+        "rows": 75,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 74,
+          "cordinates": 73,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.35,
+            "max": 14.03
+          },
+          "water level height(m)": {
+            "min": 0.41,
+            "max": 1.69
+          }
+        }
+      },
+      "T3": {
+        "rows": 42,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 41,
+          "cordinates": 40,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.39,
+            "max": 8.39
+          },
+          "water level height(m)": {
+            "min": 0.6,
+            "max": 1.81
+          }
+        }
+      },
+      "T4": {
+        "rows": 11,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 10,
+          "cordinates": 9,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.24,
+            "max": 9.37
+          },
+          "water level height(m)": {
+            "min": 0.8,
+            "max": 1.01
+          }
+        }
+      },
+      "T5": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.56,
+            "max": 9.02
+          },
+          "water level height(m)": {
+            "min": 0.6,
+            "max": 1.84
+          }
+        }
+      },
+      "T6": {
+        "rows": 38,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 37,
+          "cordinates": 36,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.41,
+            "max": 7.4
+          },
+          "water level height(m)": {
+            "min": 0.65,
+            "max": 1.82
+          }
+        }
+      },
+      "T7": {
+        "rows": 27,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 26,
+          "cordinates": 25,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.21,
+            "max": 14.4
+          },
+          "water level height(m)": {
+            "min": 0.21,
+            "max": 1.31
+          }
+        }
+      },
+      "C3": {
+        "rows": 76,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 75,
+          "cordinates": 74,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.5,
+            "max": 14.0
+          },
+          "water level height(m)": {
+            "min": 0.06,
+            "max": 3.05
+          }
+        }
+      },
+      "C4": {
+        "rows": 51,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 50,
+          "cordinates": 49,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.38,
+            "max": 9.06
+          },
+          "water level height(m)": {
+            "min": 0.14,
+            "max": 1.48
+          }
+        }
+      },
+      "C5": {
+        "rows": 55,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 54,
+          "cordinates": 53,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.56,
+            "max": 14.17
+          },
+          "water level height(m)": {
+            "min": 0.23,
+            "max": 1.91
+          }
+        }
+      },
+      "B4, T8": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.4,
+            "max": 11.57
+          },
+          "water level height(m)": {
+            "min": 0.1,
+            "max": 1.61
+          }
+        }
+      },
+      "B5": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 8.44,
+            "max": 10.29
+          },
+          "water level height(m)": {
+            "min": 0.23,
+            "max": 1.49
+          }
+        }
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "Bathymetry_august_2021_B4, T8.csv",
+    "sha256": "bab63eeeada2e869c0074e3fe286dae9225bf4517951be2b17a0ff1182c96044",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8836361111,
+            "max": -6.8811722222
+          },
+          "LON": {
+            "min": 110.5057666667,
+            "max": 110.5090361111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_B5.csv",
+    "sha256": "4f35f09185ff04b4ec3c115db94a166213abca93d8cdd8a10c585e02bb45acfa",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8827805556,
+            "max": -6.8804527778
+          },
+          "LON": {
+            "min": 110.5062527778,
+            "max": 110.5092388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_C2.csv",
+    "sha256": "865369c8a2878796a9d7da1989d2bbc8c9791034e98a61b2d98e8d7cf94f3693",
+    "tables": {
+      "csv": {
+        "rows": 75,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8883833333,
+            "max": -6.8851361111
+          },
+          "LON": {
+            "min": 110.5032944444,
+            "max": 110.5091333333
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_C3.csv",
+    "sha256": "374680417e14a9b0a168db6a8737d75ade4cd2ffd8790b6ddc40478c260e2189",
+    "tables": {
+      "csv": {
+        "rows": 76,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.89995,
+            "max": -6.8833305556
+          },
+          "LON": {
+            "min": 110.5049444444,
+            "max": 110.5107388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_C4.csv",
+    "sha256": "2014bb73e3d02d0f4af0868eff01f1117f83f9426d7230f7d0b493dbd5619251",
+    "tables": {
+      "csv": {
+        "rows": 51,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8849277778,
+            "max": -6.8825888889
+          },
+          "LON": {
+            "min": 110.5051166667,
+            "max": 110.5093861111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_C5.csv",
+    "sha256": "f28d779320ee665118c43e2313b772ce7e8a3792b505e9e01b75941730008f0e",
+    "tables": {
+      "csv": {
+        "rows": 55,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8843111111,
+            "max": -6.8822222222
+          },
+          "LON": {
+            "min": 110.5048611111,
+            "max": 110.5092666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_T3.csv",
+    "sha256": "329f7769ccf190a74862842ed4a82f33de7d2ce5d006ba9a873e3031674c2ec6",
+    "tables": {
+      "csv": {
+        "rows": 42,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8863861111,
+            "max": -6.8838916667
+          },
+          "LON": {
+            "min": 110.5038472222,
+            "max": 110.506575
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_T4.csv",
+    "sha256": "a4015d8314ba6492373db84e75ec4fd4ed90dfaea7f0f33fa7babf933eefe3e7",
+    "tables": {
+      "csv": {
+        "rows": 11,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8863861111,
+            "max": -6.8858277778
+          },
+          "LON": {
+            "min": 110.5058611111,
+            "max": 110.506575
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_T5.csv",
+    "sha256": "1fdc51e4d55ea645d67b696229714b0169dca39d2cd962cc43853e906f83c694",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8856388889,
+            "max": -6.8836388889
+          },
+          "LON": {
+            "min": 110.5038416667,
+            "max": 110.5070666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_T6.csv",
+    "sha256": "7398563e5bed6de72acfdff20dde5993e8f2ec6cb1c4d0e36f50d3a8d7c81574",
+    "tables": {
+      "csv": {
+        "rows": 38,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8853888889,
+            "max": -6.8835666667
+          },
+          "LON": {
+            "min": 110.5039416667,
+            "max": 110.5072916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_august_2021_T7.csv",
+    "sha256": "9b36fc79cab5749624ef41b3ba37d8c21ea4de2d0ae2e67fb8633d7763047828",
+    "tables": {
+      "csv": {
+        "rows": 26,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8853444444,
+            "max": -6.8839694444
+          },
+          "LON": {
+            "min": 110.5064222222,
+            "max": 110.5080916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021.xlsx",
+    "sha256": "e95426ee1d7d007e3bcb08ee2381adaf6cb25ff8b116513e83993060e48c7b1f",
+    "tables": {
+      "C2": {
+        "rows": 74,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 73,
+          "cordinates": 72,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.17,
+            "max": 13.38
+          },
+          "water level height(m)": {
+            "min": 0.21,
+            "max": 1.75
+          }
+        }
+      },
+      "Tg3": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 8.25,
+            "max": 13.28
+          },
+          "water level height(m)": {
+            "min": 0.02,
+            "max": 2.0
+          }
+        }
+      },
+      "T4": {
+        "rows": 13,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 12,
+          "cordinates": 11,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.21,
+            "max": 13.49
+          },
+          "water level height(m)": {
+            "min": 0.64,
+            "max": 1.38
+          }
+        }
+      },
+      "T5": {
+        "rows": 20,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 19,
+          "cordinates": 18,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.23,
+            "max": 14.0
+          },
+          "water level height(m)": {
+            "min": 0.16,
+            "max": 1.18
+          }
+        }
+      },
+      "T6": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.17,
+            "max": 14.2
+          },
+          "water level height(m)": {
+            "min": 0.01,
+            "max": 1.35
+          }
+        }
+      },
+      "T7": {
+        "rows": 27,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 26,
+          "cordinates": 25,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.04,
+            "max": 7.43
+          },
+          "water level height(m)": {
+            "min": 0.06,
+            "max": 1.52
+          }
+        }
+      },
+      "C3": {
+        "rows": 76,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "date/time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 75,
+          "cordinates": 74,
+          "day": 0,
+          "date/time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "date/time": {
+            "min": 5.41,
+            "max": 7.57
+          },
+          "water level height(m)": {
+            "min": 0.13,
+            "max": 3.74
+          }
+        }
+      },
+      "C4": {
+        "rows": 52,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 51,
+          "cordinates": 50,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 5.48,
+            "max": 7.21
+          },
+          "water level height(m)": {
+            "min": 0.19,
+            "max": 1.55
+          }
+        }
+      },
+      "C5": {
+        "rows": 55,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 54,
+          "cordinates": 53,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.34,
+            "max": 7.4
+          },
+          "water level height(m)": {
+            "min": 0.52,
+            "max": 1.68
+          }
+        }
+      },
+      "B5": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 5.31,
+            "max": 6.24
+          },
+          "water level height(m)": {
+            "min": 0.57,
+            "max": 1.62
+          }
+        }
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "Bathymetry_december_2021_B5.csv",
+    "sha256": "9f91d4a30fd027592f418d3a948997baac384ff74c8a68255fe0dd06c52c3d67",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8827805556,
+            "max": -6.8802416667
+          },
+          "LON": {
+            "min": 110.5064111111,
+            "max": 110.5092388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_C2.csv",
+    "sha256": "66adb4d339040559945154db3bc2d2e7725d0a39298c16e8958ccd7342fd7114",
+    "tables": {
+      "csv": {
+        "rows": 74,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8883833333,
+            "max": -6.8845777778
+          },
+          "LON": {
+            "min": 110.5035333333,
+            "max": 110.5091333333
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_C3.csv",
+    "sha256": "81fb17dccdd26aef69de2e48f1c910bdba5139d4c43871211cdb40db3e3be2b6",
+    "tables": {
+      "csv": {
+        "rows": 76,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8865611111,
+            "max": -6.8666777778
+          },
+          "LON": {
+            "min": 110.5049333333,
+            "max": 110.5107388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_C4.csv",
+    "sha256": "96d5ebdfbd97251d64b305f32b673453c7318875aab7e918d2bbe490453e5c29",
+    "tables": {
+      "csv": {
+        "rows": 52,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8849277778,
+            "max": -6.866725
+          },
+          "LON": {
+            "min": 110.5053388889,
+            "max": 110.5093861111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_C5.csv",
+    "sha256": "ca37b03c0c1c4995376749dbb14f5ffacdb135afb8f2f986de8e1adf314c025a",
+    "tables": {
+      "csv": {
+        "rows": 55,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8999861111,
+            "max": -6.8816277778
+          },
+          "LON": {
+            "min": 110.5051638889,
+            "max": 110.5092666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_T4.csv",
+    "sha256": "c6cc345dca17f1d52b6c7e2ba0b5f24390160479089273b0ada03b539932be03",
+    "tables": {
+      "csv": {
+        "rows": 13,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8860944444,
+            "max": -6.8852
+          },
+          "LON": {
+            "min": 110.5063694444,
+            "max": 110.5069861111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_T5.csv",
+    "sha256": "eb4ac1460f1069593f4aaac00426e176afc51bad33f325929df74ac0869a17c7",
+    "tables": {
+      "csv": {
+        "rows": 20,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8856388889,
+            "max": -6.8847027778
+          },
+          "LON": {
+            "min": 110.505625,
+            "max": 110.5070666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_T6.csv",
+    "sha256": "dfb56b03cb13700a4f4ac7bf48cbb30a9f31e3fbe6ea02e81f52f129cf2d6ca3",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8999666667,
+            "max": -6.8833666667
+          },
+          "LON": {
+            "min": 110.5041722222,
+            "max": 110.5072916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_T7.csv",
+    "sha256": "ad55b73504190c73cd458e9f61a2e031b054c292ed0746fd7a8310e0ed33e817",
+    "tables": {
+      "csv": {
+        "rows": 27,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8854,
+            "max": -6.8842944444
+          },
+          "LON": {
+            "min": 110.5061083333,
+            "max": 110.5081805556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_december_2021_Tg3.csv",
+    "sha256": "c832999bc01c61ac1d725623c8be2331afd3ce5a3da2d371ca36bd2eed9bb8ad",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8863861111,
+            "max": -6.8840472222
+          },
+          "LON": {
+            "min": 110.5036083333,
+            "max": 110.5066777778
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022.xlsx",
+    "sha256": "77e72b7490bf5d78767a3eec0de7d31a48ac97ea07ac0b30b16a4bb74515c69c",
+    "tables": {
+      "C2": {
+        "rows": 61,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 60,
+          "cordinates": 59,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.18,
+            "max": 10.19
+          },
+          "water level height(m)": {
+            "min": 0.21,
+            "max": 1.47
+          }
+        }
+      },
+      "Tg3": {
+        "rows": 26,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 25,
+          "cordinates": 24,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.06,
+            "max": 13.24
+          },
+          "water level height(m)": {
+            "min": 0.03,
+            "max": 1.22
+          }
+        }
+      },
+      "T4": {
+        "rows": 15,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 14,
+          "cordinates": 13,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.56,
+            "max": 13.53
+          },
+          "water level height(m)": {
+            "min": 0.57,
+            "max": 1.22
+          }
+        }
+      },
+      "T5": {
+        "rows": 22,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 21,
+          "cordinates": 20,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.43,
+            "max": 14.01
+          },
+          "water level height(m)": {
+            "min": 0.03,
+            "max": 1.41
+          }
+        }
+      },
+      "T6": {
+        "rows": 23,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 22,
+          "cordinates": 21,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.31,
+            "max": 14.17
+          },
+          "water level height(m)": {
+            "min": 0.005,
+            "max": 1.54
+          }
+        }
+      },
+      "T7": {
+        "rows": 28,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 27,
+          "cordinates": 26,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.51,
+            "max": 8.31
+          },
+          "water level height(m)": {
+            "min": 0.01,
+            "max": 1.54
+          }
+        }
+      },
+      "C3": {
+        "rows": 64,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 63,
+          "cordinates": 62,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.39,
+            "max": 11.59
+          },
+          "water level height(m)": {
+            "min": 0.03,
+            "max": 3.55
+          }
+        }
+      },
+      "C4": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.42,
+            "max": 11.59
+          },
+          "water level height(m)": {
+            "min": 0.04,
+            "max": 1.3
+          }
+        }
+      },
+      "C5": {
+        "rows": 42,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 41,
+          "cordinates": 40,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.36,
+            "max": 13.46
+          },
+          "water level height(m)": {
+            "min": 0.03,
+            "max": 1.16
+          }
+        }
+      },
+      "B5": {
+        "rows": 33,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 32,
+          "cordinates": 31,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.12,
+            "max": 10.22
+          },
+          "water level height(m)": {
+            "min": 0.01,
+            "max": 1.17
+          }
+        }
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "Bathymetry_february_2022_B5.csv",
+    "sha256": "685ae03b5a588db022e4db0e313dead424d2524ab8bfd6e1b2d9535e9f12aec3",
+    "tables": {
+      "csv": {
+        "rows": 33,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8827805556,
+            "max": -6.8805138889
+          },
+          "LON": {
+            "min": 110.5064972222,
+            "max": 110.5094305556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_C2.csv",
+    "sha256": "4e3261d4c024cfd24cec4d742654d9934f5f99eb66da3a357a53accfcf81abda",
+    "tables": {
+      "csv": {
+        "rows": 61,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8883833333,
+            "max": -6.8853194444
+          },
+          "LON": {
+            "min": 110.5046555556,
+            "max": 110.5091333333
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_C3.csv",
+    "sha256": "abe0fcf40f03af029efdae2c3d8723bcd3d90035be68a81deaaeed22c53969b8",
+    "tables": {
+      "csv": {
+        "rows": 64,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8996277778,
+            "max": -6.8825805556
+          },
+          "LON": {
+            "min": 110.5057166667,
+            "max": 110.5107388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_C4.csv",
+    "sha256": "fff16c5f871ebc8cb94da1f1ead1773d3a852c06c09e83733a322568faed4475",
+    "tables": {
+      "csv": {
+        "rows": 21,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8849277778,
+            "max": -6.8839416667
+          },
+          "LON": {
+            "min": 110.5078611111,
+            "max": 110.5093861111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_C5.csv",
+    "sha256": "2723984264e9bda62b8f03fedaaee5dec0b14ef312e35dc2023dbadc9fe84463",
+    "tables": {
+      "csv": {
+        "rows": 39,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8843111111,
+            "max": -6.8822916667
+          },
+          "LON": {
+            "min": 110.5056277778,
+            "max": 110.5092666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_T4.csv",
+    "sha256": "dd5c2b96425fbf12fc3ff7d62849a3e0b782b2934f33a3ffc9bcfbf4a6a22ea7",
+    "tables": {
+      "csv": {
+        "rows": 15,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8860583333,
+            "max": -6.8853111111
+          },
+          "LON": {
+            "min": 110.5059916667,
+            "max": 110.5077055556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_T5.csv",
+    "sha256": "384e6f30c4f551d97219e6432ee20002373acc5d1c68f3b4ab01e12b0d769f06",
+    "tables": {
+      "csv": {
+        "rows": 22,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8858,
+            "max": -6.8842416667
+          },
+          "LON": {
+            "min": 110.5051611111,
+            "max": 110.5070666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_T6.csv",
+    "sha256": "d104292848943f4f36eb07eee96c6910fefb39d14b63c9d7e58fae5604cf567b",
+    "tables": {
+      "csv": {
+        "rows": 23,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8853888889,
+            "max": -6.8839972222
+          },
+          "LON": {
+            "min": 110.5054111111,
+            "max": 110.5072916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_T7.csv",
+    "sha256": "d5fdf32b50e11d2bf20a38e7327ca85ae7f40b59c3e3d0c25bfa4e790ee333d9",
+    "tables": {
+      "csv": {
+        "rows": 28,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8854,
+            "max": -6.8839805556
+          },
+          "LON": {
+            "min": 110.5062027778,
+            "max": 110.5081805556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_february_2022_Tg3.csv",
+    "sha256": "1a47644c2f9688e6794d50f9690ce0772383924bfd2732854b390a0539f18876",
+    "tables": {
+      "csv": {
+        "rows": 26,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8863861111,
+            "max": -6.8850972222
+          },
+          "LON": {
+            "min": 110.5047138889,
+            "max": 110.5065888889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022.xlsx",
+    "sha256": "a6065a4a685ca9b0d867ae3c3e5aea1fc3194f8ed482434b8ee7eef691a4fe34",
+    "tables": {
+      "C2": {
+        "rows": 64,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 63,
+          "cordinates": 62,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 8.18,
+            "max": 11.41
+          },
+          "water level height(m)": {
+            "min": 0.14,
+            "max": 1.59
+          }
+        }
+      },
+      "Tg3": {
+        "rows": 28,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 27,
+          "cordinates": 26,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.49,
+            "max": 14.06
+          },
+          "water level height(m)": {
+            "min": 0.1,
+            "max": 1.13
+          }
+        }
+      },
+      "T4": {
+        "rows": 16,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 15,
+          "cordinates": 14,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 11.06,
+            "max": 14.25
+          },
+          "water level height(m)": {
+            "min": 0.5,
+            "max": 1.21
+          }
+        }
+      },
+      "T5": {
+        "rows": 13,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 12,
+          "cordinates": 11,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.5,
+            "max": 14.32
+          },
+          "water level height(m)": {
+            "min": 0.67,
+            "max": 1.24
+          }
+        }
+      },
+      "T6": {
+        "rows": 33,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 32,
+          "cordinates": 31,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.14,
+            "max": 14.41
+          },
+          "water level height(m)": {
+            "min": 0.07,
+            "max": 1.37
+          }
+        }
+      },
+      "T7": {
+        "rows": 25,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 24,
+          "cordinates": 23,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.25,
+            "max": 11.41
+          },
+          "water level height(m)": {
+            "min": 0.08,
+            "max": 1.11
+          }
+        }
+      },
+      "C3": {
+        "rows": 69,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 68,
+          "cordinates": 67,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.4,
+            "max": 13.24
+          },
+          "water level height(m)": {
+            "min": 0.01,
+            "max": 3.46
+          }
+        }
+      },
+      "C4": {
+        "rows": 47,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 46,
+          "cordinates": 45,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 8.3,
+            "max": 11.27
+          },
+          "water level height(m)": {
+            "min": 0.01,
+            "max": 0.85
+          }
+        }
+      },
+      "C5": {
+        "rows": 55,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 54,
+          "cordinates": 53,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.06,
+            "max": 10.38
+          },
+          "water level height(m)": {
+            "min": 0.005,
+            "max": 2.0
+          }
+        }
+      },
+      "B5": {
+        "rows": 37,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 36,
+          "cordinates": 35,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.59,
+            "max": 8.11
+          },
+          "water level height(m)": {
+            "min": 0.26,
+            "max": 0.49
+          }
+        }
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "Bathymetry_january_2022_B5.csv",
+    "sha256": "372576734e9f33a6e4aef482afd0ea3c6162e815334d379e9a0cac385c55abf0",
+    "tables": {
+      "csv": {
+        "rows": 37,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8827805556,
+            "max": -6.8809888889
+          },
+          "LON": {
+            "min": 110.5065305556,
+            "max": 110.5094416667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_C2.csv",
+    "sha256": "f598b34e0ad268774a2735fd0c85e66e008db2a255cc10769c99b2c789ebc73a",
+    "tables": {
+      "csv": {
+        "rows": 64,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8883833333,
+            "max": -6.8851694444
+          },
+          "LON": {
+            "min": 110.5044472222,
+            "max": 110.5091333333
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_C3.csv",
+    "sha256": "048baec0ba4be4770a78ba0800e0a2d8500946aaef35c9b58fe75e2c73a25b6f",
+    "tables": {
+      "csv": {
+        "rows": 69,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8999694444,
+            "max": -6.8828722222
+          },
+          "LON": {
+            "min": 110.5050583333,
+            "max": 110.5107388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_C4.csv",
+    "sha256": "c2d204eeaa3f383717f9ba6b5b48a3cab449fd3c8d94c7f5c1d04ceb7a2a2a7a",
+    "tables": {
+      "csv": {
+        "rows": 47,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8849277778,
+            "max": -6.8820944444
+          },
+          "LON": {
+            "min": 110.505425,
+            "max": 110.5157083333
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_C5.csv",
+    "sha256": "b41de04c95758d272a436041afeecfd13070a271125029391cbb4d02882161d4",
+    "tables": {
+      "csv": {
+        "rows": 55,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8999638889,
+            "max": -6.8814916667
+          },
+          "LON": {
+            "min": 110.5052805556,
+            "max": 110.5092666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_T4.csv",
+    "sha256": "850794319d94caf376321ba36cbd772f77d32b545791d28ed0e26007cd364808",
+    "tables": {
+      "csv": {
+        "rows": 16,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8860583333,
+            "max": -6.8851888889
+          },
+          "LON": {
+            "min": 110.5059638889,
+            "max": 110.5069916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_T5.csv",
+    "sha256": "52c217f5b7e687ac18c3033ed88580e2172b827a9ef1c339f13e9763e82cccec",
+    "tables": {
+      "csv": {
+        "rows": 13,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8856388889,
+            "max": -6.8849472222
+          },
+          "LON": {
+            "min": 110.5061777778,
+            "max": 110.5070666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_T6.csv",
+    "sha256": "0922d623d086f8229ed29fce2b3f6c94bcf9727521d386f098f635500921d52c",
+    "tables": {
+      "csv": {
+        "rows": 33,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8853888889,
+            "max": -6.8833777778
+          },
+          "LON": {
+            "min": 110.5052138889,
+            "max": 110.5072916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_T7.csv",
+    "sha256": "eaa9e9aa68c158a2294bf60776fd8f0d4c4e3751fccb518f18df1af02a638427",
+    "tables": {
+      "csv": {
+        "rows": 25,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8854,
+            "max": -6.8840666667
+          },
+          "LON": {
+            "min": 110.5064361111,
+            "max": 110.5081805556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_january_2022_Tg3.csv",
+    "sha256": "a31405723de93ad9be2c938ea56d4f43cad6b831c12b5e633b4ab384ec51f10a",
+    "tables": {
+      "csv": {
+        "rows": 28,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8863861111,
+            "max": -6.8849416667
+          },
+          "LON": {
+            "min": 110.5046,
+            "max": 110.5065888889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022.xlsx",
+    "sha256": "f3247b0362d893e9b3240a896e7f17bef25058dca516ebecfe474caf162e23a9",
+    "tables": {
+      "C2": {
+        "rows": 76,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 75,
+          "cordinates": 74,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.03,
+            "max": 10.36
+          },
+          "water level height(m)": {
+            "min": 0.72,
+            "max": 1.96
+          }
+        }
+      },
+      "Tg3": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.38,
+            "max": 15.39
+          },
+          "water level height(m)": {
+            "min": 0.82,
+            "max": 2.03
+          }
+        }
+      },
+      "T4": {
+        "rows": 16,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 15,
+          "cordinates": 14,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 14.26,
+            "max": 15.28
+          },
+          "water level height(m)": {
+            "min": 0.6,
+            "max": 1.54
+          }
+        }
+      },
+      "T5": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.51,
+            "max": 15.04
+          },
+          "water level height(m)": {
+            "min": 0.36,
+            "max": 1.84
+          }
+        }
+      },
+      "T6": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.02,
+            "max": 14.51
+          },
+          "water level height(m)": {
+            "min": 0.22,
+            "max": 2.12
+          }
+        }
+      },
+      "T7": {
+        "rows": 28,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 27,
+          "cordinates": 26,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.27,
+            "max": 9.57
+          },
+          "water level height(m)": {
+            "min": 0.37,
+            "max": 2.44
+          }
+        }
+      },
+      "C3": {
+        "rows": 76,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 75,
+          "cordinates": 74,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.14,
+            "max": 9.18
+          },
+          "water level height(m)": {
+            "min": 0.37,
+            "max": 4.41
+          }
+        }
+      },
+      "C4": {
+        "rows": 53,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 52,
+          "cordinates": 51,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 11.11,
+            "max": 12.2
+          },
+          "water level height(m)": {
+            "min": 0.31,
+            "max": 1.69
+          }
+        }
+      },
+      "C5": {
+        "rows": 54,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 53,
+          "cordinates": 52,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.47,
+            "max": 10.54
+          },
+          "water level height(m)": {
+            "min": 0.43,
+            "max": 1.87
+          }
+        }
+      },
+      "B5": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "day",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "day": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 8.24,
+            "max": 9.22
+          },
+          "water level height(m)": {
+            "min": 0.21,
+            "max": 1.88
+          }
+        }
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "Bathymetry_july_2022_B5.csv",
+    "sha256": "e3793f4839a53b35c942ef0b60466a06309719d6790c39a9bcce6ad131fcf0e3",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8827805556,
+            "max": -6.8807055556
+          },
+          "LON": {
+            "min": 110.5060638889,
+            "max": 110.5094388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_C2.csv",
+    "sha256": "27061be1e2a280b4c3608c7aa2348ac8ee74dc5a55655a2fde0db2548391d6ea",
+    "tables": {
+      "csv": {
+        "rows": 76,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8883833333,
+            "max": -6.884525
+          },
+          "LON": {
+            "min": 110.5035777778,
+            "max": 110.5091333333
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_C3.csv",
+    "sha256": "ea7bb64c37f95cdf91fb07a93fa7d198615319e0fc33511eea48b5bc74072b5d",
+    "tables": {
+      "csv": {
+        "rows": 76,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8999833333,
+            "max": -6.8825305556
+          },
+          "LON": {
+            "min": 110.5053,
+            "max": 110.5107388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_C4.csv",
+    "sha256": "32f3c310b910fe2f1c4ab8d761f2da5a6c633733614ff9a538a7bafb116b6a0a",
+    "tables": {
+      "csv": {
+        "rows": 53,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8849277778,
+            "max": -6.8667083333
+          },
+          "LON": {
+            "min": 110.505425,
+            "max": 110.5093861111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_C5.csv",
+    "sha256": "0295d6f491b6370d56457bf350fc996fb0c570ab4cdb92bbc095f304697de5b3",
+    "tables": {
+      "csv": {
+        "rows": 54,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8843111111,
+            "max": -6.8666694444
+          },
+          "LON": {
+            "min": 110.5053111111,
+            "max": 110.5092666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_T4.csv",
+    "sha256": "ff2821b7d02863462b316184c6b998a8d6796f630bbda8caea25a587af7151ac",
+    "tables": {
+      "csv": {
+        "rows": 16,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8860583333,
+            "max": -6.8851972222
+          },
+          "LON": {
+            "min": 110.5059666667,
+            "max": 110.5069916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_T5.csv",
+    "sha256": "67090bd26f4c024f3d207728316e0ff6f88699d9153b8e75eaa8d62232606f6d",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 1,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8856388889,
+            "max": -6.8667305556
+          },
+          "LON": {
+            "min": 110.5039944444,
+            "max": 110.5070666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [
+      34
+    ],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_T6.csv",
+    "sha256": "a82d180c0875ef459fb9c2ed048f06cf0a5235e238ac628fd9f0854b91b2eedf",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8999694444,
+            "max": -6.8833583333
+          },
+          "LON": {
+            "min": 110.5043027778,
+            "max": 110.5072916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_T7.csv",
+    "sha256": "796f98ca206e4f59c2b1b596aae868957ebe7b65206b0995afff81619a607691",
+    "tables": {
+      "csv": {
+        "rows": 28,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8854,
+            "max": -6.8840527778
+          },
+          "LON": {
+            "min": 110.5061416667,
+            "max": 110.5081805556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_july_2022_Tg3.csv",
+    "sha256": "7b4447acf06d3bd63ad36c1cffd166429dcbf1a9ece92eff3718eacecaf4975a",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8863861111,
+            "max": -6.884025
+          },
+          "LON": {
+            "min": 110.5035833333,
+            "max": 110.5065888889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021.xlsx",
+    "sha256": "e1ee6440a043b48e5e26aabe3f60fbdbe0bd6355541b7d0ad4acf665fe80659d",
+    "tables": {
+      "C2": {
+        "rows": 75,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 74,
+          "cordinates": 73,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.49,
+            "max": 13.41
+          },
+          "water level height(m)": {
+            "min": 0.23,
+            "max": 1.9
+          }
+        }
+      },
+      "T3": {
+        "rows": 42,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 41,
+          "cordinates": 40,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.04,
+            "max": 9.35
+          },
+          "water level height(m)": {
+            "min": 0.67,
+            "max": 1.97
+          }
+        }
+      },
+      "T4": {
+        "rows": 13,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 12,
+          "cordinates": 11,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.44,
+            "max": 10.08
+          },
+          "water level height(m)": {
+            "min": 0.74,
+            "max": 1.4
+          }
+        }
+      },
+      "T5": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.58,
+            "max": 10.29
+          },
+          "water level height(m)": {
+            "min": 0.61,
+            "max": 1.82
+          }
+        }
+      },
+      "T6": {
+        "rows": 41,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 40,
+          "cordinates": 39,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 7.5,
+            "max": 10.56
+          },
+          "water level height(m)": {
+            "min": 0.7,
+            "max": 1.89
+          }
+        }
+      },
+      "T7": {
+        "rows": 27,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 26,
+          "cordinates": 25,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.33,
+            "max": 11.26
+          },
+          "water level height(m)": {
+            "min": 0.46,
+            "max": 1.81
+          }
+        }
+      },
+      "C3": {
+        "rows": 76,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 75,
+          "cordinates": 74,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 6.26,
+            "max": 9.53
+          },
+          "water level height(m)": {
+            "min": 0.37,
+            "max": 3.4
+          }
+        }
+      },
+      "C4": {
+        "rows": 52,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 51,
+          "cordinates": 50,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.0,
+            "max": 11.13
+          },
+          "water level height(m)": {
+            "min": 0.26,
+            "max": 1.43
+          }
+        }
+      },
+      "C5": {
+        "rows": 55,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)"
+        ],
+        "missing": {
+          "Transec": 54,
+          "cordinates": 53,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 10.51,
+            "max": 12.12
+          },
+          "water level height(m)": {
+            "min": 0.08,
+            "max": 1.39
+          }
+        }
+      },
+      "B5": {
+        "rows": 43,
+        "columns": [
+          "Transec",
+          "cordinates",
+          "date",
+          "time",
+          "way point South",
+          "way point East",
+          "water level height(m)",
+          "Unnamed: 7",
+          "Unnamed: 8",
+          "Unnamed: 9"
+        ],
+        "missing": {
+          "Transec": 42,
+          "cordinates": 41,
+          "date": 0,
+          "time": 0,
+          "way point South": 0,
+          "way point East": 0,
+          "water level height(m)": 0,
+          "Unnamed: 7": 43,
+          "Unnamed: 8": 43,
+          "Unnamed: 9": 42
+        },
+        "numeric_ranges": {
+          "time": {
+            "min": 9.17,
+            "max": 10.35
+          },
+          "water level height(m)": {
+            "min": 0.12,
+            "max": 1.43
+          }
+        }
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "Bathymetry_october_2021_B5.csv",
+    "sha256": "bb6272afc08e8f22cca4678fccc11c840fba777a02d185de24868a33928dfb7b",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8827805556,
+            "max": -6.8809166667
+          },
+          "LON": {
+            "min": 110.5059361111,
+            "max": 110.5092388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_C2.csv",
+    "sha256": "0ea65792be1a74810415957f8fc12d5a8770fd9391f68eb9f25a8c89e5661648",
+    "tables": {
+      "csv": {
+        "rows": 75,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8883833333,
+            "max": -6.8846916667
+          },
+          "LON": {
+            "min": 110.5035722222,
+            "max": 110.5091333333
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_C3.csv",
+    "sha256": "3ebcb67693cffb160acb0a8160bf24536c595208e312e15ccb46e95b0beb463f",
+    "tables": {
+      "csv": {
+        "rows": 76,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8865611111,
+            "max": -6.8828666667
+          },
+          "LON": {
+            "min": 110.5050361111,
+            "max": 110.5107388889
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_C4.csv",
+    "sha256": "cb4d7d9cd2a15cae94e29e9257fcabb3a2eb06f8db1edc3d2d4ddfe0be2308da",
+    "tables": {
+      "csv": {
+        "rows": 52,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8849277778,
+            "max": -6.8821138889
+          },
+          "LON": {
+            "min": 110.5054138889,
+            "max": 110.5093861111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_C5.csv",
+    "sha256": "82cd9275cbb59b8fd2b5f1bd69d5a1df7a98f24dfba52cd9b56de2daa5e58883",
+    "tables": {
+      "csv": {
+        "rows": 55,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8843111111,
+            "max": -6.8666722222
+          },
+          "LON": {
+            "min": 110.5052611111,
+            "max": 110.5092666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_T3.csv",
+    "sha256": "bb4f99617643a1cc7c0211b41ac23bd124a4ac15cfc4a013d1e8047d81d8f84d",
+    "tables": {
+      "csv": {
+        "rows": 42,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8863861111,
+            "max": -6.8837388889
+          },
+          "LON": {
+            "min": 110.5039833333,
+            "max": 110.506575
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_T4.csv",
+    "sha256": "340f0445329657c65e7513a7d7161d15829287b2176d8179241a1adadfca64cd",
+    "tables": {
+      "csv": {
+        "rows": 13,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8860944444,
+            "max": -6.8853972222
+          },
+          "LON": {
+            "min": 110.5061472222,
+            "max": 110.5069861111
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_T5.csv",
+    "sha256": "ff455e7c5231757b5232bae1c446598618c57fdb7294598b3fe9810a25d30c33",
+    "tables": {
+      "csv": {
+        "rows": 43,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8856388889,
+            "max": -6.8827777778
+          },
+          "LON": {
+            "min": 110.50455,
+            "max": 110.5070666667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_T6.csv",
+    "sha256": "83de5f149c3ed38732b2361e1cee7ba5a11f7901ea98d9c21ad1504ed48ea945",
+    "tables": {
+      "csv": {
+        "rows": 41,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8853888889,
+            "max": -6.8833944444
+          },
+          "LON": {
+            "min": 110.5042888889,
+            "max": 110.5072916667
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "Bathymetry_october_2021_T7.csv",
+    "sha256": "f6cdbc58541b9912f1782539cb2875f30a1427c0f4d79bf5c01dfe61cde70781",
+    "tables": {
+      "csv": {
+        "rows": 27,
+        "columns": [
+          "LAT",
+          "LON"
+        ],
+        "missing": {
+          "LAT": 0,
+          "LON": 0
+        },
+        "numeric_ranges": {
+          "LAT": {
+            "min": -6.8854,
+            "max": -6.8842388889
+          },
+          "LON": {
+            "min": 110.5061361111,
+            "max": 110.5081805556
+          }
+        }
+      }
+    },
+    "invalid_coordinate_rows": [],
+    "role": "spatial_support",
+    "reason": "Koordinat saja, tanpa label biologis atau nilai kedalaman; tidak menjadi sampel survival."
+  },
+  {
+    "file": "december2021_updated.xlsx",
+    "sha256": "ae0c1272ccfbb45025350ba0cede8972a476dae7149f924c79f0f82120a4f2b5",
+    "tables": {
+      "Sheet1": {
+        "rows": 44413,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 10979,
+          "water_level": 1536
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -0.409,
+            "max": 2320.97
+          }
+        },
+        "invalid_timestamps": 10979,
+        "time_min": "2021-12-01 05:23:00",
+        "time_max": "2021-12-31 07:00:00",
+        "duplicate_timestamps": 10979
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "february2022_updated.xlsx",
+    "sha256": "66abdd81bcf02fb1e7d2005296480ae9d61391db5e4143bfbc56c861730dea0b",
+    "tables": {
+      "Sheet1": {
+        "rows": 44407,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 10979,
+          "water_level": 1486
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -0.655,
+            "max": 1689.97
+          }
+        },
+        "invalid_timestamps": 10979,
+        "time_min": "2022-01-29 07:00:00",
+        "time_max": "2022-02-28 07:00:00",
+        "duplicate_timestamps": 10978
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "july 2021_updated.xlsx",
+    "sha256": "eaa224225f8e9b5a7aa99d61e5d4f33d1df86cb7416551121f2cb6d1bf22c43b",
+    "tables": {
+      "Sheet1": {
+        "rows": 44379,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 11135,
+          "water_level": 1549
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -0.894,
+            "max": 1747.97
+          }
+        },
+        "invalid_timestamps": 11135,
+        "time_min": "2021-06-30 07:00:00",
+        "time_max": "2021-07-30 07:00:00",
+        "duplicate_timestamps": 11134
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "july2022_updated.xlsx",
+    "sha256": "89b5401b7fc5081e4cb776d9cd25e0aa9c052808b864c0d008b32fcf36ffcdb8",
+    "tables": {
+      "Sheet1": {
+        "rows": 25968,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 6489,
+          "water_level": 874
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -1.03,
+            "max": 1857.97
+          }
+        },
+        "invalid_timestamps": 6489,
+        "time_min": "2022-06-29 11:29:00",
+        "time_max": "2022-07-30 14:47:00",
+        "duplicate_timestamps": 6489
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "june2021_updated.xlsx",
+    "sha256": "2e7732cdf666241753ad141cdae2d2cc3189120639a46386503b1bf34b2c0f1a",
+    "tables": {
+      "Sheet1": {
+        "rows": 44060,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 11014,
+          "water_level": 1548
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -0.109,
+            "max": 1793.97
+          }
+        },
+        "invalid_timestamps": 11014,
+        "time_min": "2021-05-31 07:00:00",
+        "time_max": "2021-06-30 07:00:00",
+        "duplicate_timestamps": 11013
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "october2021_updated.xlsx",
+    "sha256": "f74d3f86eb40aad4963ffa811c64a71a0a8f408b470800e54454136a3adc7729",
+    "tables": {
+      "Sheet1": {
+        "rows": 44362,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 4893,
+          "water_level": 2473
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -0.199,
+            "max": 61249.97
+          }
+        },
+        "invalid_timestamps": 4893,
+        "time_min": "2021-09-22 19:07:00",
+        "time_max": "2021-10-22 04:19:00",
+        "duplicate_timestamps": 4893
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  },
+  {
+    "file": "PoleData.xlsx",
+    "sha256": "4979129ee2d50f9c1f9a81090cc526a5d3382305c71437c124a0b2f73d88361a",
+    "tables": {
+      "Pole_1": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8824305556,
+            "max": -6.8824305556
+          },
+          "Longitude": {
+            "min": 110.5093416667,
+            "max": 110.5093416667
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 121.0
+          }
+        }
+      },
+      "Pole_2": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8823833333,
+            "max": -6.8823833333
+          },
+          "Longitude": {
+            "min": 110.509275,
+            "max": 110.509275
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 124.0
+          }
+        }
+      },
+      "Pole_3": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8823055556,
+            "max": -6.8823055556
+          },
+          "Longitude": {
+            "min": 110.5091361111,
+            "max": 110.5091361111
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 137.0
+          }
+        }
+      },
+      "Pole_4": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.88275,
+            "max": -6.88275
+          },
+          "Longitude": {
+            "min": 110.5091805556,
+            "max": 110.5091805556
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 127.0
+          }
+        }
+      },
+      "Pole_5": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8827055556,
+            "max": -6.8827055556
+          },
+          "Longitude": {
+            "min": 110.5091,
+            "max": 110.5091
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 122.0
+          }
+        }
+      },
+      "Pole_6": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8826222222,
+            "max": -6.8826222222
+          },
+          "Longitude": {
+            "min": 110.5089361111,
+            "max": 110.5089361111
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 141.0
+          }
+        }
+      },
+      "Pole_7": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8856194444,
+            "max": -6.8856194444
+          },
+          "Longitude": {
+            "min": 110.5070194444,
+            "max": 110.5070194444
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 183.0
+          }
+        }
+      },
+      "Pole_8": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8855777778,
+            "max": -6.8855777778
+          },
+          "Longitude": {
+            "min": 110.5069638889,
+            "max": 110.5069638889
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 179.0
+          }
+        }
+      },
+      "Pole_9": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8854222222,
+            "max": -6.8854222222
+          },
+          "Longitude": {
+            "min": 110.5067805556,
+            "max": 110.5067805556
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 205.0
+          }
+        }
+      },
+      "Pole_10": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8859166667,
+            "max": -6.8859166667
+          },
+          "Longitude": {
+            "min": 110.5068166667,
+            "max": 110.5068166667
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 174.0
+          }
+        }
+      },
+      "Pole_11": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8858583333,
+            "max": -6.8858583333
+          },
+          "Longitude": {
+            "min": 110.5067472222,
+            "max": 110.5067472222
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 159.0
+          }
+        }
+      },
+      "Pole_12": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8856722222,
+            "max": -6.8856722222
+          },
+          "Longitude": {
+            "min": 110.5065416667,
+            "max": 110.5065416667
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 197.0
+          }
+        }
+      },
+      "Pole_13": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8861444444,
+            "max": -6.8861444444
+          },
+          "Longitude": {
+            "min": 110.5065833333,
+            "max": 110.5065833333
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 145.0
+          }
+        }
+      },
+      "Pole_14": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8860861111,
+            "max": -6.8860861111
+          },
+          "Longitude": {
+            "min": 110.5065194444,
+            "max": 110.5065194444
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 152.0
+          }
+        }
+      },
+      "Pole_15": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8859416667,
+            "max": -6.8859416667
+          },
+          "Longitude": {
+            "min": 110.5063416667,
+            "max": 110.5063416667
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 201.0
+          }
+        }
+      },
+      "Pole_16": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8864472222,
+            "max": -6.8864472222
+          },
+          "Longitude": {
+            "min": 110.5063527778,
+            "max": 110.5063527778
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 137.0
+          }
+        }
+      },
+      "Pole_17": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8863916667,
+            "max": -6.8863916667
+          },
+          "Longitude": {
+            "min": 110.5062777778,
+            "max": 110.5062777778
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 138.0
+          }
+        }
+      },
+      "Pole_18": {
+        "rows": 9,
+        "columns": [
+          "Date",
+          "Latitude",
+          "Longitude",
+          "Distance between pole top and seabed [cm]"
+        ],
+        "missing": {
+          "Date": 0,
+          "Latitude": 0,
+          "Longitude": 0,
+          "Distance between pole top and seabed [cm]": 0
+        },
+        "numeric_ranges": {
+          "Latitude": {
+            "min": -6.8862416667,
+            "max": -6.8862416667
+          },
+          "Longitude": {
+            "min": 110.5061055556,
+            "max": 110.5061055556
+          },
+          "Distance between pole top and seabed [cm]": {
+            "min": 0.0,
+            "max": 190.0
+          }
+        }
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C. Nilai nol pada tanggal akhir dipertahankan dan ditandai; maknanya belum dikonfirmasi."
+  },
+  {
+    "file": "pond_dataset_withNAs.csv",
+    "sha256": "88f835e39f9b12419a11f92873c47bbed568bcd01aec6c4fa5316c3462149f11",
+    "tables": {
+      "csv": {
+        "rows": 55,
+        "columns": [
+          "transect",
+          "station",
+          "lat",
+          "lon",
+          "pH",
+          "redox",
+          "S2-",
+          "SCOARSE%_2 (%)",
+          "SD(0.1)_2 (µm)",
+          "SD(0.9)_2 (µm)",
+          "SD50MUM_2 (µm)",
+          "SD50PHIM_2 (phi)",
+          "SFINES%_2 (%)",
+          "SMEDIUM%_2 (%)",
+          "SMODE_2 (µm)",
+          "SSILT63_2 (%)",
+          "SVFINES%_2 (%)",
+          "WC",
+          "orgC",
+          "BulkDen",
+          "ShearStrngth",
+          "%t_submerged",
+          "SeedlingDen",
+          "Seedling density class"
+        ],
+        "missing": {
+          "transect": 0,
+          "station": 0,
+          "lat": 0,
+          "lon": 0,
+          "pH": 0,
+          "redox": 0,
+          "S2-": 1,
+          "SCOARSE%_2 (%)": 0,
+          "SD(0.1)_2 (µm)": 0,
+          "SD(0.9)_2 (µm)": 0,
+          "SD50MUM_2 (µm)": 0,
+          "SD50PHIM_2 (phi)": 0,
+          "SFINES%_2 (%)": 0,
+          "SMEDIUM%_2 (%)": 0,
+          "SMODE_2 (µm)": 0,
+          "SSILT63_2 (%)": 0,
+          "SVFINES%_2 (%)": 0,
+          "WC": 0,
+          "orgC": 0,
+          "BulkDen": 1,
+          "ShearStrngth": 0,
+          "%t_submerged": 0,
+          "SeedlingDen": 0,
+          "Seedling density class": 0
+        },
+        "numeric_ranges": {
+          "transect": {
+            "min": 3.0,
+            "max": 19.0
+          },
+          "station": {
+            "min": 1.0,
+            "max": 6.0
+          },
+          "lat": {
+            "min": -6.914048,
+            "max": -6.893683
+          },
+          "lon": {
+            "min": 110.486313,
+            "max": 110.506009
+          },
+          "pH": {
+            "min": 6.562,
+            "max": 8.035
+          },
+          "redox": {
+            "min": -226.3,
+            "max": -29.5
+          },
+          "S2-": {
+            "min": 279.7977874313,
+            "max": 11629.6266343568
+          },
+          "SCOARSE%_2 (%)": {
+            "min": 0.0,
+            "max": 0.15
+          },
+          "SD(0.1)_2 (µm)": {
+            "min": 1.69,
+            "max": 2.04
+          },
+          "SD(0.9)_2 (µm)": {
+            "min": 13.37,
+            "max": 42.69
+          },
+          "SD50MUM_2 (µm)": {
+            "min": 5.14,
+            "max": 7.66
+          },
+          "SD50PHIM_2 (phi)": {
+            "min": 7.03,
+            "max": 7.6
+          },
+          "SFINES%_2 (%)": {
+            "min": 0.0,
+            "max": 1.15
+          },
+          "SMEDIUM%_2 (%)": {
+            "min": 0.0,
+            "max": 0.56
+          },
+          "SMODE_2 (µm)": {
+            "min": 5.238,
+            "max": 6.999
+          },
+          "SSILT63_2 (%)": {
+            "min": 94.14,
+            "max": 100.0
+          },
+          "SVFINES%_2 (%)": {
+            "min": 0.0,
+            "max": 4.08
+          },
+          "WC": {
+            "min": 54.373802709,
+            "max": 65.5116903749
+          },
+          "orgC": {
+            "min": 6.8002343946,
+            "max": 13.8157894737
+          },
+          "BulkDen": {
+            "min": 1.2223,
+            "max": 1.6974
+          },
+          "ShearStrngth": {
+            "min": 0.3225516407,
+            "max": 2.3546269769
+          },
+          "%t_submerged": {
+            "min": 0.0511627907,
+            "max": 1.0
+          },
+          "SeedlingDen": {
+            "min": 0.0,
+            "max": 16.0
+          }
+        }
+      }
+    },
+    "role": "duplicate_verified",
+    "reason": "Isi tabel sama dengan pond_dataset_withNAs_UTF8.csv; tidak dihitung dua kali."
+  },
+  {
+    "file": "pond_dataset_withNAs_UTF8.csv",
+    "sha256": "7bbefebea1c71db2d027f2719511c9b586f070b1f7a643a957f6e9cf2e25d995",
+    "tables": {
+      "csv": {
+        "rows": 55,
+        "columns": [
+          "transect",
+          "station",
+          "lat",
+          "lon",
+          "pH",
+          "redox",
+          "S2-",
+          "SCOARSE%_2 (%)",
+          "SD(0.1)_2 (µm)",
+          "SD(0.9)_2 (µm)",
+          "SD50MUM_2 (µm)",
+          "SD50PHIM_2 (phi)",
+          "SFINES%_2 (%)",
+          "SMEDIUM%_2 (%)",
+          "SMODE_2 (µm)",
+          "SSILT63_2 (%)",
+          "SVFINES%_2 (%)",
+          "WC",
+          "orgC",
+          "BulkDen",
+          "ShearStrngth",
+          "%t_submerged",
+          "SeedlingDen",
+          "Seedling density class"
+        ],
+        "missing": {
+          "transect": 0,
+          "station": 0,
+          "lat": 0,
+          "lon": 0,
+          "pH": 0,
+          "redox": 0,
+          "S2-": 1,
+          "SCOARSE%_2 (%)": 0,
+          "SD(0.1)_2 (µm)": 0,
+          "SD(0.9)_2 (µm)": 0,
+          "SD50MUM_2 (µm)": 0,
+          "SD50PHIM_2 (phi)": 0,
+          "SFINES%_2 (%)": 0,
+          "SMEDIUM%_2 (%)": 0,
+          "SMODE_2 (µm)": 0,
+          "SSILT63_2 (%)": 0,
+          "SVFINES%_2 (%)": 0,
+          "WC": 0,
+          "orgC": 0,
+          "BulkDen": 1,
+          "ShearStrngth": 0,
+          "%t_submerged": 0,
+          "SeedlingDen": 0,
+          "Seedling density class": 0
+        },
+        "numeric_ranges": {
+          "transect": {
+            "min": 3.0,
+            "max": 19.0
+          },
+          "station": {
+            "min": 1.0,
+            "max": 6.0
+          },
+          "lat": {
+            "min": -6.914048,
+            "max": -6.893683
+          },
+          "lon": {
+            "min": 110.486313,
+            "max": 110.506009
+          },
+          "pH": {
+            "min": 6.562,
+            "max": 8.035
+          },
+          "redox": {
+            "min": -226.3,
+            "max": -29.5
+          },
+          "S2-": {
+            "min": 279.7977874313,
+            "max": 11629.6266343568
+          },
+          "SCOARSE%_2 (%)": {
+            "min": 0.0,
+            "max": 0.15
+          },
+          "SD(0.1)_2 (µm)": {
+            "min": 1.69,
+            "max": 2.04
+          },
+          "SD(0.9)_2 (µm)": {
+            "min": 13.37,
+            "max": 42.69
+          },
+          "SD50MUM_2 (µm)": {
+            "min": 5.14,
+            "max": 7.66
+          },
+          "SD50PHIM_2 (phi)": {
+            "min": 7.03,
+            "max": 7.6
+          },
+          "SFINES%_2 (%)": {
+            "min": 0.0,
+            "max": 1.15
+          },
+          "SMEDIUM%_2 (%)": {
+            "min": 0.0,
+            "max": 0.56
+          },
+          "SMODE_2 (µm)": {
+            "min": 5.238,
+            "max": 6.999
+          },
+          "SSILT63_2 (%)": {
+            "min": 94.14,
+            "max": 100.0
+          },
+          "SVFINES%_2 (%)": {
+            "min": 0.0,
+            "max": 4.08
+          },
+          "WC": {
+            "min": 54.373802709,
+            "max": 65.5116903749
+          },
+          "orgC": {
+            "min": 6.8002343946,
+            "max": 13.8157894737
+          },
+          "BulkDen": {
+            "min": 1.2223,
+            "max": 1.6974
+          },
+          "ShearStrngth": {
+            "min": 0.3225516407,
+            "max": 2.3546269769
+          },
+          "%t_submerged": {
+            "min": 0.0511627907,
+            "max": 1.0
+          },
+          "SeedlingDen": {
+            "min": 0.0,
+            "max": 16.0
+          }
+        }
+      }
+    },
+    "role": "model_input",
+    "reason": "Digunakan pada eksperimen dengan target dan fitur yang eksplisit."
+  },
+  {
+    "file": "Q1_forest_structure.csv",
+    "sha256": "9488d2c1166038240ffbda858a2a9b63248edbe3cda154903a0c4511bd8a4a28",
+    "tables": {
+      "csv": {
+        "rows": 523,
+        "columns": [
+          "rep",
+          "surface_area",
+          "habitat",
+          "species",
+          "DBH",
+          "basal_area_cm2"
+        ],
+        "missing": {
+          "rep": 0,
+          "surface_area": 0,
+          "habitat": 0,
+          "species": 0,
+          "DBH": 0,
+          "basal_area_cm2": 0
+        },
+        "numeric_ranges": {
+          "surface_area": {
+            "min": 40.0,
+            "max": 180.0
+          },
+          "DBH": {
+            "min": 3.0,
+            "max": 13.0
+          },
+          "basal_area_cm2": {
+            "min": 7.0685834706,
+            "max": 132.7322896142
+          }
+        }
+      }
+    },
+    "role": "ecological_context",
+    "reason": "Tidak memiliki kunci plot yang terverifikasi ke target semai/survival."
+  },
+  {
+    "file": "Q1_GIS_data.csv",
+    "sha256": "8c73072a8ca77def4c44bafc7fe7f2ec18b75bd52e96b48be8eb7a5ce39f1fdf",
+    "tables": {
+      "csv": {
+        "rows": 2552,
+        "columns": [
+          "ID",
+          "area",
+          "year",
+          "Type",
+          "surface_area",
+          "surface_area_ha"
+        ],
+        "missing": {
+          "ID": 0,
+          "area": 0,
+          "year": 0,
+          "Type": 0,
+          "surface_area": 0,
+          "surface_area_ha": 0
+        },
+        "numeric_ranges": {
+          "ID": {
+            "min": 0.0,
+            "max": 24110.0
+          },
+          "year": {
+            "min": 2005.0,
+            "max": 2018.0
+          },
+          "surface_area": {
+            "min": 0.0097135338,
+            "max": 216445.541366206
+          },
+          "surface_area_ha": {
+            "min": 9.714e-07,
+            "max": 21.6445541366
+          }
+        }
+      }
+    },
+    "role": "ecological_context",
+    "reason": "Tidak memiliki kunci plot yang terverifikasi ke target semai/survival."
+  },
+  {
+    "file": "Q2_EMR-hydrology_propagules.csv",
+    "sha256": "5f2b3c5d5a21e0b4dbdb2d41c301f4cc4b5264a3128e666784f7610d52d047d5",
+    "tables": {
+      "csv": {
+        "rows": 2615,
+        "columns": [
+          "trap_ID",
+          "lat",
+          "lon",
+          "zone",
+          "date",
+          "week",
+          "species",
+          "prop_count"
+        ],
+        "missing": {
+          "trap_ID": 0,
+          "lat": 0,
+          "lon": 0,
+          "zone": 0,
+          "date": 0,
+          "week": 0,
+          "species": 0,
+          "prop_count": 210
+        },
+        "numeric_ranges": {
+          "trap_ID": {
+            "min": 16.0,
+            "max": 40.0
+          },
+          "lat": {
+            "min": -6.90634694,
+            "max": -6.8950551
+          },
+          "lon": {
+            "min": 110.4996287,
+            "max": 110.5073692
+          },
+          "week": {
+            "min": 19.0,
+            "max": 42.0
+          },
+          "prop_count": {
+            "min": 0.0,
+            "max": 195.0
+          }
+        }
+      }
+    },
+    "role": "model_input",
+    "reason": "Digunakan pada eksperimen dengan target dan fitur yang eksplisit."
+  },
+  {
+    "file": "Q3_EMR-dams_natural_seedling_establishment_mon.csv",
+    "sha256": "2b29113fed12b5823d0874f7910c551eeb4fef858ec0f87e609db7e3fe38c123",
+    "tables": {
+      "csv": {
+        "rows": 581,
+        "columns": [
+          "SiteCondition",
+          "blockname",
+          "species",
+          "season",
+          "survival"
+        ],
+        "missing": {
+          "SiteCondition": 0,
+          "blockname": 0,
+          "species": 0,
+          "season": 0,
+          "survival": 0
+        },
+        "numeric_ranges": {
+          "survival": {
+            "min": 0.0,
+            "max": 2.0
+          }
+        }
+      }
+    },
+    "role": "unresolved_target",
+    "reason": "Kolom survival memuat kode 0/1/2; tanpa kamus kode atau ID bibit. Tidak mengasumsikan 2=hidup/mati."
+  },
+  {
+    "file": "Q3_EMR-dams_seedling_survival_exp.csv",
+    "sha256": "b5fb8b285e7906f13d20275d9171ec3ee352495c2993434d7c373e7c327ba3e6",
+    "tables": {
+      "csv": {
+        "rows": 700,
+        "columns": [
+          "ID",
+          "SiteCondition",
+          "blockname",
+          "PlantingTreatment",
+          "month",
+          "season",
+          "survival"
+        ],
+        "missing": {
+          "ID": 0,
+          "SiteCondition": 0,
+          "blockname": 0,
+          "PlantingTreatment": 0,
+          "month": 0,
+          "season": 0,
+          "survival": 0
+        },
+        "numeric_ranges": {
+          "ID": {
+            "min": 1.0,
+            "max": 350.0
+          },
+          "month": {
+            "min": 3.0,
+            "max": 10.0
+          },
+          "survival": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    "role": "model_input",
+    "reason": "Digunakan pada eksperimen dengan target dan fitur yang eksplisit."
+  },
+  {
+    "file": "Q4_EMR-and-planting.csv",
+    "sha256": "079c80efca94d233dc299d16da4599b27f85a757f80ba91dfc27bfcdfd385c6e",
+    "tables": {
+      "csv": {
+        "rows": 2800,
+        "columns": [
+          "blocknumber",
+          "ID",
+          "species",
+          "month",
+          "length",
+          "sediment_raw",
+          "sediment_rel",
+          "growth",
+          "growth_corr",
+          "survival"
+        ],
+        "missing": {
+          "blocknumber": 0,
+          "ID": 0,
+          "species": 0,
+          "month": 0,
+          "length": 591,
+          "sediment_raw": 20,
+          "sediment_rel": 20,
+          "growth": 591,
+          "growth_corr": 600,
+          "survival": 0
+        },
+        "numeric_ranges": {
+          "blocknumber": {
+            "min": 1.0,
+            "max": 20.0
+          },
+          "month": {
+            "min": 0.0,
+            "max": 16.0
+          },
+          "length": {
+            "min": 16.0,
+            "max": 125.0
+          },
+          "sediment_raw": {
+            "min": 43.0,
+            "max": 128.0
+          },
+          "sediment_rel": {
+            "min": -7.0,
+            "max": 38.55
+          },
+          "growth": {
+            "min": -37.0,
+            "max": 96.0
+          },
+          "growth_corr": {
+            "min": -36.3,
+            "max": 89.0
+          },
+          "survival": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    "role": "model_input",
+    "reason": "Digunakan pada eksperimen dengan target dan fitur yang eksplisit."
+  },
+  {
+    "file": "sea-site_dataset_withNAs.csv",
+    "sha256": "c8c18d89657eae5efe3c41c12156b51c4039ec7a7aa5bedd85d1a38ca040565e",
+    "tables": {
+      "csv": {
+        "rows": 56,
+        "columns": [
+          "transect",
+          "station",
+          "lat",
+          "lon",
+          "treatment",
+          "pH",
+          "redox",
+          "S2-",
+          "SCOARSE%_2 (%)",
+          "SD(0.1)_2 (µm)",
+          "SD(0.9)_2 (µm)",
+          "SD50MUM_2 (µm)",
+          "SD50PHIM_2 (phi)",
+          "SFINES%_2 (%)",
+          "SMEDIUM%_2 (%)",
+          "SMODE_2 (µm)",
+          "SSILT63_2 (%)",
+          "WC",
+          "orgC",
+          "BulkDen",
+          "ShearStrngth",
+          "%t_submerged",
+          "slope",
+          "slo2",
+          "SeedlingDen",
+          "SeedlingPresence",
+          "max_shelter_width_linestudy",
+          "chenier_width_line_study",
+          "water_fetch_lt_width_line_study",
+          "mudflat_width_line_study",
+          "2016_veget",
+          "S2_2016011",
+          "2015_veget",
+          "S2_2015100",
+          "mangrove_expansion",
+          "mangrove_die-back"
+        ],
+        "missing": {
+          "transect": 0,
+          "station": 0,
+          "lat": 0,
+          "lon": 0,
+          "treatment": 0,
+          "pH": 2,
+          "redox": 2,
+          "S2-": 26,
+          "SCOARSE%_2 (%)": 24,
+          "SD(0.1)_2 (µm)": 24,
+          "SD(0.9)_2 (µm)": 24,
+          "SD50MUM_2 (µm)": 24,
+          "SD50PHIM_2 (phi)": 24,
+          "SFINES%_2 (%)": 24,
+          "SMEDIUM%_2 (%)": 24,
+          "SMODE_2 (µm)": 24,
+          "SSILT63_2 (%)": 24,
+          "WC": 24,
+          "orgC": 25,
+          "BulkDen": 24,
+          "ShearStrngth": 7,
+          "%t_submerged": 0,
+          "slope": 0,
+          "slo2": 0,
+          "SeedlingDen": 0,
+          "SeedlingPresence": 0,
+          "max_shelter_width_linestudy": 0,
+          "chenier_width_line_study": 0,
+          "water_fetch_lt_width_line_study": 0,
+          "mudflat_width_line_study": 0,
+          "2016_veget": 0,
+          "S2_2016011": 0,
+          "2015_veget": 0,
+          "S2_2015100": 0,
+          "mangrove_expansion": 0,
+          "mangrove_die-back": 0
+        },
+        "numeric_ranges": {
+          "transect": {
+            "min": 1.0,
+            "max": 21.0
+          },
+          "station": {
+            "min": 1.0,
+            "max": 8.0
+          },
+          "lat": {
+            "min": -6.912405,
+            "max": -6.893683
+          },
+          "lon": {
+            "min": 110.486364,
+            "max": 110.506009
+          },
+          "pH": {
+            "min": 6.735,
+            "max": 7.697
+          },
+          "redox": {
+            "min": -317.9,
+            "max": -62.8
+          },
+          "S2-": {
+            "min": 395.3378145467,
+            "max": 11181.2640905196
+          },
+          "SCOARSE%_2 (%)": {
+            "min": 0.0,
+            "max": 9.24
+          },
+          "SD(0.1)_2 (µm)": {
+            "min": 1.38,
+            "max": 5.72
+          },
+          "SD(0.9)_2 (µm)": {
+            "min": 13.7,
+            "max": 418.72
+          },
+          "SD50MUM_2 (µm)": {
+            "min": 5.12,
+            "max": 144.77
+          },
+          "SD50PHIM_2 (phi)": {
+            "min": 2.79,
+            "max": 7.61
+          },
+          "SFINES%_2 (%)": {
+            "min": 0.0,
+            "max": 36.98
+          },
+          "SMEDIUM%_2 (%)": {
+            "min": 0.0,
+            "max": 19.09
+          },
+          "SMODE_2 (µm)": {
+            "min": 3.808,
+            "max": 194.942
+          },
+          "SSILT63_2 (%)": {
+            "min": 29.58,
+            "max": 100.0
+          },
+          "WC": {
+            "min": 26.7829050865,
+            "max": 66.023354707
+          },
+          "orgC": {
+            "min": 4.6833943016,
+            "max": 13.8971532246
+          },
+          "BulkDen": {
+            "min": 1.249,
+            "max": 1.6605
+          },
+          "ShearStrngth": {
+            "min": 0.3225516407,
+            "max": 4.0
+          },
+          "%t_submerged": {
+            "min": 0.0,
+            "max": 1.0
+          },
+          "slope": {
+            "min": -0.0979166667,
+            "max": 0.1775
+          },
+          "SeedlingDen": {
+            "min": 0.0,
+            "max": 5.0
+          },
+          "SeedlingPresence": {
+            "min": 0.0,
+            "max": 1.0
+          },
+          "max_shelter_width_linestudy": {
+            "min": 0.0,
+            "max": 735.39107
+          },
+          "chenier_width_line_study": {
+            "min": 0.0,
+            "max": 134.35029
+          },
+          "water_fetch_lt_width_line_study": {
+            "min": 77.78174,
+            "max": 2000.0
+          },
+          "mudflat_width_line_study": {
+            "min": 0.0,
+            "max": 537.40117
+          },
+          "2016_veget": {
+            "min": 0.0,
+            "max": 1.0
+          },
+          "S2_2016011": {
+            "min": -0.25778,
+            "max": 0.62254
+          },
+          "2015_veget": {
+            "min": 0.0,
+            "max": 1.0
+          },
+          "S2_2015100": {
+            "min": -0.38604,
+            "max": 0.72248
+          },
+          "mangrove_expansion": {
+            "min": 0.0,
+            "max": 1.0
+          },
+          "mangrove_die-back": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        }
+      }
+    },
+    "role": "model_input",
+    "reason": "Digunakan pada eksperimen dengan target dan fitur yang eksplisit."
+  },
+  {
+    "file": "september2021_updated.xlsx",
+    "sha256": "1ef824bb294c60fa471e8f3652338b33e4be39dc13667751db6ebc8b8527c063",
+    "tables": {
+      "Sheet1": {
+        "rows": 44398,
+        "columns": [
+          "time",
+          "water_level"
+        ],
+        "missing": {
+          "time": 10979,
+          "water_level": 1538
+        },
+        "numeric_ranges": {
+          "water_level": {
+            "min": -0.604,
+            "max": 1536.97
+          }
+        },
+        "invalid_timestamps": 10979,
+        "time_min": "2021-08-02 07:00:00",
+        "time_max": "2021-09-01 07:00:00",
+        "duplicate_timestamps": 10978
+      }
+    },
+    "role": "physical_context",
+    "reason": "Belum ada hubungan lokasi/waktu/datum terverifikasi dengan target biologis; tidak diubah menjadi pengukuran di A-C."
+  }
+]

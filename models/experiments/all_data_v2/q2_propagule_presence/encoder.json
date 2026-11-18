@@ -1,0 +1,46 @@
+{
+  "numeric": [
+    "day_sin",
+    "day_cos"
+  ],
+  "categorical": [
+    "zone",
+    "species"
+  ],
+  "categories": {
+    "zone": [
+      "pond",
+      "source"
+    ],
+    "species": [
+      "Prop # Avicennia alba",
+      "Prop # Avicennia marina",
+      "Prop # Avicennia officinalis",
+      "Prop # Rhizophora mucronata",
+      "Prop # Rhizophora stylosa"
+    ]
+  },
+  "encoded_names": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8"
+  ],
+  "source_features": [
+    "day_sin",
+    "day_cos",
+    "zone",
+    "zone",
+    "species",
+    "species",
+    "species",
+    "species",
+    "species"
+  ],
+  "missing_policy": "NaN native XGBoost, tanpa imputasi; kategori tak dikenal menjadi all-zero indikator."
+}

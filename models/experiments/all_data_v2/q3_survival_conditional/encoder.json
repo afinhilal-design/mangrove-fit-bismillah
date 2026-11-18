@@ -1,0 +1,33 @@
+{
+  "numeric": [],
+  "categorical": [
+    "SiteCondition",
+    "PlantingTreatment"
+  ],
+  "categories": {
+    "SiteCondition": [
+      "EMR-dams",
+      "exposed",
+      "natural shelter"
+    ],
+    "PlantingTreatment": [
+      "A.alba",
+      "R.mucronata"
+    ]
+  },
+  "encoded_names": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4"
+  ],
+  "source_features": [
+    "SiteCondition",
+    "SiteCondition",
+    "SiteCondition",
+    "PlantingTreatment",
+    "PlantingTreatment"
+  ],
+  "missing_policy": "NaN native XGBoost, tanpa imputasi; kategori tak dikenal menjadi all-zero indikator."
+}

@@ -1,0 +1,79 @@
+{
+  "dataset_id": "D02",
+  "citation": "van Bijsterveldt, C. E. J., dkk. (2020). How to restore mangroves for greenbelt creation along eroding coasts with abandoned aquaculture ponds. 4TU.ResearchData. https://doi.org/10.4121/uuid:522c81ad-e989-4374-8ac9-10367c6d4b23",
+  "license": "Periksa lisensi di halaman 4TU sebelum distribusi ulang.",
+  "source_files": {
+    "sea_site": {
+      "name": "sea-site_dataset_withNAs.csv",
+      "sha256": "c8c18d89657eae5efe3c41c12156b51c4039ec7a7aa5bedd85d1a38ca040565e",
+      "rows": 56
+    },
+    "pond": {
+      "name": "pond_dataset_withNAs_UTF8.csv",
+      "sha256": "7bbefebea1c71db2d027f2719511c9b586f070b1f7a643a957f6e9cf2e25d995",
+      "rows": 55
+    }
+  },
+  "converted_file": "D02_combined_seedling.csv",
+  "converted_sha256": "0d8c813f73f7c5e47ef8487b3ab3f9233b40672b51b0a04666dbcca18b23e102",
+  "converted_at": "2026-11-18T16:33:08+00:00",
+  "rows": 111,
+  "rows_per_zone": {
+    "sea": 56,
+    "pond": 55
+  },
+  "blocks": 21,
+  "target": {
+    "column": "seedling_presence",
+    "source_sea": "SeedlingPresence (0/1)",
+    "source_pond": "Seedling density class (absent→0, present/multiple→1)",
+    "positives": 30,
+    "negatives": 81,
+    "definition": "Semai mangrove alami ditemukan (1) atau tidak (0) pada titik pengamatan."
+  },
+  "block_column": "blok",
+  "features": {
+    "inundation_duration_h_day": {
+      "missing": 0,
+      "available": 111
+    },
+    "soil_ph": {
+      "missing": 2,
+      "available": 109
+    },
+    "redox_mv": {
+      "missing": 2,
+      "available": 109
+    },
+    "bed_slope": {
+      "missing": 55,
+      "available": 56
+    },
+    "shear_strength_kpa": {
+      "missing": 7,
+      "available": 104
+    },
+    "water_content_pct": {
+      "missing": 24,
+      "available": 87
+    },
+    "organic_carbon_pct": {
+      "missing": 25,
+      "available": 86
+    },
+    "bulk_density_g_cm3": {
+      "missing": 25,
+      "available": 86
+    },
+    "shelter_width_m": {
+      "missing": 55,
+      "available": 56
+    }
+  },
+  "known_limitations": [
+    "111 titik pengamatan, 21 blok; ukuran kecil.",
+    "Pond tidak memiliki data slope dan shelter width.",
+    "Target biner digabung dari dua definisi berbeda (presence vs density class).",
+    "Semua data berasal dari satu wilayah (Demak, Jawa Tengah)."
+  ]
+}

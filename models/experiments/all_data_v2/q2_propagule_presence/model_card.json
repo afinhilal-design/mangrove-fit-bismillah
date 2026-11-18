@@ -1,0 +1,298 @@
+{
+  "status": "RESEARCH_ONLY",
+  "description": "Propagul ditemukan pada perangkap/tanggal/spesies; bukan survival atau prediksi tahun mendatang.",
+  "target": "target",
+  "features": [
+    "day_sin",
+    "day_cos",
+    "zone",
+    "species"
+  ],
+  "synthetic": false,
+  "approved_by": null,
+  "rows": 2387,
+  "missing_labels_excluded": 198,
+  "groups": 25,
+  "missing_features": {
+    "day_sin": 0,
+    "day_cos": 0,
+    "zone": 0,
+    "species": 0
+  },
+  "sha256": "750b893ab78b38b83e2f60fe9d02798d7f6d5671f5b20c74430dd83cd7248545",
+  "data_sha256": "dd30e5f76a6c87ab59db7210ed15243b806b8a475fca6158939672d8566574ba",
+  "xgboost_version": "3.2.0",
+  "final_config": {
+    "max_depth": 3,
+    "rounds": 100
+  },
+  "final_threshold": 0.2,
+  "validation": "Nested GroupKFold: outer<=4, inner<=3; four fixed configurations; encoder fit on training fold only.",
+  "folds": [
+    {
+      "fold": 0,
+      "train_groups": [
+        "16",
+        "17",
+        "18",
+        "19",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "33",
+        "34",
+        "36",
+        "37",
+        "38"
+      ],
+      "test_groups": [
+        "20",
+        "21",
+        "32",
+        "35",
+        "39",
+        "40"
+      ],
+      "config": {
+        "max_depth": 3,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.2,
+      "shap_max_error": 9.5367431640625e-07,
+      "metrics": {
+        "n": 595,
+        "prevalence": 0.1748,
+        "balanced_accuracy": 0.75,
+        "f1": 0.5151,
+        "pr_auc": 0.4764,
+        "brier": 0.1148,
+        "confusion": {
+          "tp": 77,
+          "fp": 118,
+          "tn": 373,
+          "fn": 27
+        },
+        "threshold": 0.2
+      }
+    },
+    {
+      "fold": 1,
+      "train_groups": [
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "23",
+        "24",
+        "28",
+        "29",
+        "31",
+        "32",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "test_groups": [
+        "17",
+        "22",
+        "25",
+        "26",
+        "27",
+        "30",
+        "33"
+      ],
+      "config": {
+        "max_depth": 3,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.2,
+      "shap_max_error": 1.9073486328125e-06,
+      "metrics": {
+        "n": 605,
+        "prevalence": 0.1901,
+        "balanced_accuracy": 0.6929,
+        "f1": 0.471,
+        "pr_auc": 0.4228,
+        "brier": 0.1299,
+        "confusion": {
+          "tp": 73,
+          "fp": 122,
+          "tn": 368,
+          "fn": 42
+        },
+        "threshold": 0.2
+      }
+    },
+    {
+      "fold": 2,
+      "train_groups": [
+        "16",
+        "17",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "25",
+        "26",
+        "27",
+        "28",
+        "30",
+        "32",
+        "33",
+        "35",
+        "36",
+        "37",
+        "39",
+        "40"
+      ],
+      "test_groups": [
+        "18",
+        "24",
+        "29",
+        "31",
+        "34",
+        "38"
+      ],
+      "config": {
+        "max_depth": 3,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.2,
+      "shap_max_error": 1.9073486328125e-06,
+      "metrics": {
+        "n": 595,
+        "prevalence": 0.158,
+        "balanced_accuracy": 0.7303,
+        "f1": 0.4514,
+        "pr_auc": 0.4656,
+        "brier": 0.1062,
+        "confusion": {
+          "tp": 72,
+          "fp": 153,
+          "tn": 348,
+          "fn": 22
+        },
+        "threshold": 0.2
+      }
+    },
+    {
+      "fold": 3,
+      "train_groups": [
+        "17",
+        "18",
+        "20",
+        "21",
+        "22",
+        "24",
+        "25",
+        "26",
+        "27",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "38",
+        "39",
+        "40"
+      ],
+      "test_groups": [
+        "16",
+        "19",
+        "23",
+        "28",
+        "36",
+        "37"
+      ],
+      "config": {
+        "max_depth": 3,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.2,
+      "shap_max_error": 1.9073486328125e-06,
+      "metrics": {
+        "n": 592,
+        "prevalence": 0.1486,
+        "balanced_accuracy": 0.7613,
+        "f1": 0.466,
+        "pr_auc": 0.4707,
+        "brier": 0.0992,
+        "confusion": {
+          "tp": 72,
+          "fp": 149,
+          "tn": 355,
+          "fn": 16
+        },
+        "threshold": 0.2
+      }
+    }
+  ],
+  "metrics": {
+    "nested_oof_threshold_05": {
+      "n": 2387,
+      "prevalence": 0.168,
+      "balanced_accuracy": 0.5829,
+      "f1": 0.292,
+      "pr_auc": 0.4514,
+      "brier": 0.1126,
+      "confusion": {
+        "tp": 80,
+        "fp": 67,
+        "tn": 1919,
+        "fn": 321
+      },
+      "threshold": 0.5
+    },
+    "baseline_prevalence": {
+      "n": 2387,
+      "prevalence": 0.168,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.1584,
+      "brier": 0.14,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 1986,
+        "fn": 401
+      },
+      "threshold": 0.5
+    },
+    "nested_oof_tuned_threshold": {
+      "n": 2387,
+      "prevalence": 0.168,
+      "balanced_accuracy": 0.7301,
+      "f1": 0.4753,
+      "pr_auc": 0.4514,
+      "brier": 0.1126,
+      "confusion": {
+        "tp": 294,
+        "fp": 542,
+        "tn": 1444,
+        "fn": 107
+      },
+      "threshold": "selected_in_each_inner_cv"
+    }
+  },
+  "limitations": [
+    "Exploratory re-analysis of previously inspected data, not an untouched external test.",
+    "OOF SHAP explains different fold models; final all-data model has no new independent evaluation.",
+    "Not approved for application inference; no calendar or location reassignment.",
+    "Grouping does not prove independence of nearby physical sites."
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "status": "RESEARCH_ONLY",
+  "description": "Keberadaan semai alami; lokasi dengan koordinat sama digabung dalam grup validasi.",
+  "target": "target",
+  "features": [
+    "pH",
+    "redox",
+    "S2-",
+    "SCOARSE%_2 (%)",
+    "SD(0.1)_2 (µm)",
+    "SD(0.9)_2 (µm)",
+    "SD50MUM_2 (µm)",
+    "SD50PHIM_2 (phi)",
+    "SFINES%_2 (%)",
+    "SMEDIUM%_2 (%)",
+    "SMODE_2 (µm)",
+    "SSILT63_2 (%)",
+    "WC",
+    "orgC",
+    "BulkDen",
+    "ShearStrngth",
+    "%t_submerged",
+    "zone_type"
+  ],
+  "synthetic": false,
+  "approved_by": null,
+  "rows": 111,
+  "missing_labels_excluded": 0,
+  "groups": 4,
+  "missing_features": {
+    "pH": 2,
+    "redox": 2,
+    "S2-": 27,
+    "SCOARSE%_2 (%)": 24,
+    "SD(0.1)_2 (µm)": 24,
+    "SD(0.9)_2 (µm)": 24,
+    "SD50MUM_2 (µm)": 24,
+    "SD50PHIM_2 (phi)": 24,
+    "SFINES%_2 (%)": 24,
+    "SMEDIUM%_2 (%)": 24,
+    "SMODE_2 (µm)": 24,
+    "SSILT63_2 (%)": 24,
+    "WC": 24,
+    "orgC": 25,
+    "BulkDen": 25,
+    "ShearStrngth": 7,
+    "%t_submerged": 0,
+    "zone_type": 0
+  },
+  "sha256": "8f09b24e1bd38b2d753ab0e9904adfefcaf6fe86b19c540af7a2a7b136634db0",
+  "data_sha256": "7b04a4ba5fe43fe4f755bb70116246c0c4df14b121a9b82da21db4ea19feadfa",
+  "xgboost_version": "3.2.0",
+  "final_config": {
+    "max_depth": 2,
+    "rounds": 40
+  },
+  "final_threshold": 0.6,
+  "validation": "Nested GroupKFold: outer<=4, inner<=3; four fixed configurations; encoder fit on training fold only.",
+  "folds": [
+    {
+      "fold": 0,
+      "train_groups": [
+        "component_1",
+        "component_21",
+        "component_9"
+      ],
+      "test_groups": [
+        "component_20"
+      ],
+      "config": {
+        "max_depth": 2,
+        "rounds": 40
+      },
+      "threshold_from_inner_cv": 0.5,
+      "shap_max_error": 3.5762786865234375e-07,
+      "metrics": {
+        "n": 55,
+        "prevalence": 0.4182,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.4669,
+        "brier": 0.3236,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 32,
+          "fn": 23
+        },
+        "threshold": 0.5
+      }
+    },
+    {
+      "fold": 1,
+      "train_groups": [
+        "component_1",
+        "component_20",
+        "component_21"
+      ],
+      "test_groups": [
+        "component_9"
+      ],
+      "config": {
+        "max_depth": 2,
+        "rounds": 40
+      },
+      "threshold_from_inner_cv": 0.5,
+      "shap_max_error": 3.5762786865234375e-07,
+      "metrics": {
+        "n": 35,
+        "prevalence": 0.0857,
+        "balanced_accuracy": 0.7083,
+        "f1": 0.3077,
+        "pr_auc": 0.5841,
+        "brier": 0.1542,
+        "confusion": {
+          "tp": 2,
+          "fp": 8,
+          "tn": 24,
+          "fn": 1
+        },
+        "threshold": 0.5
+      }
+    },
+    {
+      "fold": 2,
+      "train_groups": [
+        "component_1",
+        "component_20",
+        "component_9"
+      ],
+      "test_groups": [
+        "component_21"
+      ],
+      "config": {
+        "max_depth": 2,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.6,
+      "shap_max_error": 9.5367431640625e-07,
+      "metrics": {
+        "n": 11,
+        "prevalence": 0.3636,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.75,
+        "brier": 0.2174,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 7,
+          "fn": 4
+        },
+        "threshold": 0.6
+      }
+    },
+    {
+      "fold": 3,
+      "train_groups": [
+        "component_20",
+        "component_21",
+        "component_9"
+      ],
+      "test_groups": [
+        "component_1"
+      ],
+      "config": {
+        "max_depth": 2,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.5,
+      "shap_max_error": 7.152557373046875e-07,
+      "metrics": {
+        "n": 10,
+        "prevalence": 0.0,
+        "balanced_accuracy": null,
+        "f1": 0.0,
+        "pr_auc": null,
+        "brier": 0.0907,
+        "confusion": {
+          "tp": 0,
+          "fp": 2,
+          "tn": 8,
+          "fn": 0
+        },
+        "threshold": 0.5
+      }
+    }
+  ],
+  "metrics": {
+    "nested_oof_threshold_05": {
+      "n": 111,
+      "prevalence": 0.2703,
+      "balanced_accuracy": 0.4883,
+      "f1": 0.1395,
+      "pr_auc": 0.2871,
+      "brier": 0.2387,
+      "confusion": {
+        "tp": 3,
+        "fp": 10,
+        "tn": 71,
+        "fn": 27
+      },
+      "threshold": 0.5
+    },
+    "baseline_prevalence": {
+      "n": 111,
+      "prevalence": 0.2703,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.2324,
+      "brier": 0.2427,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 81,
+        "fn": 30
+      },
+      "threshold": 0.5
+    },
+    "nested_oof_tuned_threshold": {
+      "n": 111,
+      "prevalence": 0.2703,
+      "balanced_accuracy": 0.4716,
+      "f1": 0.0952,
+      "pr_auc": 0.2871,
+      "brier": 0.2387,
+      "confusion": {
+        "tp": 2,
+        "fp": 10,
+        "tn": 71,
+        "fn": 28
+      },
+      "threshold": "selected_in_each_inner_cv"
+    },
+    "simple_features_same_outer_folds": {
+      "n": 111,
+      "prevalence": 0.2703,
+      "balanced_accuracy": 0.4759,
+      "f1": 0.1333,
+      "pr_auc": 0.3165,
+      "brier": 0.2356,
+      "confusion": {
+        "tp": 3,
+        "fp": 12,
+        "tn": 69,
+        "fn": 27
+      },
+      "threshold": 0.5
+    }
+  },
+  "limitations": [
+    "Exploratory re-analysis of previously inspected data, not an untouched external test.",
+    "OOF SHAP explains different fold models; final all-data model has no new independent evaluation.",
+    "Not approved for application inference; no calendar or location reassignment.",
+    "Grouping does not prove independence of nearby physical sites."
+  ]
+}

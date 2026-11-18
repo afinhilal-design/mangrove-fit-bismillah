@@ -1,0 +1,222 @@
+{
+  "status": "RESEARCH_ONLY",
+  "description": "Survival bulan 10, bersyarat masih hidup bulan 3; bukan survival sejak tanam.",
+  "target": "target",
+  "features": [
+    "SiteCondition",
+    "PlantingTreatment"
+  ],
+  "synthetic": false,
+  "approved_by": null,
+  "rows": 240,
+  "missing_labels_excluded": 0,
+  "groups": 7,
+  "missing_features": {
+    "SiteCondition": 0,
+    "PlantingTreatment": 0
+  },
+  "sha256": "5b438924c95420134d5e0502623016617ef67d7accdb10927476762dc28c7770",
+  "data_sha256": "b615500171637db0cb9096fd1c54671ebe603c2345ef363fe0c03f4d9baf84f5",
+  "xgboost_version": "3.2.0",
+  "final_config": {
+    "max_depth": 3,
+    "rounds": 40
+  },
+  "final_threshold": 0.4,
+  "validation": "Nested GroupKFold: outer<=4, inner<=3; four fixed configurations; encoder fit on training fold only.",
+  "folds": [
+    {
+      "fold": 0,
+      "train_groups": [
+        "EMR-dams1",
+        "EMR-dams4",
+        "exposed2",
+        "natural shelter1",
+        "natural shelter2",
+        "natural shelter3"
+      ],
+      "test_groups": [
+        "EMR-dams3"
+      ],
+      "config": {
+        "max_depth": 2,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.4,
+      "shap_max_error": 5.364418029785156e-07,
+      "metrics": {
+        "n": 46,
+        "prevalence": 0.0,
+        "balanced_accuracy": null,
+        "f1": 0.0,
+        "pr_auc": null,
+        "brier": 0.0512,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 46,
+          "fn": 0
+        },
+        "threshold": 0.4
+      }
+    },
+    {
+      "fold": 1,
+      "train_groups": [
+        "EMR-dams1",
+        "EMR-dams3",
+        "natural shelter1",
+        "natural shelter2",
+        "natural shelter3"
+      ],
+      "test_groups": [
+        "EMR-dams4",
+        "exposed2"
+      ],
+      "config": {
+        "max_depth": 2,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.4,
+      "shap_max_error": 4.76837158203125e-07,
+      "metrics": {
+        "n": 60,
+        "prevalence": 0.1667,
+        "balanced_accuracy": 0.46,
+        "f1": 0.1538,
+        "pr_auc": 0.2028,
+        "brier": 0.1976,
+        "confusion": {
+          "tp": 2,
+          "fp": 14,
+          "tn": 36,
+          "fn": 8
+        },
+        "threshold": 0.4
+      }
+    },
+    {
+      "fold": 2,
+      "train_groups": [
+        "EMR-dams3",
+        "EMR-dams4",
+        "exposed2",
+        "natural shelter1",
+        "natural shelter2"
+      ],
+      "test_groups": [
+        "EMR-dams1",
+        "natural shelter3"
+      ],
+      "config": {
+        "max_depth": 3,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.5,
+      "shap_max_error": 1.6689300537109375e-06,
+      "metrics": {
+        "n": 68,
+        "prevalence": 0.4706,
+        "balanced_accuracy": 0.5,
+        "f1": 0.0,
+        "pr_auc": 0.7998,
+        "brier": 0.221,
+        "confusion": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 36,
+          "fn": 32
+        },
+        "threshold": 0.5
+      }
+    },
+    {
+      "fold": 3,
+      "train_groups": [
+        "EMR-dams1",
+        "EMR-dams3",
+        "EMR-dams4",
+        "exposed2",
+        "natural shelter3"
+      ],
+      "test_groups": [
+        "natural shelter1",
+        "natural shelter2"
+      ],
+      "config": {
+        "max_depth": 2,
+        "rounds": 100
+      },
+      "threshold_from_inner_cv": 0.5,
+      "shap_max_error": 3.5762786865234375e-07,
+      "metrics": {
+        "n": 66,
+        "prevalence": 0.4242,
+        "balanced_accuracy": 0.5555,
+        "f1": 0.5897,
+        "pr_auc": 0.4536,
+        "brier": 0.3612,
+        "confusion": {
+          "tp": 23,
+          "fp": 27,
+          "tn": 11,
+          "fn": 5
+        },
+        "threshold": 0.5
+      }
+    }
+  ],
+  "metrics": {
+    "nested_oof_threshold_05": {
+      "n": 240,
+      "prevalence": 0.2917,
+      "balanced_accuracy": 0.558,
+      "f1": 0.3676,
+      "pr_auc": 0.446,
+      "brier": 0.2211,
+      "confusion": {
+        "tp": 25,
+        "fp": 41,
+        "tn": 129,
+        "fn": 45
+      },
+      "threshold": 0.5
+    },
+    "baseline_prevalence": {
+      "n": 240,
+      "prevalence": 0.2917,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "pr_auc": 0.2352,
+      "brier": 0.2312,
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 170,
+        "fn": 70
+      },
+      "threshold": 0.5
+    },
+    "nested_oof_tuned_threshold": {
+      "n": 240,
+      "prevalence": 0.2917,
+      "balanced_accuracy": 0.558,
+      "f1": 0.3676,
+      "pr_auc": 0.446,
+      "brier": 0.2211,
+      "confusion": {
+        "tp": 25,
+        "fp": 41,
+        "tn": 129,
+        "fn": 45
+      },
+      "threshold": "selected_in_each_inner_cv"
+    }
+  },
+  "limitations": [
+    "Exploratory re-analysis of previously inspected data, not an untouched external test.",
+    "OOF SHAP explains different fold models; final all-data model has no new independent evaluation.",
+    "Not approved for application inference; no calendar or location reassignment.",
+    "Grouping does not prove independence of nearby physical sites."
+  ]
+}

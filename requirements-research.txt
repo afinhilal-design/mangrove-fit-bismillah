@@ -1,0 +1,4 @@
+# Offline research audit and nested group validation; application schema unchanged.
+-r requirements-ml.txt
+openpyxl>=3.1,<4
+scikit-learn>=1.4,<2
