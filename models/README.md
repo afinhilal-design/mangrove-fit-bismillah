@@ -14,3 +14,29 @@ Tahap selanjutnya memerlukan:
 8. Tambahkan pengujian model nyata sebelum mengubah status UI.
 
 `model_service.check_model_inputs` sudah menyediakan pemeriksaan kelengkapan fitur. Ini belum merupakan implementasi inferensi. Tidak ada pickle/joblib upload, notebook yang mengarang data latih, atau hasil akurasi fiktif. Dependensi AI baru dipilih dan dikunci setelah tahap tersebut diuji.
+
+## Kontrak artefak untuk adapter (opsional, belum aktif)
+
+`mangrove_fit/model_service.py` kini memuat model hanya jika `models/active/model_card.json` dan `models/active/model.ubj` ada.
+Kartu harus berisi: `status` (harus `APPROVED`), `version`, `target`, `features` (parameter numerik), `sha256` dari `model.ubj`,
+`domain` ({fitur: [min, maks]}), `output_space` (`probability`/`raw`), `approved_by`.
+Gerbang: screening bukan EXCLUDED → fitur lengkap tanpa imputasi → nilai dalam domain → baru prediksi.
+Penjelasan memakai `pred_contribs` XGBoost (TreeSHAP) dengan uji aditivitas. Pasang dengan `pip install -r requirements-ml.txt`.
+UI belum menampilkan skor model; itu menunggu langkah 8 di atas. Tanpa berkas tersebut, perilaku tetap NO_MODEL_AVAILABLE.
+
+## Pipeline yang tersedia (17 Nov 2026)
+
+```
+python -m pip install -r requirements-ml.txt
+python scripts/train_model.py data/latih.csv --target <kolom_0_1> --features <param...> --block-col <kolom_blok>
+#  -> models/candidate/  status PENDING_REVIEW (belum aktif)
+python scripts/approve_model.py --reviewer "Nama" --note "..."
+#  -> models/active/     status APPROVED (model lama diarsipkan ke models/archive/)
+```
+
+- CSV: satu baris per titik sampel, label biner 0/1, kolom blok spasial, fitur = parameter numerik `schemas.PARAMETERS`.
+- Baris tidak lengkap dibuang (tidak diimputasi); jumlahnya dicatat di kartu.
+- Data dari `data/demo/`, berkas bernama `*SYNTHETIC*`, atau bertanda `is_demo`/`quality_flag=demo` ditolak;
+  dengan `--allow-synthetic` kartunya `SYNTHETIC_TEST_ONLY` dan tidak pernah bisa disetujui atau dimuat.
+- Persetujuan ditolak bila balanced accuracy uji tidak melampaui baseline prevalensi.
+- `shap` (opsional) dipakai untuk mencocokkan ulang nilai TreeSHAP; bila berbeda > 1e-3 penjelasan ditahan.

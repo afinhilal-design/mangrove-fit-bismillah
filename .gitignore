@@ -225,3 +225,7 @@ data/app.db-*
 
 # Visual Studio temporary files
 .vs/
+
+# Model kandidat & arsip lokal (model aktif dikomit hanya setelah disetujui)
+models/candidate/
+models/archive/

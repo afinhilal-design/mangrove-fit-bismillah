@@ -55,13 +55,15 @@
 
 | Komponen | Status | Bukti / Catatan |
 |---|---|---|
-| Audit ketersediaan dataset berlabel | ❌ TERHAMBAT | Dataset D01, D02 (4TU) belum diunduh; akses manual diperlukan |
-| Pipeline training XGBoost | ⚠️ PARSIAL | `model_service.py` berisi validator & status; inferensi belum terhubung |
-| Inferensi model di UI | ❌ TERHAMBAT | Menunggu artefak model terverifikasi |
-| Interpretasi SHAP | ❌ TERHAMBAT | `explain_service.py` berisi placeholder; menunggu model valid |
+| Audit ketersediaan dataset berlabel | ⚠️ PARSIAL | D01 sea-site diaudit & dikonversi (`dataset_d01.py`, `scripts/import_sea_site.py`, manifest SHA-256). D02 belum diunduh |
+| Model kandidat D01 | ⚠️ PARSIAL | `cand-20261117-ef0e4a75` PENDING_REVIEW; CV antar-transek BA 0.5, PR-AUC 0.4367 vs 0.2222. Ditolak gerbang persetujuan (tidak melampaui baseline) → UI tetap NO_MODEL_AVAILABLE |
+| Parameter baru pH, redoks, kemiringan | ✅ SELESAI | `schemas.py` + migrasi baca `upgrade_observations`; diuji `tests/test_dataset_d01.py` |
+| Pipeline training XGBoost | ✅ SELESAI (kode) | `training.py` + `scripts/train_model.py`: split blok spasial, tanpa imputasi, early stopping, metrik BA/F1/PR-AUC/Brier vs baseline; diuji `tests/test_training.py` dengan data acak sementara |
+| Inferensi model di UI | ⚠️ PARSIAL | Tab Model XGBoost & Analisis terhubung ke `predict_zone`; tampil hanya bila model APPROVED ada. Belum ada model nyata → tetap NO_MODEL_AVAILABLE |
+| Interpretasi SHAP | ⚠️ PARSIAL | TreeSHAP XGBoost + uji aditivitas + cek silang `shap.TreeExplainer` (opsional); grafik di tab Penjelasan SHAP. Menunggu model nyata |
 | Notebook training | 🔲 BELUM MULAI | Direncanakan di `notebooks/train_xgboost.ipynb` |
-| Model registry | ⚠️ PARSIAL | Tabel `model_registry` ada di DB; belum ada artefak model |
-| Validasi out-of-domain | 🔲 BELUM MULAI | Menunggu data latih dan domain pelatihan terdefinisi |
+| Model registry | ⚠️ PARSIAL | Berbasis berkas: `models/candidate` → `scripts/approve_model.py` → `models/active`, arsip di `models/archive`. Tabel DB `model_registry` belum dipakai |
+| Validasi out-of-domain | ✅ SELESAI (kode) | Domain = min/maks fitur data latih, ditulis ke kartu model; prediksi ditolak (OUT_OF_DOMAIN) di luar rentang |
 
 ---
 
@@ -115,9 +117,9 @@
 
 1. **Prioritas:** Unduh dataset D02 (`To Plant or Not to Plant`, 4TU) secara manual → audit kolom → tentukan target AI
 2. Buat `data/manifests/D02.json` setelah berhasil akses
-3. Susun pipeline training di `notebooks/train_xgboost.ipynb`
-4. Aktifkan inferensi model di `model_service.py` setelah artefak terverifikasi
-5. Hubungkan SHAP ke tab Penjelasan SHAP di halaman Analisis
+3. Latih kandidat: `python scripts/train_model.py <csv> --target ... --features ... --block-col ...`
+4. Peninjau ahli memeriksa `models/candidate/model_card.json`, lalu `python scripts/approve_model.py --reviewer ...`
+5. Uji UI dengan model nyata (AT-10, AT-11) sebelum mengubah status menjadi SELESAI
 
 ---
 

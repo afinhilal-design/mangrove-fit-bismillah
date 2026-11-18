@@ -1,6 +1,6 @@
 # Model Card — MANGROVE-FIT
 
-> **Status model:** `NO_MODEL_AVAILABLE`  
+> **Status model aktif:** `NO_MODEL_AVAILABLE` · **Kandidat:** `cand-20261117-ef0e4a75` (`PENDING_REVIEW`, belum layak disetujui; rincian di `models/candidate/model_card.json`)  
 > **Versi:** Placeholder 0.1 · 16 November 2026  
 > **Dokumen ini akan diperbarui** setelah model XGBoost dilatih dan divalidasi
 

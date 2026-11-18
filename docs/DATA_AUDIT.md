@@ -20,7 +20,7 @@ Mencatat hasil inspeksi file mentah setiap dataset secara sistematis:
 
 | Dataset | Unduh | Inventaris file | Audit kolom | Keputusan penggunaan |
 |---|---|---|---|---|
-| D01 | ❌ | ❌ | ❌ | ❌ |
+| D01 | ✅ sea-site (18 Nov 2026) | ⚠️ satu berkas | ✅ lihat bagian D01 | ⚠️ kandidat model saja |
 | D02 | ❌ | ❌ | ❌ | ❌ |
 | D03 | ❌ | ❌ | ❌ | ❌ |
 | D04 | ❌ (perlu kontak penulis) | ❌ | ❌ | ❌ |
@@ -102,7 +102,18 @@ Setelah file berhasil diunduh dari https://doi.org/10.4121/17927198:
 
 ---
 
-## D01 — Rencana Audit
+## D01 — Hasil audit berkas `sea-site_dataset_withNAs.csv` (18 Nov 2026)
+
+- Format: Windows-1252, setiap baris dibungkus satu field berkutip; dibaca oleh `mangrove_fit/dataset_d01.py`.
+- 56 titik, 10 transek (T01, T02, T06, T09, T10, T11, T14, T15, T20, T21), perlakuan ES (26) dan RS (30). Koordinat per titik tersedia.
+- Tidak ada kolom tanggal per baris; label vegetasi/S2 merujuk 2015/2016.
+- Target dipilih: `SeedlingPresence` → `seedling_presence` (12 positif). Seluruh titik positif berada di 5 transek RS.
+- Fitur dipakai: `%t_submerged`×24 → lama genangan, `pH`, `redox`, `slope`. Sedimen (24–26 NA), orgC, BulkDen tidak dipakai; ShearStrngth 7 NA.
+- Tidak dipakai karena risiko kebocoran label: `2016_veget`, `S2_2016011`, `mangrove_expansion`, `mangrove_die-back`.
+- Belum diverifikasi: satuan `redox` (diasumsikan mV), definisi `slope`, lisensi distribusi ulang.
+- Jejak: salinan asli `data/raw/D01/`, tabel latih `data/training/D01_sea_site_seedling.csv`, manifest + SHA-256 `data/manifests/D01.json`.
+
+## D01 — Rencana Audit (awal)
 
 Setelah file diunduh dari https://doi.org/10.4121/uuid:522c81ad:
 

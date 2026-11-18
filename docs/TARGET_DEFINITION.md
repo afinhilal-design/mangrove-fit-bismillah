@@ -1,10 +1,17 @@
 # Definisi Target AI — MANGROVE-FIT
 
-> **Status:** Placeholder — target belum dipilih karena dataset berlabel belum diaudit  
+> **Status:** Target kandidat dipilih tim (18 Nov 2026): `seedling_presence` dari D01 sea-site — lihat bagian 0  
 > **Versi:** 0.1 · 16 November 2026  
 > **Wajib diperbarui** setelah audit dataset D01/D02 selesai
 
 ---
+
+## 0. Keputusan 18 Nov 2026
+
+- **Target:** `seedling_presence` = kolom `SeedlingPresence` (0/1) dataset D01 sea-site; turunan biner dari Target 2 (kepadatan semai).
+- **Unit analisis:** titik pengamatan pada transek; blok spasial = transek.
+- **Fitur:** lama genangan, pH tanah, potensial redoks, kemiringan dasar.
+- **Hasil kandidat `cand-20261117-ef0e4a75`:** uji blok BA 0.5 (baseline 0.5); validasi silang antar-transek BA 0.5, PR-AUC 0.4367 (baseline 0.2222). Model tidak pernah memprediksi kelas positif pada ambang 0,5 → **belum layak disetujui**.
 
 ## 1. Prinsip Pemilihan Target
 

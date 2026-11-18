@@ -15,6 +15,10 @@ PARAMETERS = {
     'substrate_type': {'label': 'Substrat', 'unit': 'kategori', 'choices': ['lumpur','pasir','campuran','lainnya','tidak_diketahui']},
     'wave_exposure': {'label': 'Paparan gelombang', 'unit': 'kategori', 'choices': ['rendah','sedang','tinggi','tidak_diketahui']},
     'shoreline_change_m_y': {'label': 'Perubahan garis pantai', 'unit': 'm/tahun', 'range': (None,None)},
+    # Parameter tanah & morfologi (v0.2, 18 Nov 2026) — dipakai model kandidat dari dataset D01 sea-site.
+    'soil_ph': {'label': 'pH tanah', 'unit': 'pH', 'range': (0,14)},
+    'redox_mv': {'label': 'Potensial redoks', 'unit': 'mV', 'range': (-1000,1000)},
+    'bed_slope': {'label': 'Kemiringan dasar', 'unit': 'rasio', 'range': (-1,1)},
     'natural_recruitment': {'label': 'Regenerasi alami', 'unit': 'kategori', 'choices': ['ada','tidak','tidak_diketahui']},
     'propagule_supply': {'label': 'Pasokan propagul', 'unit': 'kategori', 'choices': ['cukup','terbatas','tidak_diketahui']},
     'accessibility': {'label': 'Akses lokasi', 'unit': 'kategori', 'choices': ['mudah','sedang','sulit','tidak_diketahui']},
@@ -100,6 +104,14 @@ def normalize_zone(properties, geometry):
     if not isinstance(provenance,dict): raise ValidationError('provenance harus object.')
     demo = p.get('quality_flag') == 'demo' or any(o['quality_flag']=='demo' for o in observations.values()) or p.get('data_quality') in ('DEMO','MIXED_DEMO')
     return {'zone_id':zid,'zone_name':name,'geometry':validate_geometry(geometry),'landcover_type':land,'legal_status':legal,'observations':observations,'is_demo':demo,'provenance':provenance}
+
+def upgrade_observations(zone):
+    """Migrasi baca: zona lama yang belum punya parameter baru diberi entri kosong (missing), tanpa imputasi."""
+    obs = zone.setdefault('observations', {})
+    for key, meta in PARAMETERS.items():
+        if key not in obs:
+            obs[key] = {'value': None, 'unit': meta['unit'], 'quality_flag': 'missing', 'source': None, 'date': None, 'method': None, 'datum': None}
+    return zone
 
 def values(zone):
     return {k:v['value'] for k,v in zone['observations'].items()}

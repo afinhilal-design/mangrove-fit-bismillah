@@ -1,0 +1,47 @@
+{
+  "dataset_id": "D01",
+  "citation": "van Bijsterveldt, C. E. J., dkk. (2020). How to restore mangroves for greenbelt creation along eroding coasts with abandoned aquaculture ponds. 4TU.ResearchData. https://doi.org/10.4121/uuid:522c81ad-e989-4374-8ac9-10367c6d4b23",
+  "license": "Periksa lisensi di halaman 4TU sebelum distribusi ulang.",
+  "source_file": "data/raw/D01/sea-site_dataset_withNAs.csv",
+  "source_sha256": "c8c18d89657eae5efe3c41c12156b51c4039ec7a7aa5bedd85d1a38ca040565e",
+  "source_encoding": "cp1252 (baris terbungkus kutip)",
+  "converted_file": "data/training/D01_sea_site_seedling.csv",
+  "converted_sha256": "2f8d792d7fc76dd82e89b1b96763a4079a2f49382e83ffb39b1f405e20639666",
+  "converted_at": "2026-11-17T17:40:52+00:00",
+  "rows": 56,
+  "blocks": 10,
+  "target": {
+    "column": "seedling_presence",
+    "source": "SeedlingPresence",
+    "positives": 12,
+    "definition": "Semai mangrove alami ditemukan (1) atau tidak (0) pada titik pengamatan sea-site."
+  },
+  "block_column": "blok",
+  "features": {
+    "inundation_duration_h_day": {
+      "source": "%t_submerged",
+      "transform": "x * 24 (fraksi waktu tergenang → jam/hari)",
+      "missing": 0
+    },
+    "soil_ph": {
+      "source": "pH",
+      "transform": "identitas",
+      "missing": 2
+    },
+    "redox_mv": {
+      "source": "redox",
+      "transform": "identitas (satuan diasumsikan mV)",
+      "missing": 2
+    },
+    "bed_slope": {
+      "source": "slope",
+      "transform": "identitas (rasio; definisi perlu dicek)",
+      "missing": 0
+    }
+  },
+  "not_used": "Variabel sedimen (24–26 NA dari 56), orgC, BulkDen, ShearStrngth, indeks Sentinel-2 dan kolom vegetasi tidak dipakai; S2/vegetasi 2016 berisiko kebocoran label, sedimen terlalu banyak kosong.",
+  "known_limitations": [
+    "56 titik, 10 transek; semua titik positif berada pada 5 transek perlakuan RS.",
+    "Satuan redox dan definisi slope belum diverifikasi terhadap metadata asli."
+  ]
+}

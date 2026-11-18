@@ -1,13 +1,18 @@
 import os
 import streamlit as st
+import mangrove_fit.database as _db
 from scripts.seed_demo import seed
 from mangrove_fit.ui_components import apply_style
 
 st.set_page_config(page_title='MANGROVE-FIT · Kajian Pesisir',page_icon='🌿',layout='wide',initial_sidebar_state='expanded')
-seed()
+@st.cache_resource
+def _seed_once(db_path):
+    # Sekali per proses/berkas DB, bukan di setiap interaksi pengguna.
+    seed()
+_seed_once(str(_db.DB_PATH))
 apply_style()
 with st.sidebar:
-    st.markdown('<div class="brand-mark">◒</div><div class="brand-name">MANGROVE<span>FIT</span></div><div class="brand-sub">KAJI HABITAT. PULIHKAN PESISIR.</div>',unsafe_allow_html=True)
+    st.markdown('<div class="brand"><div class="brand-mark"></div><div><div class="brand-name">MANGROVE<span>FIT</span></div><div class="brand-sub">KAJI HABITAT. PULIHKAN PESISIR.</div></div></div>',unsafe_allow_html=True)
     st.write('')
     default=0 if os.getenv('APP_MODE','demo')=='demo' else 1
     st.radio('Ruang kerja',['Demo','Analis lokal'],index=default,key='workspace_mode',help='Demo bersifat baca-saja. Analis lokal menyimpan data pengguna dalam SQLite.')
