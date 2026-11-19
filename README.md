@@ -53,6 +53,8 @@ Aplikasi akan terbuka di: **http://localhost:8501**
 
 ### Data sendiri
 
+Untuk mencoba fitur impor dengan data 33 desa dan kelurahan di Sidoarjo dan Surabaya, unggah [datasheet NDVI desa](data/pesisir/MangroveFit_NDVI_Desa_Sidoarjo_Surabaya.xlsx) dan pilih lembar **Data desa**.
+
 1. Buka **Kelola datasheet** dan pilih file. Aplikasi mendukung CSV, TSV, TXT, XLS, XLSX, XLSB, ODS, JSON, JSONL, GeoJSON, Parquet, tabel Word DOCX dan tabel pada PDF teks bergaris.
 2. Untuk buku kerja atau dokumen, pilih lembar atau tabel. Bila judulnya berada di bawah baris pertama, atur **Posisi judul kolom**. Nama berbahasa Indonesia dan Inggris yang dikenal dipetakan otomatis. Periksa satuan dan sesuaikan melalui **Cocokkan nama kolom**.
 3. Sertakan nama lokasi dan sedikitnya satu indikator vegetasi. Misalnya NDVI, tutupan tajuk dalam persen, kehilangan luas, atau kerapatan pohon per hektare. Dua luas pada periode yang sebanding juga dapat menghasilkan persentase kehilangan. Koordinat bersifat opsional. Satu nilai luas saja tercatat sebagai inventaris.
