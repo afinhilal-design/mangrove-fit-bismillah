@@ -6,6 +6,18 @@
 
 ---
 
+## Atlas Sidoarjo dan Surabaya · 19 November 2026
+
+| Fitur | Status | Hasil |
+|---|---|---|
+| Data regional | SELESAI | 17 kecamatan pada peta BIG, komposit Sentinel-2 Collection 1 hingga 18 November 2026. Cakupan memadai pada 16 kecamatan. |
+| Pengelompokan dan urutan survei | SELESAI | K-Means untuk lokasi dengan profil indikator sebanding, alasan per lokasi, status deskriptif untuk data terbatas dan unduhan CSV. |
+| Kelola datasheet | SELESAI | Impor tabel multi-format, pemilihan lembar atau tabel, pemetaan kolom, pratinjau, validasi, simpan lokal, buka kembali dan hapus. |
+| Migrasi SQLite | SELESAI | `init_db` menambahkan tabel `coastal_sheets` secara idempoten pada database lama. Kunci menggabungkan hash isi file dengan konfigurasi impor. |
+| Antarmuka | SELESAI | Peta kecamatan offline, filter wilayah, urutan survei dan rincian indikator. Ruang survei lama serta model riset berada di bagian Survei dan riset. |
+
+Pengujian edisi regional mencakup seluruh suite repositori, pembacaan tabel PDF, serta alur unggah CSV sampai unduh hasil melalui browser. Instalasi dependensi Windows diverifikasi untuk wheel Python 3.11 x64. Eksekusi otomatis dilakukan pada Linux dengan Python 3.12.
+
 ## Integrasi skenario Demak A–C — 19 November 2026
 
 **SELESAI — Perbandingan skenario:** kartu skor historis untuk A–C, tabel ringkas dan kualitas “Data historis · skenario”, detail alasan screening terpisah, grafik hanya menawarkan parameter tersedia, serta unduhan skor berwatermark. Tidak ada parameter random, kelas habitat atau status legal buatan. 15 tes skenario/UI lulus.

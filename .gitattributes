@@ -1,0 +1,9 @@
+# Preserve the bytes used to build the existing research checksums on every OS.
+datamangroveit/Bathymetry*.csv -text
+datamangroveit/Q*.csv text eol=crlf
+datamangroveit/pond_dataset_withNAs*.csv text eol=crlf
+datamangroveit/sea-site_dataset_withNAs.csv text eol=crlf
+models/experiments/all_data_v2/*/training.csv text eol=crlf
+models/experiments/datamangroveit_presence/training.csv text eol=crlf
+data/pesisir/**/lokasi.csv text eol=crlf
+data/pesisir/**/sumber.json text eol=lf

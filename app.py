@@ -1,34 +1,44 @@
 import streamlit as st
-import mangrove_fit.database as _db
-from scripts.seed_demo import seed
+
+import mangrove_fit.database as db
+from mangrove_fit.coastal_ui import coastal_style
 from mangrove_fit.ui_components import apply_style
+from scripts.seed_demo import seed
 
 st.set_page_config(page_title='MANGROVE-FIT · Kajian Pesisir',page_icon='🌿',layout='wide',initial_sidebar_state='expanded')
+
+
 @st.cache_resource
-def _seed_once(db_path):
-    # Sekali per proses/berkas DB, bukan di setiap interaksi pengguna.
+def seed_once(db_path):
     seed()
-_seed_once(str(_db.DB_PATH))
-apply_style()
+
+
+seed_once(str(db.DB_PATH))
+regional = [
+    st.Page('pages/8_Pesisir.py', title='Prioritas wilayah', icon=':material/map:', default=True),
+    st.Page('pages/9_Datasheet.py', title='Kelola datasheet', icon=':material/table_chart:'),
+]
+archive = [
+    st.Page('pages/1_Beranda.py', title='Beranda survei', icon=':material/dashboard:'),
+    st.Page('pages/2_Peta.py', title='Peta kawasan', icon=':material/map:'),
+    st.Page('pages/3_Analisis.py', title='Analisis lokasi', icon=':material/eco:'),
+    st.Page('pages/4_Perbandingan.py', title='Perbandingan zona', icon=':material/compare_arrows:'),
+    st.Page('pages/5_Data_Model.py', title='Data survei', icon=':material/database:'),
+    st.Page('pages/6_Metodologi.py', title='Metodologi survei', icon=':material/menu_book:'),
+    st.Page('pages/7_Riset.py', title='XGBoost & SHAP', icon=':material/science:'),
+]
+page = st.navigation(regional + archive, position='hidden')
+on_archive = page.url_path in {p.url_path for p in archive}
+if on_archive:
+    apply_style()
+coastal_style(archive=on_archive)
 with st.sidebar:
-    st.markdown('<div class="brand"><div class="brand-mark"></div><div><div class="brand-name">MANGROVE<span>FIT</span></div><div class="brand-sub">KAJI HABITAT. PULIHKAN PESISIR.</div></div></div>',unsafe_allow_html=True)
-    st.write('')
-    st.radio('Ruang kerja',['Demo','Analis lokal','Skenario Demak A–C'],index=2,key='workspace_mode',help='Skenario Demak A–C dan Demo bersifat baca-saja. Analis lokal menyimpan survei pengguna dalam SQLite.')
-    st.divider()
-page=st.navigation({'EKSPLORASI':[
-    st.Page('pages/1_Beranda.py',title='Beranda',icon=':material/dashboard:',default=True),
-    st.Page('pages/2_Peta.py',title='Peta kawasan',icon=':material/map:'),
-    st.Page('pages/3_Analisis.py',title='Analisis lokasi',icon=':material/eco:'),
-    st.Page('pages/4_Perbandingan.py',title='Perbandingan zona',icon=':material/compare_arrows:')],
-    'PENGELOLAAN':[
-    st.Page('pages/7_Riset.py',title='XGBoost & SHAP · Riset',icon=':material/science:'),
-    st.Page('pages/5_Data_Model.py',title='Data & model',icon=':material/database:'),
-    st.Page('pages/6_Metodologi.py',title='Metodologi',icon=':material/menu_book:')]
-})
-with st.sidebar:
-    st.divider()
-    st.markdown('**● Sistem aktif**  \nPenilaian berbasis aturan')
-    from mangrove_fit.research_service import available_models
-    st.caption(('XGBoost & SHAP tersedia di menu Riset; model operasional terpisah.' if available_models()
-                else 'Artefak XGBoost & SHAP riset belum tersedia.') + '\n\nPenyimpanan lokal')
+    st.markdown('<div class="mf-wordmark">Mangrove<span>Fit</span></div><div class="mf-brandnote">Kajian pesisir</div>', unsafe_allow_html=True)
+    for p in regional:
+        st.page_link(p)
+    with st.expander('Survei dan riset', expanded=on_archive):
+        st.radio('Ruang kerja', ['Demo', 'Analis lokal', 'Skenario Demak A–C'], index=2, key='workspace_mode',
+                 help='Pilihan ini berlaku untuk halaman survei dan riset di bawah.')
+        for p in archive:
+            st.page_link(p)
 page.run()

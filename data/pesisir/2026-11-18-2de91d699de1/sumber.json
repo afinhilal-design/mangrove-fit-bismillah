@@ -1,0 +1,49 @@
+{
+  "cutoff": "2026-11-18",
+  "periods": [
+    [
+      "2025-10-10",
+      "2025-11-18"
+    ],
+    [
+      "2026-10-10",
+      "2026-11-18"
+    ]
+  ],
+  "mask_years": [
+    "2021"
+  ],
+  "mask_url": "https://kspservices.big.go.id/satupeta/rest/services/PUBLIK/SUMBER_DAYA_ALAM_DAN_LINGKUNGAN/MapServer/57",
+  "admin_url": "https://kspservices.big.go.id/satupeta/rest/services/PUBLIK/BATAS_WILAYAH/MapServer/3",
+  "stac": "https://earth-search.aws.element84.com/v1",
+  "collection": "sentinel-2-c1-l2a",
+  "scenes": {
+    "2025_49MFN": [
+      "S2A_T49MFN_20251102T025001_L2A",
+      "S2C_T49MFN_20251031T024015_L2A",
+      "S2B_T49MFN_20251016T024205_L2A",
+      "S2A_T49MFN_20251013T023931_L2A"
+    ],
+    "2026_49MFN": [
+      "S2C_T49MFN_20261115T024910_L2A",
+      "S2B_T49MFN_20261110T024619_L2A",
+      "S2C_T49MFN_20261105T023915_L2A",
+      "S2B_T49MFN_20261031T023823_L2A"
+    ],
+    "2025_49MFM": [
+      "S2C_T49MFM_20251031T024015_L2A",
+      "S2B_T49MFM_20251016T024205_L2A",
+      "S2A_T49MFM_20251013T023931_L2A",
+      "S2C_T49MFM_20251011T024716_L2A"
+    ],
+    "2026_49MFM": [
+      "S2C_T49MFM_20261115T024910_L2A",
+      "S2C_T49MFM_20261105T023915_L2A",
+      "S2B_T49MFM_20261031T023823_L2A",
+      "S2A_T49MFM_20261028T024252_L2A"
+    ]
+  },
+  "minimum_pixels": 20,
+  "minimum_coverage": 0.5,
+  "resolution_m": 20
+}

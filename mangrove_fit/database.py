@@ -39,6 +39,10 @@ def init_db(path=None):
         CREATE TABLE IF NOT EXISTS reviews (id INTEGER PRIMARY KEY, analysis_id INTEGER REFERENCES analyses(id), reviewer TEXT NOT NULL, notes TEXT NOT NULL, decision TEXT NOT NULL, reviewed_at TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS datasets (id INTEGER PRIMARY KEY, name TEXT, checksum TEXT, date_imported TEXT, metadata_json TEXT);
         CREATE TABLE IF NOT EXISTS models (id INTEGER PRIMARY KEY, version TEXT, target TEXT, status TEXT, metadata_json TEXT);
+        CREATE TABLE IF NOT EXISTS coastal_sheets (
+            id TEXT PRIMARY KEY, name TEXT NOT NULL, filename TEXT NOT NULL, sheet TEXT,
+            checksum TEXT NOT NULL, config_json TEXT NOT NULL, rows_json TEXT NOT NULL, created_at TEXT NOT NULL
+        );
         CREATE INDEX IF NOT EXISTS idx_analyses_zone ON analyses(zone_id, id DESC);
         CREATE INDEX IF NOT EXISTS idx_reviews_analysis ON reviews(analysis_id);
         CREATE INDEX IF NOT EXISTS idx_zones_scope ON zones(scope, zone_id);

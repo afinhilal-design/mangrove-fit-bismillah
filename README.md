@@ -1,30 +1,14 @@
-# 🌿 MANGROVE-FIT
+# MANGROVE-FIT
 
-**MANGROVE-FIT: Aplikasi Prioritisasi Rehabilitasi Mangrove di Pesisir Pantai Berbasis XGBoost dan SHAP dengan Integrasi Data Hidrologi dan Geospasial**
+Aplikasi Streamlit untuk menentukan lokasi survei rehabilitasi mangrove di pesisir Kabupaten Sidoarjo dan Kota Surabaya. Halaman pertama menampilkan peta, urutan lokasi, kondisi vegetasi dan sumber pengamatan.
 
-> Wilayah studi: Pesisir Kabupaten Demak, Jawa Tengah, Indonesia  
-> Versi: MVP 0.1 · Bahasa antarmuka: Indonesia  
-> Status sistem: Rule-based screening · XGBoost & SHAP belum tersedia
+## Data bawaan
 
----
+Edisi 18 November 2026 mencakup 7 kecamatan di Sidoarjo dan 10 di Surabaya. Komposit Sentinel-2 L2A Collection 1 membandingkan periode 10 Oktober–18 November 2025 dengan 10 Oktober–18 November 2026. Citra paling baru yang lolos pemilihan direkam 15 November 2026. Poligon mangrove acuan berasal dari peta KLHK tahun 2021 yang disajikan BIG. Pengamatan mencakup area di dalam poligon lama tersebut.
 
-## Deskripsi
+Setiap piksel pada grid 20 m memerlukan dua tanggal pengamatan valid pada masing-masing periode. Analisis hanya membandingkan piksel yang tersedia pada kedua periode. Sebanyak 16 kecamatan memenuhi batas minimum 20 piksel dan 50% cakupan. Asem Rowo memiliki cakupan 17,1% dan tetap terlihat di peta tanpa peringkat.
 
-MANGROVE-FIT adalah aplikasi web lokal berbasis Streamlit untuk membantu peneliti, pengelola pesisir, dan kelompok masyarakat menilai **kesesuaian ekologis habitat mangrove** dan menentukan **prioritas verifikasi dan strategi pemulihan**. Aplikasi ini **tidak** menggantikan survei lapangan, izin kawasan, atau konsultasi ahli.
-
-**Apa yang bisa dilakukan:**
-- Jelajahi peta kawasan pesisir dengan zona kandidat
-- Impor data titik (CSV) atau polygon (GeoJSON)
-- Jalankan screening ekologis & legal berbasis aturan transparan
-- Bandingkan beberapa zona dan susun urutan survei
-- Ekspor hasil ke CSV, GeoJSON, HTML, atau Markdown
-
-**Apa yang belum tersedia (MVP):**
-- Prediksi XGBoost (menunggu dataset berlabel terverifikasi)
-- Penjelasan SHAP
-- Integrasi Google Earth Engine / Sentinel-2 otomatis
-
----
+Di **Kelola datasheet → Datasheet tersimpan**, klik **Unduh datasheet regional** untuk memperoleh CSV. Daftar citra, tautan sumber dan tanggalnya tersedia di **Prioritas wilayah → Cara membaca hasil dan sumber data**.
 
 ## Prasyarat
 
@@ -46,7 +30,7 @@ MANGROVE-FIT adalah aplikasi web lokal berbasis Streamlit untuk membantu penelit
 
 ```powershell
 # 1. Masuk ke folder proyek
-cd e:\ITRUSH\mangrove-fit-bismillah
+cd path\ke\mangrove-fit-bismillah
 
 # 2. Buat virtual environment
 python -m venv .venv
@@ -67,37 +51,34 @@ Aplikasi akan terbuka di: **http://localhost:8501**
 
 ## Cara Menggunakan
 
-### 1. Mode Demo (bawaan)
-- Buka aplikasi → sidebar menunjukkan **"Demo"**
-- Tiga zona sintetis sudah tersedia dengan watermark **SIMULASI — BUKAN DATA LAPANGAN**
-- Jelajahi peta, lihat analisis, dan ekspor contoh laporan
+### Data sendiri
 
-### 2. Mode Analis Lokal
-- Di sidebar, pilih **"Analis lokal"**
-- Pergi ke halaman **Data & model** → tab **Impor & template**
-- Unduh template CSV kosong, isi data lapangan kamu, lalu upload kembali
+1. Buka **Kelola datasheet** dan pilih file. Aplikasi mendukung CSV, TSV, TXT, XLS, XLSX, XLSB, ODS, JSON, JSONL, GeoJSON, Parquet, tabel Word DOCX dan tabel pada PDF teks bergaris.
+2. Untuk buku kerja atau dokumen, pilih lembar atau tabel. Bila judulnya berada di bawah baris pertama, atur **Posisi judul kolom**. Nama berbahasa Indonesia dan Inggris yang dikenal dipetakan otomatis. Periksa satuan dan sesuaikan melalui **Cocokkan nama kolom**.
+3. Sertakan nama lokasi dan sedikitnya satu indikator vegetasi. Misalnya NDVI, tutupan tajuk dalam persen, kehilangan luas, atau kerapatan pohon per hektare. Dua luas pada periode yang sebanding juga dapat menghasilkan persentase kehilangan. Koordinat bersifat opsional. Satu nilai luas saja tercatat sebagai inventaris.
+4. Hasil awal muncul saat file dibaca. Pilih **Simpan dan buka hasil** untuk menyimpan tabel di SQLite lokal. Gunakan **Datasheet aktif** untuk berpindah antara tabel sendiri dan data bawaan.
+5. Gunakan filter wilayah, pilih baris atau rincian lokasi, lalu unduh hasil CSV. File yang sama dengan pilihan lembar, judul dan pemetaan sama akan memperbarui nama salinan yang sudah ada.
 
-### 3. Import Data
+Batas satu file adalah 10 MB, 20.000 baris dan 250 kolom. File PDF berupa pindai, foto, tabel tanpa struktur yang terbaca, atau file tanpa indikator memerlukan penyiapan data. Nilai yang gagal dibaca ditandai. Data kosong tidak diganti dengan nol.
 
-**Format CSV** (untuk titik/sampel):
+### Membaca urutan survei
+
+K-Means berjalan lokal tanpa API key. Lokasi dibandingkan jika profil indikatornya sama. Tiga lokasi atau lebih dengan variasi indikator dapat dibagi menjadi dua atau tiga kelompok. Dengan data sedikit atau seragam, aplikasi menampilkan indikator deskriptif. Urutan mencantumkan status tindak lanjut, kelompok tekanan, serta ringkasan indikator yang arahnya diseragamkan.
+
+Ambang penapisan dalam aplikasi menandai kandidat jika NDVI median turun ≥0,10, minimal 25% piksel turun ≥0,10 NDVI, atau kehilangan luas mangrove mencapai 10%. Ini pilihan desain untuk menyeleksi kunjungan. Pasang surut, kondisi citra dan perubahan musiman dapat memengaruhi hasil. Survei hidrologi, pemeriksaan penyebab degradasi dan status lahan diperlukan sebelum menetapkan bentuk rehabilitasi.
+
+**Survei dan riset** memuat ruang kerja lokal, demo sintetis dan skenario historis Demak. Model XGBoost / SHAP riset memiliki target semai dan survival tersendiri. Hasilnya tersedia pada arsip riset jika dependensi opsional terpasang.
+
+### Memperbarui data bawaan
+
+Pembacaan, pengelompokan dan peta regional berjalan dari berkas lokal. Untuk membangun edisi berikutnya dari BIG dan katalog publik Earth Search, jalankan perintah berikut dari lingkungan Python proyek dengan akses internet. Ganti tanggal dengan akhir periode yang sudah selesai.
+
+```bash
+python -m pip install "rasterio>=1.4,<2"
+python scripts/update_pesisir.py --tanggal 2026-11-18
 ```
-zone_id, zone_name, longitude, latitude, landcover_type, legal_status, ...
-```
-Kolom kosong = `null` (bukan 0). Lihat [`data/demo/template_kosong.csv`](data/demo/template_kosong.csv) untuk template lengkap.
 
-**Format GeoJSON** (untuk polygon):
-- CRS: EPSG:4326 `[longitude, latitude]`
-- Tipe geometri: Point atau Polygon
-- Lihat [`data/demo/zona_simulasi.geojson`](data/demo/zona_simulasi.geojson) untuk contoh
-
-### 4. Ekspor Hasil
-Dari halaman **Analisis lokasi** atau **Perbandingan zona**, klik tombol ekspor:
-- **CSV** — data tabular + metadata sumber
-- **GeoJSON** — geometri + hasil screening
-- **HTML** — laporan ringkas siap cetak
-- **Markdown** — teks terformat
-
----
+Pembaruan mengunduh band citra untuk pemrosesan dan memeriksa integritasnya. Setiap edisi memuat `lokasi.csv`, `kecamatan.geojson`, dan `sumber.json` di `data/pesisir/`. Penanda aktif berubah setelah edisi baru lengkap. Impor pengguna tetap tersimpan saat data bawaan diperbarui.
 
 ## Struktur Folder
 
@@ -110,12 +91,16 @@ mangrove-fit-bismillah/
 │   ├── 3_Analisis.py
 │   ├── 4_Perbandingan.py
 │   ├── 5_Data_Model.py
-│   └── 6_Metodologi.py
+│   ├── 6_Metodologi.py
+│   ├── 7_Riset.py
+│   ├── 8_Pesisir.py
+│   └── 9_Datasheet.py
 ├── mangrove_fit/             # Modul backend Python
 ├── config/
 │   ├── rules.yaml            # Aturan screening ekologis (dapat diedit)
 │   └── demo_mode.yaml
 ├── data/
+│   ├── pesisir/              # Snapshot regional dan manifest sumber
 │   ├── demo/                 # Data sintetis (SIMULASI)
 │   └── app.db                # Database SQLite lokal (dibuat otomatis)
 ├── docs/                     # Dokumentasi teknis
@@ -133,7 +118,7 @@ mangrove-fit-bismillah/
 | Peta tidak muncul | Aktifkan **"Peta skematis offline"** di halaman Peta |
 | `Error: cannot import name ...` | Pastikan virtual environment aktif (`.venv\Scripts\Activate.ps1`) |
 | Port 8501 sudah terpakai | Jalankan `streamlit run app.py --server.port 8502` |
-| Database error | Hapus `data/app.db` lalu restart aplikasi |
+| Gagal membuka database | Pastikan folder proyek dapat ditulis dan tersedia ruang disk. Salin `data/app.db` sebelum melakukan pemulihan. |
 | Data demo muncul di mode lokal | Normal — klik "Analis lokal" di sidebar, tambah zona baru |
 
 ---
@@ -145,16 +130,16 @@ mangrove-fit-bismillah/
 python -m pytest tests -v
 ```
 
-Hasil: 51 test lulus pada versi MVP 0.1.
+Tes mencakup impor datasheet, peringkat, integritas model arsip, dan navigasi Streamlit.
 
 ---
 
 ## Keterbatasan Penting
 
 - **Kesesuaian habitat ≠ keberhasilan rehabilitasi.** Hasil screening hanya arah kajian awal.
-- Semua zona bawaan adalah **data sintetis** — koordinat dan nilai tidak mewakili lokasi nyata.
-- XGBoost dan SHAP **belum aktif** — menunggu dataset berlabel terverifikasi.
-- Basemap memerlukan internet. Data dan analisis tetap berjalan offline.
+- Data regional memakai citra dan geometri publik. Skenario Demak dan demo memiliki penanda tersendiri.
+- Pengelompokan regional menggunakan K-Means. Model XGBoost di ruang riset memakai data historis.
+- Peta bawaan Sidoarjo–Surabaya tersedia offline. Peta jalan untuk unggahan dari luar wilayah membutuhkan koneksi internet.
 - Tidak ada multiuser, login, atau keamanan produksi.
 
 Lihat [`docs/limitations.md`](docs/limitations.md) untuk daftar lengkap.
@@ -178,7 +163,7 @@ Lihat [`docs/limitations.md`](docs/limitations.md) untuk daftar lengkap.
 
 ## Referensi Ilmiah
 
-Dataset dan sumber data yang relevan didokumentasikan di [`docs/spesifikasi_sumber.md`](docs/spesifikasi_sumber.md) dan [`data/DATA_STATUS.md`](data/DATA_STATUS.md). Aplikasi **tidak mengklaim** telah mengunduh atau menggunakan dataset tersebut tanpa verifikasi tertulis.
+Dataset dan sumber data yang relevan didokumentasikan di [`docs/spesifikasi_sumber.md`](docs/spesifikasi_sumber.md) dan [`data/DATA_STATUS.md`](data/DATA_STATUS.md). Sumber snapshot regional dan metode pengolahannya tercatat di setiap edisi.
 
 ---
 

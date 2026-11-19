@@ -7,8 +7,8 @@
 ## Identitas Proyek
 
 **Nama:** MANGROVE-FIT  
-**Tujuan:** Aplikasi prioritisasi rehabilitasi mangrove berbasis rule-based screening dan (kelak) XGBoost + SHAP  
-**Wilayah studi:** Pesisir Kabupaten Demak, Jawa Tengah, Indonesia  
+**Tujuan:** Prioritas survei rehabilitasi mangrove menggunakan indikator kondisi dan K-Means. Ruang survei memakai screening ekologis dan legal. XGBoost dan SHAP tersedia untuk eksperimen riset.
+**Wilayah studi utama:** Kabupaten Sidoarjo dan Kota Surabaya, Jawa Timur. Demak berada di ruang arsip.
 **Entry point:** `streamlit run app.py`  
 **Database:** SQLite di `data/app.db`
 

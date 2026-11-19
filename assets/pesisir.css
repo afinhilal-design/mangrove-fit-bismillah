@@ -1,0 +1,34 @@
+:root{
+  --ink:#163b34;--paper:#faf9f5;--muted:#546b61;--rule:#d7ddd2;--rust:#984529;
+}
+[data-testid="stAppViewContainer"],[data-testid="stHeader"]{background:var(--paper)}
+[data-testid="stSidebar"]{background:#eeefe7;border-right:1px solid #d6dbce}
+[data-testid="stSidebarContent"]{padding-top:.2rem}
+[data-testid="stSidebarUserContent"]{padding-top:1.5rem}
+.mf-wordmark{font:600 34px/1.1 Georgia,serif;letter-spacing:-2px;color:var(--ink)}
+.mf-wordmark span{font-style:italic;font-weight:400}
+.mf-brandnote{font:13px/1.6 system-ui,sans-serif;color:var(--muted);margin:.15rem 0 1.65rem}
+[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]{border-radius:4px;padding:.5rem .65rem}
+[data-testid="stSidebar"] [aria-current="page"]{background:#dce5d6}
+[data-testid="stSidebar"] details{margin-top:1rem}
+.block-container{max-width:1440px;padding:3.3rem clamp(1.15rem,3.4vw,4.25rem) 3rem}
+.mf-supra{font:600 12px/1.4 system-ui,sans-serif;color:#516e60;letter-spacing:.085em;text-transform:uppercase}
+.mf-display{font:normal clamp(34px,4.1vw,64px)/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.046em;color:var(--ink);margin:.45rem 0 .75rem}
+.mf-deck{font:normal 16px/1.55 system-ui,sans-serif;color:#496055;max-width:74ch;margin:0 0 1.1rem}
+.mf-section{font:normal 27px/1.2 Georgia,serif;letter-spacing:-.024em;color:var(--ink);margin:.4rem 0 .65rem}
+.mf-callout{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:13px 0 12px;margin-top:2px}
+.mf-callout strong{font:normal 23px/1.18 Georgia,serif;color:var(--ink);display:block}
+.mf-callout small,.mf-site small{display:block;font:12px/1.45 system-ui,sans-serif;color:var(--muted)}
+.mf-site{display:grid;grid-template-columns:29px 1fr;gap:9px;border-bottom:1px solid var(--rule);padding:13px 0}
+.mf-rank{font:normal 19px/1.3 Georgia,serif;color:#65796c}
+.mf-site b{color:var(--ink);font-size:15px}
+.mf-site em{font:600 12px/1.45 system-ui,sans-serif;display:block;margin:2px 0}
+.mf-site p{font:13px/1.5 system-ui,sans-serif;color:#405447;margin:2px 0}
+.mf-legend{display:flex;gap:7px 18px;flex-wrap:wrap;margin:2px 0;font:12px/1.5 system-ui,sans-serif;color:var(--muted)}
+.mf-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+[data-testid="stMetricValue"]{font-family:Georgia,serif;color:var(--ink)}
+[data-testid="stDataFrame"]{border:1px solid var(--rule)}
+[data-testid="stExpander"] details{border-color:var(--rule)}
+[data-testid="stMain"] label p,[data-testid="stMain"] h2,[data-testid="stMain"] h3{color:var(--ink)}
+[data-testid="stFileUploaderDropzone"]{border:1px dashed #8d9f8e;background:#f0f2e9}
+@media(max-width:780px){.block-container{padding-top:3.5rem}.mf-display{font-size:38px}.mf-brandnote{margin-bottom:.8rem}}

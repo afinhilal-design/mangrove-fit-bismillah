@@ -10,10 +10,12 @@ MANGROVE-FIT - MULAI DI SINI
 VS Code hanya perlu jika ingin mengedit kode. Jangan tutup jendela
 terminal selama aplikasi dipakai. Tekan Ctrl+C untuk berhenti.
 
-Pilih Demo untuk mencoba; Analis lokal untuk menyimpan data sendiri.
-Contoh bawaan adalah SIMULASI, bukan data lapangan.
-XGBoost dan SHAP belum tersedia; analisis memakai aturan transparan.
+Halaman Prioritas wilayah menampilkan peta Sidoarjo dan Surabaya.
+Pilih Kelola datasheet untuk membaca file dari komputermu. Setelah pratinjau
+muncul, klik Simpan dan buka hasil. Datasheet tersimpan juga menyediakan
+CSV regional yang bisa kamu buka di Excel.
 
-Panduan lengkap: README.md
-Hasil pengujian: docs/acceptance.md
-Tangkapan layar: docs/screenshots/
+Data satelit membantu menyusun survei. Periksa kondisi dan penyebab
+perubahan di lapangan sebelum memutuskan bentuk rehabilitasi.
+
+Panduan dan metode tersedia di README.md.
